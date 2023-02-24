@@ -4,9 +4,34 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
-@import url('./vite-promo.css');
+
+/* utils */
+@import url('./utils/variables.css');
+@import url('./utils/hidden.css');
+
+/* base */
+@import url('./base/reset.css');
+@import url('./base/common.css');
+
+/* components */
+@import url('./components/section.css');
+@import url('./components/container.css');
+
+/* layout */
 @import url('./header.css');
+@import url('./layout/main/main.css');
+@import url('./layout/hotel/hotel.css');
+@import url('./layout/restaurant/restaurant.css');
+@import url('./layout/room/room.css');
+@import url('./footer.css');
+
+/* pages */
+@import url('./pages/modal/room-modal.css');
+@import url('./pages/modal/table-modal.css');
+@import url('./pages/modal/prices-modal.css');
+
+
+
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
