@@ -15,6 +15,35 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
+span {
+    font-style: italic;
+}
+
 .menu-description {
     font-family: 'Geometria', sans-serif;
 }
+
+.btn {
+    border: 0.8px solid var(--button);
+    border-radius: 32px;
+}
+
+.link {
+    font-style: normal;
+    text-decoration: none;
+    color: currentColor;
+    outline: transparent;
+}
+
+.h1 {
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.h2 {
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+}
+

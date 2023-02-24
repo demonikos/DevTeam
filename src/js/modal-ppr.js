@@ -1,8 +1,8 @@
 (() => {
   const refs = {
-    openModalBtns: document.querySelectorAll('[data-modal-br-open]'),
-    closeModalBtn: document.querySelector('[data-modal-br-close]'),
-    modal: document.querySelector('[data-modal-br]'),
+    openModalBtns: document.querySelectorAll('[data-modal-ppr-open]'),
+    closeModalBtn: document.querySelector('[data-modal-ppr-close]'),
+    modal: document.querySelector('[data-modal-ppr]'),
   };
 
   const disableBodyScroll = () => {
