@@ -13,6 +13,7 @@
 
 body {
     font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
 }
 
 span {
@@ -24,6 +25,9 @@ span {
 }
 
 .btn {
+    font-family: inherit;
+    font-weight: normal;
+    letter-spacing: -0.02em;
     border: 0.8px solid var(--button);
     border-radius: 32px;
 }
@@ -37,13 +41,8 @@ span {
 
 .h1 {
     font-weight: normal;
-    font-style: normal;
-    text-transform: uppercase;
 }
 
 .h2 {
     font-weight: bold;
-    font-style: normal;
-    text-transform: uppercase;
 }
-
