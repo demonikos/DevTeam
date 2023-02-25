@@ -1,0 +1,35 @@
+.section-restaurant-hero{
+    padding-top: 40px;
+}
+
+.restaurant-hero-title{
+font-family: 'DM Sans', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 1;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+
+color: #121212;
+}
+.restaurant-hero-btn{
+    display: flex;
+    gap: 12px;
+}
+
+.action-btns{
+    border: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 18px;
+    gap: 10px;
+    
+    width: 128px;
+    height: 34px;
+    
+    border: 0.8px solid #121212;
+    border-radius: 32px;
+}
