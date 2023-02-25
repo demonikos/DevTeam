@@ -1,0 +1,16 @@
+.main-hero-section {
+  background-color: var(--dark);
+}
+
+.main-hero-title {
+  font-weight: var(--regular);
+  font-size: 80px;
+  line-height: calc(80 / 80);
+  letter-spacing: -0.02em;
+
+  color: var(--button);
+}
+
+.main-hero-text {
+  
+}
