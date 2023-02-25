@@ -1,5 +1,45 @@
-<section>
-    <p>
-        main-hotels
-    </p>
+<section class="main-hotel">
+    <div class="main-hotel-details container">
+        <h2 class="main-hotel-title">Hotel</h2>
+        <p class="main-hotel-about">Book your stay with us now and experience the epitome of comfort and luxury at our hotel. We guarantee you'll be thrilled with your decision.</p>
+        <div>
+            <div class="main-photo">                
+                <picture>
+                    <source srcset="./src/img/main-page/main-hotels/desktop/ht-img-3-desk@1x.jpg 1x,
+                        ./src/img/main-page/main-hotels/desktop/ht-img-3-desk@2x.jpg 2x"
+                        media="(min-width: 1200px)"/>
+                    <source srcset="./src/img/main-page/main-hotels/tablet/ht-img-3-tab@1x.jpg 1x,
+                        ./src/img/main-page/main-hotels/tablet/ht-img-3-tab@2x.jpg 2x"
+                        media="(min-width: 768px)"/>
+                    <source srcset="./src/img/main-page/main-hotels/mobile/ht-img-3-mob@1x.jpg 1x,
+                        ./src/img/main-page/main-hotels/mobile/ht-img-3-mob@2x.jpg 2x"
+                        media="(max-width: 767px)"/>
+                    <img src="./src/img/main-page/main-hotels/desktop/ht-img-3-desk@1x.jpg" alt="hotel room"
+                    width="335px"
+                    height="417px">                                             
+                    
+                </picture>
+            </div>
+            <div class="main-slider">
+               <div class="main-slider-item slide-active"></div>
+               <div class="main-slider-item slide-second"></div>
+               <div class="main-slider-item slide-second"></div>
+               <div class="main-slider-item slide-second"></div>
+            </div>
+            <div>
+                <button class="slider-back" type="button">
+                    <svg class="icon-back">
+                        <use href="./src/img/sprite.svg#icon-back"></use>
+                    </svg>
+                </button>
+                <button class="slider-up" type="button">
+                    <svg class="icon-up">
+                        <use href="./src/img/sprite.svg#icon-up"></use>
+                    </svg>
+                </button>
+            </div>
+            <button>Book a room</button>
+            <button>View room</button>
+        </div>
+    </div>
 </section>

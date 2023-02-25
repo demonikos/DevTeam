@@ -1,0 +1,48 @@
+.main-hotel {
+    background-color: #121212;
+    padding: 20px 32px;
+}
+
+.main-hotel-details {}
+
+.main-hotel-title{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.0;
+    letter-spacing: -0.02em;
+    color: #F7F7F7;
+}
+
+.main-hotel-about {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    color: #F7F7F7;
+}
+
+.main-photo {
+    width: 335px;
+    height: 417px;
+    border: solid 1px;
+}
+
+.main-slider {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-slider-item{
+    display: flex;
+    justify-content: center;
+    width: 158px;
+    height: 128px;
+    border: solid 1px;
+
+}
+.slider-back, .slider-up{
+    width: 10px;
+    height: 10px;
+    color: #F7F7F7;
+    border: solid 1px;
+}
