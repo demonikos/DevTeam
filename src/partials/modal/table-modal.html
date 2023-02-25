@@ -23,7 +23,7 @@
 
             <label class="field-description" for="people_number"></label>
             <select class="modal-field number-field " id="people_number" name="people_number">
-                <option value="empty" checked>NUMBER OF PEOPLE</option>
+                <option value="empty">NUMBER OF PEOPLE</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -31,10 +31,13 @@
                 <option value="5">5</option>
             </select>
 
-            <label class="field-description">
-                <input class="modal-field modal-date" type="date" name="date" min="2023-02-25" max="2025-01-01">
-            What date to book?
-            </label>
+            <select class="modal-field number-field " id="date" name="people_number">
+                <option value="today">TODAY</option>
+                <option value="tomorrow">TOMORROW</option>
+                <option value="the day after tomorrow">THE DAY AFTER TOMORROW</option>
+            </select>
+            <label class="field-description" for="date">What date to book?</label>
+
             
             <label class="field-description">
                 <input class="modal-field modal-tel" type="tel" name="user_phone" title="xxx-xxx-xx-xx" placeholder="+ 38 ()" required>

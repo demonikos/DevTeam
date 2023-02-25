@@ -27,18 +27,22 @@
             Phone number
             </label>
 
-            <label class="field-description">
-                <input class="modal-field modal-date" type="date" name="date" min="2023-02-25" max="2025-01-01">
-            Check-in date
-            </label>
+            <select class="modal-field number-field " id="date_in" name="people_number">
+                <option value="today">TODAY</option>
+                <option value="tomorrow">TOMORROW</option>
+                <option value="the day after tomorrow">THE DAY AFTER TOMORROW</option>
+            </select>
+            <label class="field-description" for="date_in">Check-in date</label>
 
-            <label class="field-description">
-                <input class="modal-field modal-date" type="date" name="date" min="2023-02-25" max="2025-01-01">
-            Check-out date
-            </label>
+            <select class="modal-field number-field " id="date_out" name="people_number">
+                <option value="today">TODAY</option>
+                <option value="tomorrow">TOMORROW</option>
+                <option value="the day after tomorrow">THE DAY AFTER TOMORROW</option>
+            </select>
+            <label class="field-description" for="date_out">Check-out date</label>
 
             <select class="modal-field suite-type" id="suite_type" name="suite_type">
-                <option value="double" checked>Double suite</option>
+                <option value="double">Double suite</option>
                 <option value="triple">Triple room</option>
                 <option value="four">Four-seater room</option>
             </select>
