@@ -22,6 +22,9 @@
   color: inherit;
 
   display: flex;
+  justify-content: center;
+  text-align: center;
+
   padding: 8px 18px;
 
   letter-spacing: -0.02em;
