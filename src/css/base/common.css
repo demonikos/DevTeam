@@ -1,1 +1,48 @@
 /* only for base styles for all pages */
+
+@font-face {
+    font-family: DM Sans, sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+}
+
+@font-face {
+    font-family: Geometria, sans-serif;
+    src: url('/src/uploads/fonts/Geometria.ttf');
+    font-weight: normal;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+span {
+    font-style: italic;
+}
+
+.menu-description {
+    font-family: 'Geometria', sans-serif;
+}
+
+.btn {
+    font-family: inherit;
+    font-weight: normal;
+    letter-spacing: -0.02em;
+    border: 0.8px solid var(--button);
+    border-radius: 32px;
+}
+
+.link {
+    font-style: normal;
+    text-decoration: none;
+    color: currentColor;
+    outline: transparent;
+}
+
+.h1 {
+    font-weight: normal;
+}
+
+.h2 {
+    font-weight: bold;
+}
