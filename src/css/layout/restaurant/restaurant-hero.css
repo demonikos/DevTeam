@@ -12,32 +12,35 @@ line-height: 1;
 .restaurant-hero-btn{
     display: flex;
     gap: 12px;
+    margin-bottom: 54px;
 }
 
-/* .action-btns{
+.btn {
+    font-family: inherit;
+    font-weight: normal;
+    letter-spacing: -0.02em;
+    border: 0.8px solid var(--button);
+    border-radius: 32px;
+}
 
-font-weight: 400;
-font-size: 14px;
-line-height: 1.29;
-letter-spacing: -0.02em;
-text-transform: uppercase;
-
-
+.action-btns{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 8px 18px;
     gap: 10px;
-    
-    border: 0.8px solid #121212;
-    border-radius: 32px;
-} */
+
+font-size: 14px;
+line-height: 1.29;
+text-transform: uppercase;
+
+border: 0.8px solid #121212;
+}
 
 .restaurant-hero-text{
 width: 338px;
 
 font-size: 14px;
 line-height: 1.29;
-
 }
 
