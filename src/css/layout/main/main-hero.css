@@ -1,5 +1,6 @@
 .main-hero-section {
   background-color: var(--dark);
+  color: var(--button);
 }
 
 .main-hero-title {
@@ -7,10 +8,22 @@
   font-size: 80px;
   line-height: calc(80 / 80);
   letter-spacing: -0.02em;
-
-  color: var(--button);
 }
 
 .main-hero-text {
-  
+  font-weight: var(--regular);
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: 0.05em;
+}
+
+.main-hero-btn {
+  background-color: transparent;
+  color: inherit;
+
+  display: flex;
+  padding: 8px 18px;
+
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
