@@ -4,16 +4,9 @@
 
 .restaurant-hero-title{
 margin-bottom: 24px;
-
-font-family: 'DM Sans', sans-serif;
-font-style: normal;
 font-weight: 400;
 font-size: 40px;
 line-height: 1;
-letter-spacing: -0.02em;
-text-transform: uppercase;
-
-/* color: #121212; */
 }
 
 .restaurant-hero-btn{
@@ -41,12 +34,10 @@ text-transform: uppercase;
 } */
 
 .restaurant-hero-text{
-font-weight: 400;
+width: 338px;
+
 font-size: 14px;
 line-height: 1.29;
-letter-spacing: 0.05em;
-text-transform: uppercase;
-
 
 }
 
