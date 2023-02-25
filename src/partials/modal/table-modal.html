@@ -1,3 +1,51 @@
-<div>
+<!-- ==== temporary CSS links -->
 
+<link rel="stylesheet" href="../../css/base/common.css" />
+<link rel="stylesheet" href="../../css/base/reset.css" />
+<link rel="stylesheet" href="../../css/pages/modal/table-modal.css" />
+
+<!-- =======///====== -->
+
+<div class="modal-backdrop">
+    <div class="modal-window">
+        <p class="modal-title">Book <span>a table</span></p>
+        <form class="modal-form">
+            <label class="field-description">
+                <input class="modal-field modal-name"
+                type="text" 
+                name="user_name" 
+                pattern="[a-zA-Zа-яА-я]+" 
+                minlength="2" 
+                placeholder="your name"
+                required >
+            Who should book a table for?
+            </label>
+
+            <label class="field-description" for="people_number"></label>
+            <select class="modal-field number-field " id="people_number" name="people_number">
+                <option value="empty">NUMBER OF PEOPLE</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <select class="modal-field number-field " id="date" name="people_number">
+                <option value="today">TODAY</option>
+                <option value="tomorrow">TOMORROW</option>
+                <option value="the day after tomorrow">THE DAY AFTER TOMORROW</option>
+            </select>
+            <label class="field-description" for="date">What date to book?</label>
+
+            
+            <label class="field-description">
+                <input class="modal-field modal-tel" type="tel" name="user_phone" title="xxx-xxx-xx-xx" placeholder="+ 38 ()" required>
+            Phone number
+            </label>
+
+            <button class="modal-btn btn" type="submit">Make a reservation</button>
+
+        </form>
+    </div>
 </div>
