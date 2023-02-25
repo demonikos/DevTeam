@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="../../css/base/common.css" />
 <link rel="stylesheet" href="../../css/base/reset.css" />
-<link rel="stylesheet" href="../../css/pages/modal/room-modal.css" />
+<link rel="stylesheet" href="../../css/pages/modal/table-modal.css" />
 
 <!-- =======///====== -->
 
@@ -22,7 +22,8 @@
             </label>
 
             <label class="field-description" for="people_number"></label>
-            <select class="modal-field number-field " id="people_number" name="people_number" placeholder="Number of people">
+            <select class="modal-field number-field " id="people_number" name="people_number">
+                <option value="empty" checked>NUMBER OF PEOPLE</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -31,7 +32,7 @@
             </select>
 
             <label class="field-description">
-                <input class="modal-field modal-date" type="date" name="date" min="2023-02-025" max="2025-01-01" placeholder="">
+                <input class="modal-field modal-date" type="date" name="date" min="2023-02-25" max="2025-01-01">
             What date to book?
             </label>
             
