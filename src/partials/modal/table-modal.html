@@ -1,3 +1,41 @@
 <div>
+    <p>Book a room</p>
+    <form>
+        <label>
+            <input 
+            type="text" 
+            name="user_name" 
+            pattern="[a-zA-Zа-яА-я]+" 
+            minlength="2" 
+            placeholder="your name"
+            required >
+        Who should book a room for?
+        </label>
+
+        <label>
+            <input type="tel" name="user_phone" title="xxx-xxx-xx-xx" placeholder="+ 38 ()" required>
+        Phone number
+        </label>
+
+        <label>
+            <input type="date" name="date" min="2023-02-025" max="2025-01-01" placeholder="">
+        Check-in date
+        </label>
+
+        <label>
+            <input type="date" name="date" min="2023-02-025" max="2025-01-01" placeholder="">
+        Check-out date
+        </label>
+
+        <select id="suite_type" name="suite_type" placeholder="">
+            <option value="double" checked>Double suite</option>
+            <option value="triple">Triple room</option>
+            <option value="four">Four-seater room</option>
+        </select>
+        <label for="suite_type">Number category</label>
+
+        <button type="submit">Make a reservation</button>
+
+    </form>
 
 </div>
