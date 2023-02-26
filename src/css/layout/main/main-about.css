@@ -1,5 +1,7 @@
 .main-about-section {
   padding-bottom: 64px;
+  background-color: var(--background);
+
 }
 
 .main-about-container {
@@ -23,4 +25,8 @@
   letter-spacing: -0.02em;
 
   color: var(--dark);
+}
+
+.bathroom-img {
+  margin-bottom: 20px;
 }
