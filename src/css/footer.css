@@ -1,0 +1,114 @@
+.footer {
+  border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  padding: 25px 30px;
+  margin: 0 auto;
+}
+
+.footer-nav-list {
+  display: none;
+}
+
+.footer-nav-link {
+  font-weight: var(--medium);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: #747bff;
+}
+
+.logo {
+  position: relative;
+  top: 10px;
+  font-weight: var(--medium);
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.18em;
+
+  color: var(--dark);
+}
+
+.logo-subtitle {
+  display: block;
+  font-weight: var(--regular);
+  font-size: 8px;
+  line-height: 1.25;
+
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.footer-social-media-list {
+  display: flex;
+  gap: 14px;
+}
+
+.social-media-icon {
+  stroke: var(--dark);
+  fill: var(--white);
+}
+
+address {
+  margin-left: auto;
+}
+
+/* ///////////////////////////////////////|// [ADAPTIVE] \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* ---------------------------------------------- [MOBILE] --------------------------------------------------- */
+@media screen and (min-width: 375px) {
+  .footer-container {
+    max-width: 375px;
+  }
+}
+
+/* ------------------------------------------------- [TABLET] ------------------------------------------------ */
+@media screen and (min-width: 768px) {
+  .footer-container {
+    max-width: 768px;
+  }
+
+  .footer-social-media-list {
+    display: flex;
+    gap: 16px;
+  }
+
+  .footer-nav-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  address {
+    margin-left: 0;
+  }
+}
+
+/* ------------------------------------------------ [DESKTOP] --------------------------------------------------- */
+@media screen and (min-width: 1440px) {
+  .footer-container {
+    max-width: 1406px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  .logo {
+    margin-left: 50px;
+  }
+}

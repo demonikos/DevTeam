@@ -1,45 +1,48 @@
 <!-- / ====== Temporary css links ===== -->
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="../../css/base/common.css" />
 <link rel="stylesheet" href="../../css/base/reset.css" />
-<link rel="stylesheet" href="../../css/pages/modal/room-modal.css" />
 <link rel="stylesheet" href="../../css/pages/modal/table-modal.css" />
+<link rel="stylesheet" href="../../css/pages/modal/room-modal.css" />
 
 
 
 <div class="modal-backdrop">
-    <div class="modal-window">
-        <p class="modal-title">Book <span>a room</span></p>
+    <div class="modal-window room-window">
+        <h3 class="modal-title">Book <span>a room</span></h3>
+        <svg class="close-icon" width="12px" height="12px">
+            <use href=""></use>
+        </svg>
         <form class="modal-form">
-            <label class="field-description">
-                <input class="modal-field modal-name" 
+            <input class="modal-field modal-name"
+                id="room_name" 
                 type="text" 
                 name="user_name" 
                 pattern="[a-zA-Zа-яА-я]+" 
                 minlength="2" 
                 placeholder="your name"
                 required >
-            Who should book a room for?
-            </label>
+            <label class="field-description" for="room_name">Who should book a room for?</label>
 
-            <label class="field-description">
-                <input class="modal-field modal-tel" type="tel" name="user_phone" title="xxx-xxx-xx-xx" placeholder="+ 38 ()" required>
-            Phone number
-            </label>
+            <input class="modal-field modal-tel" id="room_tel" type="tel" name="user_phone" title="xxx-xxx-xx-xx"
+                    placeholder="+ 38 ()" required>
+                <label class="field-description" for="room_tel">Phone Number</label>
 
-            <select class="modal-field number-field " id="date_in" name="people_number">
+            <select class="modal-field check-in-field" id="date_in" name="people_number">
                 <option value="today">TODAY</option>
                 <option value="tomorrow">TOMORROW</option>
                 <option value="the day after tomorrow">THE DAY AFTER TOMORROW</option>
             </select>
             <label class="field-description" for="date_in">Check-in date</label>
 
-            <select class="modal-field number-field " id="date_out" name="people_number">
+            <select class="modal-field check-out-field " id="date_out" name="people_number">
                 <option value="today">TODAY</option>
                 <option value="tomorrow">TOMORROW</option>
                 <option value="the day after tomorrow">THE DAY AFTER TOMORROW</option>
             </select>
-            <label class="field-description" for="date_out">Check-out date</label>
+            <label class="field-description check-out-date" for="date_out">Check-out date</label>
 
             <select class="modal-field suite-type" id="suite_type" name="suite_type">
                 <option value="double">Double suite</option>

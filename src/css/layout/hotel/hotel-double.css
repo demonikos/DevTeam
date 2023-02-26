@@ -1,10 +1,11 @@
 .hotel-double {
   padding-bottom: 64px;
 }
-.container {
-  max-width: 375px;
-}
 .hotel-double-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
   margin-bottom: 40px;
 }
 .hotel-double-title {
@@ -37,7 +38,7 @@
   display: flex;
   gap: 12px;
 }
-.hotel-double-btn {
+.hotel-double-btn.btn {
   padding: 8px 18px;
 
   background-color: transparent;
@@ -50,4 +51,19 @@
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1376px;
+  }
 }
