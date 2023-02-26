@@ -4,6 +4,10 @@
   background-color: var(--light);
 }
 
+.hotel-wrap {
+  margin-bottom: 72px;
+}
+
 .feedback {
   background: #121212;
   box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
@@ -31,6 +35,10 @@
   letter-spacing: -0.02em;
 
   color: var(--dark);
+}
+
+.main-about-text:not(:last-child) {
+  margin-bottom: 14px;
 }
 
 .bathroom-img {
