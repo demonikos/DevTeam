@@ -1,0 +1,127 @@
+/* вставила це правило локально, коли буде нормалайз - видалю */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.wellcome-title {
+    margin-bottom: 32px;
+
+    font-weight: var(--medium);
+    font-size: 32px;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+
+    color: #000000;
+}
+
+.wellcome-text-wrap {
+    margin-bottom: 32px;
+}
+
+.wellcome-text {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+
+    color: #000000;
+}
+
+.wellcome-text-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.wellcome-img-thumb {
+    width: 100%;
+}
+
+@media screen and (min-width: 375px) {
+    .container {
+        max-width: 375px;
+    }
+
+    .wellcome-title {
+        max-width: 335px;
+    }
+
+    .wellcome-text.first-paragraph {
+        max-width: 306px;
+    }
+
+    .wellcome-text.second-paragraph {
+        max-width: 335px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 744px;
+    }
+
+    .wellcome-title {
+        max-width: 434px;
+        margin-bottom: 50px;
+
+        font-size: 36px;
+        line-height: 1.11;
+    }
+
+    .wellcome-text-list {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .wellcome-text-wrap {
+        margin-bottom: 40px;
+    }
+
+    .wellcome-text.second-paragraph {
+        max-width: 366px;
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 32px;
+        justify-content: start;
+
+        max-width: 1240px;
+        margin-left: 0;
+    }
+
+    .wellcome-text-wrap {
+        margin-bottom: 0;
+    }
+
+    .wellcome-img-thumb {
+        width: 672px;
+        height: 599px;
+    }
+
+    .wellcome-title {
+        margin-bottom: 310px;
+    }
+
+    .wellcome-text-list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    
+        margin-bottom: 0;
+    }
+
+    .wellcome-text.first-paragraph {
+        max-width: 437px;
+    }
+
+    .wellcome-text.second-paragraph {
+        max-width: 437px;
+    }
+}
