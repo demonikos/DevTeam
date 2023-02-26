@@ -1,0 +1,112 @@
+
+.hotel-four-seater-room {
+  width: 100%;
+  background-color: var(--light);
+}
+ .hotel-four-seater-room .container {
+  width: 100%;
+  max-width: 335px;
+ }
+
+ .hotel-four-seater-room .room-photos {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 20px;
+  padding-bottom: 32px;
+}
+
+.hotel-four-seater-room .room-photo-1 {
+  width: 100vw;
+}
+
+.hotel-four-seater-room .room-type {
+  padding-bottom: 32px;
+
+  color: var(--dark);
+  
+  font-family: inherit;
+  font-weight: var(--bold);
+  font-size: 32px;
+  line-height: calc(40/32);
+  letter-spacing: -0.02em;
+}
+
+.hotel-four-seater-room .room-description {
+  padding-bottom: 28px;
+
+  color: var(--dark);
+
+  font-family: inherit;
+  font-weight: var(--regular);
+  font-size: 14px;
+  line-height: calc(18/14); 
+  letter-spacing: -0.02em;
+}
+
+.hotel-four-seater-room .room-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.hotel-four-seater-room .room-button {
+  padding: 8px 18px;
+
+  color: var(--dark);
+  background-color: inherit;
+  border: 0.8px solid var(--dark);
+  border-radius: 32px;
+
+  font-family: inherit;
+  font-weight: var(--regular);
+  font-size: 14px;
+  line-height: calc(18/14); 
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+
+/* ============================== MEDIA ============================ */
+
+@media screen and (min-width: 375px) {
+  
+}
+
+
+@media screen and (min-width: 768px) {
+  .hotel-four-seater-room .container {
+    max-width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
+   }
+
+   .hotel-four-seater-room .room-photos {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 32px;
+   }
+
+   .hotel-four-seater-room .room-photo-1 {
+    border: 2px solid red;
+    width: 331px;
+    height: 468px;
+    align-self: flex-end;
+  }
+
+  .hotel-four-seater-room .room-photo-2 {
+    border: 2px solid yellow;
+    width: 223px;
+    height: 261px;
+    align-self: end;
+  }
+  
+  .hotel-four-seater-room .room-photo-3 {
+    border: 2px solid green;
+    width: 341px;
+    height: 175px;
+    align-self: end;
+  }
+
+}
