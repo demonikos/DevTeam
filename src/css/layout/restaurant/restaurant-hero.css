@@ -17,23 +17,24 @@ line-height: 1;
     margin-bottom: 54px;
 }
 
-.action-btns{
+.action-btns-item .action-btns{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 
     padding: 8px 18px;
-    font-family: inherit;
-    font-weight: normal;
-    letter-spacing: -0.02em;
-font-size: 14px;
-line-height: 1.29;
-text-transform: uppercase;
-
-border: 0.8px solid #121212;
-border-radius: 32px;
+color: var(--dark);
+border-color: var(--dark);
 background-color:var(--background);
+
+transition: var(--action-transition);
+}
+
+.action-btns:is(:hover, :focus){
+    color: var(--background);
+    border-color: var(--dark);
+    background-color: var(--dark);
 }
 
 .restaurant-hero-slide-pic-container{
