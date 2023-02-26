@@ -1,0 +1,22 @@
+.section-restaurant-about {
+    padding-bottom: 64px;
+    background-color:var(--background);
+}
+
+.restaurant-about-pic-container{
+    margin-bottom: 32px;
+}
+
+.restaurant-about-pic {
+}
+
+.restaurant-about-text {
+    font-weight: 400;
+font-size: 14px;
+line-height: 1.29;
+max-width: 335px
+}
+
+.restaurant-about-text-first{
+    margin-bottom: 24px;
+}
