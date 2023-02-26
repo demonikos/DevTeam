@@ -1,21 +1,165 @@
 .header {
-  padding: 20px 0;
+  position: absolute;
+  border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
+  width: 100%;
 }
 
-.nav-list {
+.header-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-end;
+  padding: 25px 30px;
+  margin: 0 auto;
+}
+
+.open-menu-btn {
+  background-color: transparent;
+  border: transparent;
+  padding: 0;
+}
+
+.burger-icon {
+  stroke: var(--dark);
+}
+
+.header-nav-list {
+  display: none;
+}
+
+.header-nav-link {
+  font-weight: var(--medium);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  stroke: var(--dark);
+  fill: transparent;
+}
+
+.logo {
+  position: relative;
+  top: 10px;
+  font-weight: var(--medium);
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.18em;
+  text-align: center;
+
+  color: var(--dark);
+}
+
+.logo-subtitle {
+  display: block;
+  font-weight: var(--regular);
+  font-size: 8px;
+  line-height: 1.25;
+
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.social-media-icon {
+  stroke: var(--dark);
+  fill: transparent;
+}
+
+.header-social-media-list {
+  display: none;
+}
+
+/* ---------------------------------------------------------- [POP-UP MOBILE MENU] --------------------------------------------------------------- */
+
+/* ----------------------------------////////////////// TEMPORATY STYLES FOR BACKDROP AND MODAL \\\\\\\\\\\\\\\\\\---------------------------------*/
+.backdrop {
+  position: none;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100$;
+}
+
+.popup-modal {
+  position: absolute;
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var();
+}
+
+.popup-menu {
+  display: none;
   gap: 40px;
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+/* ---------------------------------------------------------- [STYLES FOR POPUP-MENU CONTENT] ---------------------------------------------------------*/
+
+.popup-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+  margin-top: auto;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.popup-menu-item {
+  color: var(--white);
+}
+
+.popup-social-media-list {
+  display: flex;
+  gap: 14px;
+}
+
+.popup-social-media-link > .social-media-icon {
+  stroke: var(--white);
+  fill: transparent;
+}
+
+.close-menu-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  stroke: var(--dark);
+}
+
+/* ////////////////////////////////////////////////// [ADAPTATION FOR DIFFERENT DEVICES] \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* ---------------------------------------------------- [MOBILE] ------------------------------------------- */
+@media screen and (min-width: 375px) {
+  .header-container {
+    max-width: 375px;
+  }
+}
+
+/* --------------------------------------------------- [TABLET] ---------------------------------------------- */
+@media screen and (min-width: 768px) {
+  .header-container {
+    max-width: 768px;
+  }
+
+  .header-social-media-list {
+    display: flex;
+    gap: 16px;
+  }
+}
+
+/* ---------------------------------------------- [DESKTOP] ----------------------------------------------------- */
+@media screen and (min-width: 1440px) {
+  .header-container {
+    max-width: 1440px;
+    padding: 30px 30px;
+  }
+
+  .open-menu-btn {
+    display: none;
+  }
+
+  .header-nav-list {
+    display: flex;
+    gap: 32px;
+  }
 }
