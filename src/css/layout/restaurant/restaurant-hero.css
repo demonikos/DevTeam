@@ -39,7 +39,8 @@ transition: var(--action-transition);
 
 .restaurant-hero-slide-pic-container{
     margin-bottom: 100px;
-    height: 429px;
+    
+    display: flex;
 }
 
 .restaurant-hero-text{
