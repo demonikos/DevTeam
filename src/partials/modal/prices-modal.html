@@ -1,6 +1,34 @@
-<div class="backdrop is-hidden" data-modal-ppr>
-    <div class="modal">
-        <button class="close-btn btn" data-modal-close>
+<link rel="stylesheet" href="../../css/base/reset.css" />
+<link rel="stylesheet" href="../../css/base/common.css" />
+<link rel="stylesheet" href="/src/css/utils/hidden.css" />
+<link rel="stylesheet" href="../../css/pages/modal/prices-modal.css" />
+
+<div class="modal-backdrop is-hidden" data-modal-ppr>
+    <div class="modal-window">
+        <p class="modal-title">prices per room</p>
+        <p class="modal-subtitle">double suite</p>
+        <label class="field-description" for="nights-number"></label>
+        <select class="modal-field number-field " id="nights-number" name="people_number">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+        </select>
+        <label class="field-description" for="nights-number">number of nights</label>
+        <select class="modal-field number-field " id="date_in" name="people_number">
+            <option value="today">today</option>
+            <option value="tomorrow">tomorrow</option>
+            <option value="the day after tomorrow">next day after tomorrow</option>
+        </select>
+        <label class="field-description" for="date_in">Check-in date</label>
+
+            <button class="" type="submit" data-modal-ppr-close>
+
+            </button>
+        <!-- <button class="close-btn btn" data-modal-close>
             <svg class="close-icon">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
@@ -52,6 +80,7 @@
                     Privacy Policy</label>
             </div>
             <button class="modal-btn btn" type="submit">Send</button>
-        </form>
+        </form> -->
+
     </div>
 </div>
