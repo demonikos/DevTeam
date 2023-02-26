@@ -1,8 +1,8 @@
 let offset = 0;
 const photoSlider = document.querySelector('.hotel-photo-slider');
 const viewportWidth = document.body.clientWidth;
-const buttonRight = document.querySelector('.hotel-btn-right');
 const buttonLeft = document.querySelector('.hotel-btn-left');
+const buttonRight = document.querySelector('.hotel-btn-right');
 
 if (viewportWidth >= 1440) {
   buttonRight.addEventListener('click', function () {
