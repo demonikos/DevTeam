@@ -66,3 +66,9 @@ font-size: 14px;
 line-height: 1.29;
 }
 
+@media screen and (min-width: 768px){
+    .section-restaurant-hero > .container{
+        max-width: 767px;
+    }
+    
+}
