@@ -32,9 +32,13 @@
   text-transform: uppercase;
 }
 .hotel-hero-slider {
+  overflow: hidden;
+}
+.hotel-photo-slider {
+  position: relative;
+
   display: flex;
   gap: 20px;
-  margin-bottom: 24px;
 }
 .container-btn {
   width: 104px;
