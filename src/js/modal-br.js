@@ -19,8 +19,8 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-    if (refs.modal.classList.contains('is-hidden')) {
+    refs.modal.classList.toggle('hidden');
+    if (refs.modal.classList.contains('hidden')) {
       enableBodyScroll();
     } else {
       disableBodyScroll();

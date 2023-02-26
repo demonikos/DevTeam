@@ -25,6 +25,8 @@ span {
 }
 
 .btn {
+    display: flex;
+    
     font-family: inherit;
     font-weight: normal;
     letter-spacing: -0.02em;
