@@ -39,8 +39,24 @@ transition: var(--action-transition);
 
 .restaurant-hero-slide-pic-container{
     margin-bottom: 100px;
-    
+}
+
+
+
+
+.restaurant-hero-picture-item { 
+    width: 250px;
+}
+
+.restaurant-hero-picture-list {
     display: flex;
+    gap: 20px;
+    height: 429px;
+
+}
+
+.restaurant-hero-picture{
+    
 }
 
 .restaurant-hero-text{
