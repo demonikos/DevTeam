@@ -5,8 +5,6 @@
 
 .restaurant-about-pic-container{
     margin-bottom: 32px;
-
-
 }
 
 .restaurant-about-pic-container-cook{
@@ -31,4 +29,46 @@ letter-spacing: -0.02em;
 
 .restaurant-about-text-first{
     margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .section-restaurant-about > .container{
+        max-width: 767px;
+    }
+    
+    .restaurant-about-pic-container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .restaurant-about-pic-container-dishes{
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .restaurant-about-pic-container-cook{
+        margin-left: 32px;
+        margin-bottom: 0;
+    }
+
+    .restaurant-about-text-flex{
+        display: flex;
+        gap: 32px;
+    }
+
+    .restaurant-about-text {
+        font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    }
+    
+    .restaurant-about-text-first{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 10px){
+
 }
