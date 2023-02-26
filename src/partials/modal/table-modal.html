@@ -1,5 +1,7 @@
 <!-- ==== temporary CSS links -->
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="../../css/base/common.css" />
 <link rel="stylesheet" href="../../css/base/reset.css" />
 <link rel="stylesheet" href="../../css/pages/modal/table-modal.css" />
@@ -11,14 +13,9 @@
         <p class="modal-title">Book <span>a table</span></p>
         <form class="modal-form">
             <label class="field-description">
-                <input class="modal-field modal-name"
-                type="text" 
-                name="user_name" 
-                pattern="[a-zA-Zа-яА-я]+" 
-                minlength="2" 
-                placeholder="your name"
-                required >
-            Who should book a table for?
+                <input class="modal-field modal-name" type="text" name="user_name" pattern="[a-zA-Zа-яА-я]+"
+                    minlength="2" placeholder="your name" required>
+                Who should book a table for?
             </label>
 
             <label class="field-description" for="people_number"></label>
@@ -38,10 +35,11 @@
             </select>
             <label class="field-description" for="date">What date to book?</label>
 
-            
+
             <label class="field-description">
-                <input class="modal-field modal-tel" type="tel" name="user_phone" title="xxx-xxx-xx-xx" placeholder="+ 38 ()" required>
-            Phone number
+                <input class="modal-field modal-tel" type="tel" name="user_phone" title="xxx-xxx-xx-xx"
+                    placeholder="+ 38 ()" required>
+                Phone number
             </label>
 
             <button class="modal-btn btn" type="submit">Make a reservation</button>
