@@ -1,0 +1,85 @@
+.container {
+    box-sizing: border-box;
+    max-width: 375px;
+}
+
+.restaurant {
+    padding-top: 32px;
+    padding-bottom: 50px;
+}
+
+.restaurant .title {
+    font-weight: 500;
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 1;
+
+    letter-spacing: -0.02em;
+
+    color: #121212;
+}
+
+.restaurant .button-book-wrap{
+    display: flex;
+    gap: 12px;
+}
+
+.restaurant .button-book-wrap.desktop{
+    display: none;
+}
+
+
+.restaurant .button-book-wrap button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 167px;
+    height: 42px;
+
+    border: 0.8px solid #121212;
+    border-radius: 32px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #121212;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.restaurant-wrap .text {
+    width: 221px;
+    margin-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+
+    color: #121212;
+}
+
+.gallery {
+    width: 100%;
+    overflow: hidden;
+}
+
+.photo-slider {
+    position: relative;
+    right: 0;
+    margin-top: 125px;
+    display: flex;
+    gap: 32px;
+    transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.photo-slider picture source{
+    width: 100%;
+}
