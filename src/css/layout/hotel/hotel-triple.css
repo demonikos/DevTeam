@@ -1,3 +1,132 @@
-.spoon {
-  color: aquamarine;
+
+.hotel-triple-room {
+  background-color: var(--light);
+}
+
+ .hotel-triple-room .container {
+  width: 100%;
+  max-width: 335px;
+ }
+
+ .hotel-triple-room .room-photos {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 20px;
+  padding-bottom: 32px;
+}
+
+.hotel-triple-room .room-photos li {
+  display: block;
+}
+
+.hotel-triple-room .room-photo-1 {
+  width: 100%;
+}
+
+.hotel-triple-room .room-type {
+  padding-bottom: 32px;
+
+  color: var(--dark);
+  
+  font-family: inherit;
+  font-weight: var(--bold);
+  font-size: 32px;
+  line-height: calc(40/32);
+  letter-spacing: -0.02em;
+}
+
+.hotel-triple-room .room-description {
+  display: flex;
+  flex-flow: column;
+
+  gap: 24px;
+  padding-bottom: 28px;
+
+  color: var(--dark);
+
+  font-family: inherit;
+  font-weight: var(--regular);
+  font-size: 14px;
+  line-height: calc(18/14); 
+  letter-spacing: -0.02em;
+}
+
+.hotel-triple-room .room-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.hotel-triple-room .room-button {
+  padding: 8px 18px;
+
+  color: var(--dark);
+  background-color: inherit;
+  border: 0.8px solid var(--dark);
+  border-radius: 32px;
+
+  font-family: inherit;
+  font-weight: var(--regular);
+  font-size: 14px;
+  line-height: calc(18/14); 
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+/* ============================== MEDIA ============================ */
+
+@media screen and (min-width: 375px) {
+  
+}
+
+
+@media screen and (min-width: 768px) {
+  .hotel-triple-room .container {
+    padding-left: 32px;
+    padding-right: 32px;
+
+    max-width: 704px;
+   }
+
+   /* .hotel-triple-room .room-photos {
+    flex-wrap: nowrap;
+    gap: 32px;
+   }
+
+   .hotel-triple-room .room-photo-1 {
+   width: 331px;
+  }
+  
+  .hotel-triple-room .room-description {
+    flex-flow: row;
+  } */
+
+  .hotel-triple-room .room-photos {
+    align-content: flex-start;
+  }
+
+  .hotel-triple-room .room-photo-1 {
+    width: 331px;
+    height:468px;
+    outline: 2px solid orangered;
+  }
+
+  .hotel-triple-room .room-photo-2 {
+    width: 223px;
+    height: 261px;
+    outline: 2px solid violet;
+  }
+
+  .hotel-triple-room .room-photo-3 {
+    width: 341px;
+    height: 175px;
+    outline: 2px solid blue;
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+  
 }
