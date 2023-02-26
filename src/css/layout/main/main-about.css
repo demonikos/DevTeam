@@ -1,26 +1,26 @@
+.main-about-section {
+  padding-bottom: 64px;
+}
+
 .main-about-container {
-max-width: 335px;
+  max-width: 335px;
 }
 
 .main-about-subtitle {
   font-weight: var(--regular);
-font-size: 12px;
-line-height: calc(14 / 12);
-letter-spacing: 0.18em;
-color: #484848;
-margin-top: 32px;
-margin-bottom: 18px;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.18em;
+  color: #484848;
+  margin-top: 32px;
+  margin-bottom: 18px;
 }
 
 .main-about-text {
   font-weight: var(--medium);
-font-size: 14px;
-line-height: 18px;
-/* or 129% */
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.02em;
 
-letter-spacing: -0.02em;
-text-transform: uppercase;
-
-color: #121212;
-
+  color: var(--dark);
 }
