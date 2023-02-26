@@ -39,7 +39,7 @@
 }
 
 @media screen and (min-width: 375px) {
-    .container {
+    .container.wellcome-container {
         max-width: 375px;
     }
 
@@ -57,7 +57,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .container {
+    .container.wellcome-container {
         max-width: 744px;
     }
 
@@ -86,7 +86,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .container {
+    .container.wellcome-container {
         display: flex;
         flex-direction: row-reverse;
         gap: 32px;
