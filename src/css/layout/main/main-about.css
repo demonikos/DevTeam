@@ -1,7 +1,13 @@
 .main-about-section {
+  padding-top: 64px;
   padding-bottom: 64px;
-  background-color: var(--background);
+  background-color: var(--light);
+}
 
+.feedback {
+  background: #121212;
+  box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
 }
 
 .main-about-container {
