@@ -121,19 +121,27 @@
   .ab-hotel-photos {
     position: relative;
     display: flex;
+
+    max-width: 482px;
   }
 
-  .ab-hotel-photos .thumb {
+  .ab-hotel-photo-bathroom {
     position: absolute;
-    top: 50%;
-    bottom: 50%;
+    right: -222px;
+    top: 209px;
+    bottom: 208px;
   }
 
   .thumb .feedback-block.maria {
     top: -33px;
-right: ;
+    right: 122px;
+  }
+
+  .main-about-desription {
+    max-width: 472px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .main-about-section {
     padding-top: 100px;
@@ -146,5 +154,12 @@ right: ;
 
   .main-about-container.ab-restaurants {
     max-width: 1200px;
+  }
+
+  .ab-hotel-photo-bathroom {
+    right: -257px;
+  }
+  .thumb .feedback-block.maria {
+    right: 157px;
   }
 }
