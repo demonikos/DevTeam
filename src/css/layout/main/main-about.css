@@ -45,12 +45,27 @@
   height: auto;
 }
 
-.thumb {
+.ab-hotel-thumb {
   margin-top: 20px;
   position: relative;
 }
 
+.ab-restaurant-thumb {
+  position: relative;
+}
+
+.ab-restaurants-description {
+  margin-top: 54px;
+  margin-bottom: 40px;
+}
+
 /* --- feedback-block --- */
+
+.feedback-block.alexander {
+  position: absolute;
+  left: 0;
+  bottom: -22px;
+}
 
 .feedback-block.maria {
   position: absolute;
@@ -104,6 +119,10 @@
   color: var(--button);
 }
 
+.ab-restaurants {
+  margin-top: 64px;
+}
+
 /* --- adaptive --- */
 
 @media screen and (min-width: 768px) {
@@ -132,7 +151,7 @@
     bottom: 208px;
   }
 
-  .thumb .feedback-block.maria {
+  .ab-hotel-thumb .feedback-block.maria {
     top: -33px;
     right: 122px;
   }
@@ -162,7 +181,7 @@
   .ab-hotel-photo-bathroom {
     right: -257px;
   }
-  .thumb .feedback-block.maria {
+  .ab-hotel-thumb .feedback-block.maria {
     right: 157px;
   }
 
