@@ -60,6 +60,7 @@ transition: var(--action-transition);
 .restaurant-hero-button-slide{
     border: none;
     background-color: transparent;
+    padding: 0;
 }
 
 .restaurant-hero-text{
