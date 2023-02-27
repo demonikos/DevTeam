@@ -1,7 +1,7 @@
 /*  --- section - container --- */
 
 .main-hero-section {
-  padding-top: 118px;
+  padding-top: 40px;
   padding-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -16,26 +16,29 @@
 }
 
 .main-hero-container {
+  margin-right: auto;
+  margin-left: auto;
+
   width: 100%;
   max-width: 375px;
 }
 
-.main-hero-content {
+.main-hero-image {
   max-width: 335px;
 }
 
 /* --- main-hero-content --- */
 
-.main-hero-img {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 335px;
+.main-hero-pic {
+  width: 100%;
+  height: auto;
 }
 
 .main-hero-btns {
   display: flex;
   justify-content: center;
   gap: 14px;
+  margin-top: 24px;
   margin-bottom: 66px;
 }
 
@@ -86,17 +89,20 @@
 
 /* --- adaptive --- */
 
-@media screen and (max-width: 767px) {
-  .main-hero-container {
-    max-width: 704px;
-  }
-}
-
 @media screen and (min-width: 768px) {
-  .main-hero-container {
-    max-width: 1440px;
+  .main-hero-section {
+    padding-top: 50px;
+    padding-bottom: 38px;
   }
-}
 
-@media screen and (max-width: 1440px) {
+  .main-hero-container {
+    max-width: 768px;
+
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .main-hero-content {
+    max-width: 684px;
+  }
 }
