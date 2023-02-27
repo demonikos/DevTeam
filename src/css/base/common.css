@@ -44,3 +44,7 @@ span {
 .h2 {
     font-weight: bold;
 }
+
+button{
+    cursor: pointer;
+}
