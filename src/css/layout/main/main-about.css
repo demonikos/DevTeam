@@ -9,6 +9,11 @@
   flex-direction: column;
 }
 
+.main-about-container.hotel-wrap {
+  max-width: 335px;
+  position: relative;
+}
+
 /* --- text-content --- */
 
 .main-about-subtitle {
@@ -35,15 +40,17 @@
 }
 
 /* --- img-content --- */
+
 .thumb {
   width: 282px;
   height: 153px;
-  position: relative;
 }
 /* --- feedback-block --- */
 
 .feedback-block.maria {
   position: absolute;
+  right: -53px;
+  top: -42px;
 }
 
 .feedback-block {
