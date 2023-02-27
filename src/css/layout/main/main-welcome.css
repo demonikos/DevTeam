@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+.section.wellcome-section {
+    background-color: var(--light);
+    padding-bottom: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .wellcome-title {
     margin-bottom: 32px;
 
@@ -57,6 +64,11 @@
 }
 
 @media screen and (min-width: 768px) {
+    .section.wellcome-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
     .container.wellcome-container {
         max-width: 744px;
     }
@@ -86,14 +98,20 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .section.wellcome-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
     .container.wellcome-container {
         display: flex;
         flex-direction: row-reverse;
         gap: 32px;
         justify-content: start;
 
-        max-width: 1240px;
-        margin-left: 0;
+        max-width: 1440px;
+        padding-left: 20px;
+        padding-right: 267px;
     }
 
     .wellcome-text-wrap {
