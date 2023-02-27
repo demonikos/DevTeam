@@ -1,0 +1,36 @@
+.room-hero {
+  background-color: var(--button);
+}
+.room-hero-title {
+  font-weight: var(--regular);
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--dark);
+  margin-bottom: 24px;
+}
+.room-hero-btn.btn {
+  border-color: var(--dark);
+  color: var(--dark);
+  padding: 8px 18px;
+  margin-bottom: 28px;
+}
+
+.room-hero-description {
+  font-weight: var(--regular);
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.05em;
+  color: var(--dark);
+  width: 289px;
+}
+
+.room-hero-image-list {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.room-hero > .container {
+  padding-top: 40px;
+  padding-bottom: 64px;
+}
