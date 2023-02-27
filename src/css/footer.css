@@ -5,7 +5,10 @@
 .footer-container {
   display: flex;
   align-items: center;
-  padding: 25px 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 45px;
+  padding-bottom: 80px;
   margin: 0 auto;
 }
 
@@ -17,11 +20,6 @@
   font-weight: var(--medium);
   letter-spacing: 0.02em;
   line-height: 1.5;
-}
-
-.footer-nav-link:hover,
-.footer-nav-link:focus {
-  color: #747bff;
 }
 
 .logo {
@@ -60,6 +58,24 @@ address {
   margin-left: auto;
 }
 
+.footer-social-media-link {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.social-media-icon {
+  stroke: var(--dark);
+  fill: transparent;
+}
+
+.footer-social-media-link:is(:hover, :focus) > .social-media-icon {
+  fill: var(--dark);
+}
+
+.footer-social-media-link:is(:hover, :focus) > .social-media-icon.stroke {
+  stroke: var(--white);
+}
+
 /* ///////////////////////////////////////|// [ADAPTIVE] \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 /* ---------------------------------------------- [MOBILE] --------------------------------------------------- */
@@ -79,36 +95,25 @@ address {
     display: flex;
     gap: 16px;
   }
-
-  .footer-nav-list {
-    display: flex;
-    gap: 32px;
-  }
-
-  .logo {
-    text-align: center;
-  }
-
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  address {
-    margin-left: 0;
-  }
 }
 
 /* ------------------------------------------------ [DESKTOP] --------------------------------------------------- */
 @media screen and (min-width: 1440px) {
   .footer-container {
     max-width: 1406px;
-    display: flex;
     justify-content: space-between;
-    padding: 30px;
+  }
+
+  .footer-nav-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  address {
+    margin-left: 0;
   }
 
   .logo {
-    margin-left: 50px;
+    text-align: center;
   }
 }
