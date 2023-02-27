@@ -14,8 +14,9 @@ line-height: 1;
 .restaurant-hero-btn{
     display: flex;
     gap: 12px;
-    margin-bottom: 54px;
+    margin-bottom: 40px;
 }
+
 
 .action-btns-item .action-btns{
     display: flex;
@@ -38,29 +39,48 @@ transition: var(--action-transition);
 }
 
 .restaurant-hero-slide-pic-container{
+    margin-bottom: 24px;
     overflow: hidden;
     width: 100%;
 }
 .restaurant-hero-slide-galery{
     display: flex;
     position: relative;
-    gap: 32px;
+    gap: 20px;
     transition: var(--action-transition);
 }
+/* .restaurant-hero-picture-test-absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
 
 .restaurant-hero-picture{
+    display: inline;
     width: 250px;
     height: 438px;
 }
 
-.restaurant-hero-button-right-svg{
+.restorante-hero-btn-slider{
+    margin-bottom: 40px;
+    text-align: right;
+}
+.restaurant-hero-button-svg{
+    fill:#1212124D;
+}
+
+.restaurant-hero-button-slide:is(:hover, :focus) .restaurant-hero-button-svg{
     fill: var(--dark);
 }
 
 .restaurant-hero-button-slide{
+    padding: 0;
     border: none;
     background-color: transparent;
-    padding: 0;
+    transition: var(--action-transition);
+}
+.restaurant-hero-button-slide:not(:last-child){
+    margin-right: 32px;
 }
 
 .restaurant-hero-text{
@@ -74,5 +94,28 @@ line-height: 1.29;
     .section-restaurant-hero > .container{
         max-width: 767px;
     }
+
+    .restaurant-hero-title{
+        font-size: 80px;
+        line-height: 80px;
+    }
     
+    .restaurant-hero-slide-galery{
+        gap: 20px;
+    }
+
+    .restaurant-hero-picture {
+        width: 436px;
+        height: 548px
+    }
+    .action-btns-item .action-btns{
+        padding: 8px 24px;
+    }
 }
+
+@media screen and (min-width: 1440px){
+    .section-restaurant-hero > .container{
+        max-width: 1440px;
+    }
+}
+        

@@ -1,0 +1,110 @@
+.main-hotel {
+    width: 100vw;
+    background-color: #121212;
+    padding: 32px 20px;
+}
+
+.main-hotel-title{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.0;
+    letter-spacing: -0.02em;
+    color: #F7F7F7;
+
+}
+
+.main-hotel-about {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    color: #F7F7F7;
+}
+
+.main-slider {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-slider-item{
+    display: flex;
+    justify-content: center;
+    /* width: 158px;
+    height: 128px;
+    border: solid 1px; */
+}
+.slider-back, .slider-up{
+    width: 1px;
+    height: 1px;
+    color: #F7F7F7;
+    border: solid 1px;
+}
+.main-btn-slider{
+    display: flex;
+}
+.main-btn-room{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px){
+.main-hotel{
+    width: 375px;
+    height: 930px;
+}
+}
+
+@media screen and (min-width: 768px){
+    .maine-hotel-head {
+        display: flex;
+        width: 550px;
+        gap: 32px;
+        padding-bottom: 80px;
+    }
+    .main-photo-album {
+        display: flex;
+        justify-content: center;    
+        }
+    .main-photo-album,
+    .main-photo-colum {
+        gap: 16px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .main-photo-album{
+        display: flex;
+        justify-content: center;
+    }
+
+    .maine-hotel-head {
+        display: flex;
+        width: 550px;
+        gap: 32px;
+        padding-bottom: 80px;
+    }
+
+    .main-hotel{
+        display: block;
+        justify-content: center;        
+    }
+
+    .main-photo-album,
+    .main-photo-colum {
+        gap: 28px;
+    }
+
+    .main-hotel-details{
+        position: relative;
+    }
+
+    .main-hotel-details > .main-btn-room {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+}
+

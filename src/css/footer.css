@@ -58,9 +58,14 @@ address {
   margin-left: auto;
 }
 
+
+.footer-social-media-list {
+  display: none;
+}
+
 .footer-social-media-link {
-  padding-top: 30px;
-  padding-bottom: 30px;
+padding-top: 30px;
+padding-bottom: 30px;
 }
 
 .social-media-icon {
@@ -69,11 +74,11 @@ address {
 }
 
 .footer-social-media-link:is(:hover, :focus) > .social-media-icon {
-  fill: var(--dark);
+fill: var(--dark);
 }
 
 .footer-social-media-link:is(:hover, :focus) > .social-media-icon.stroke {
-  stroke: var(--white);
+stroke: var(--white);
 }
 
 /* ///////////////////////////////////////|// [ADAPTIVE] \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
