@@ -13,6 +13,10 @@
   );
 }
 
+.main-hero-content {
+  max-width: 335px;
+}
+
 .main-hero-img {
   margin-right: auto;
   margin-left: auto;
@@ -33,10 +37,8 @@
 }
 
 .main-hero-title {
-  position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 24px;
 
   text-align: center;
 
