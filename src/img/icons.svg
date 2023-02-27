@@ -4,10 +4,10 @@
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.88" d="m8 12 8 8 8-8"/>
     </symbol>
     <symbol id="arrow-left" viewBox="0 0 32 32">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.778" d="M19.556 22.222 13.334 16l6.222-6.222"/>
+      <path d="M19.556 22.222 13.334 16l6.222-6.222"/>
     </symbol>
     <symbol id="arrow-right" viewBox="0 0 32 32">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.778" d="M12.444 22.222 18.666 16l-6.222-6.222"/>
+      <path d="M12.444 22.222 18.666 16l-6.222-6.222"/>
     </symbol>
     <symbol id="burger-icon" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16h24M4 8h24M4 24h16"/>

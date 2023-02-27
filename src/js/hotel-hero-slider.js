@@ -38,8 +38,8 @@ if (viewportWidth >= 1440) {
 } else {
   buttonRight.addEventListener('click', function () {
     offset = offset + 177;
-    if (offset > 1593) {
-      offset = 0;
+    if (offset > 531) {
+      offset = 531;
     }
     photoSlider.style.right = offset + 'px';
   });
