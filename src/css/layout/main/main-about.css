@@ -4,6 +4,11 @@
   background-color: var(--light);
 }
 
+.main-about-container {
+  display: flex;
+  flex-direction: column;
+}
+
 /* --- text-content --- */
 
 .main-about-subtitle {
@@ -31,11 +36,22 @@
 
 /* --- img-content --- */
 
-.bathroom-img {
-  margin-bottom: 20px;
+.images-wrap {
+  max-width: 335px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
 }
 
 /* --- feedback-block --- */
+
+.feedback-block.maria {
+  position: absolute;
+  top: 420px;
+  right: 0px;
+
+}
 
 .feedback-block {
   display: flex;
