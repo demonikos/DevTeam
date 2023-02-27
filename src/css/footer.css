@@ -19,9 +19,20 @@
   line-height: 1.5;
 }
 
-.footer-nav-link:hover,
-.footer-nav-link:focus {
-  color: #747bff;
+.footer-nav-item::after {
+content: '';
+position: absolute;
+left: 0;
+bottom: 0;
+display: none;
+width: 100%;
+height: 100%;
+height: 1px;
+background-color: var(--dark);
+}
+
+.footer-nav-item:is(:hover, :focus) > .footer-nav-item::after {
+display: block;
 }
 
 .logo {
@@ -58,6 +69,29 @@
 
 address {
   margin-left: auto;
+}
+
+
+.footer-social-media-list {
+  display: none;
+}
+
+.footer-social-media-link {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+.social-media-icon {
+  stroke: var(--dark);
+  fill: transparent;
+}
+
+.footer-social-media-link:is(:hover, :focus) > .social-media-icon {
+fill: var(--dark);
+}
+
+.footer-social-media-link:is(:hover, :focus) > .social-media-icon.stroke {
+stroke: var(--white);
 }
 
 /* ///////////////////////////////////////|// [ADAPTIVE] \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
