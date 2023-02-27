@@ -7,14 +7,11 @@
   background-color: var(--dark);
   color: var(--button);
   background-image: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 70.73%,
-    #121212 98.51%
-  );
-}
+      180deg,
+      rgba(0, 0, 0, 0) 70.73%,
+      #121212 98.51%
+    );
 
-.main-hero-content {
-  max-width: 335px;
 }
 
 .main-hero-img {
@@ -69,8 +66,20 @@
 @media screen and (max-width: 1440px) {
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  .main-hero-container {
+    max-width: 1440px;
+  }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 767px) {
+  .main-hero-container {
+    max-width: 704px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main-hero-container {
+    max-width: 335px;
+  }
 }
