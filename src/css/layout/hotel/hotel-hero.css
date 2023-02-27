@@ -3,6 +3,9 @@
 
   background-color: #F7F7F7;
 }
+.hotel-hero .container {
+  outline: 1px solid red;
+}
 .container-hotel-title {
   margin-bottom: 40px;
 }

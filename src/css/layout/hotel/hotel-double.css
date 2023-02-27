@@ -3,6 +3,8 @@
 }
 .hotel-double > .container {
   padding-left: 19px;
+
+  outline: 1px solid red;
 }
 .hotel-double-list {
   display: flex;
@@ -63,6 +65,43 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+  .hotel-double-list {
+    position: relative;
+    gap: 32px;
+    flex-direction: row-reverse;
+  }
+  .hotel-double-item:last-child {
+    position: absolute;
+    top: 293px;
+    left: 25px;
+  }
+  .hotel-double-title {
+    max-width: 100%;
+
+    font-size: 40px;
+    line-height: 1.1;
+  }
+  .text-container {
+    max-width: 100%;
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+  .hotel-double-text:not(:last-child) {
+    max-width: 369px;
+  }
+  .hotel-double-text {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  .hotel-btn-list {
+    max-width: 283px;
+    gap: 14px;
+    margin-left: auto;
+  }
+  .hotel-double.section {
+    padding-bottom: 80px;
   }
 }
 @media screen and (min-width: 1440px) {
