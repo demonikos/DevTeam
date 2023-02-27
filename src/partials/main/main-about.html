@@ -2,63 +2,67 @@
   <h2 class="hidden">About a complex</h2>
 
   <div class="container main-about-container hotel-wrap">
-    <div class="lobby-img">
-      <picture class="lobby-img">
-        <source
-          media="(min-width: 376px)"
-          srcset="
-            ../../img/main-page/main-about/desktop/ab-img-1-desk@1x.jpg 1x,
-            ../../img/main-page/main-about/desktop/ab-img-1-desk@2x.jpg 2x
-          "
-        />
-        <source
-          media="(max-width: 375px)"
-          srcset="
-            ../../img/main-page/main-about/mobile/ab-img-1-mob@1x.jpg 1x,
-            ../../img/main-page/main-about/mobile/ab-img-1-mob@2x.jpg 2x
-          "
-        />
-        <img
-          class="lobby-img"
-          src="../../img/main-page/main-about/desktop/ab-img-1-desk@1x.jpg"
-          alt="hotel lobby interior"
-          width="482"
-        />
-      </picture>
+    <div class="hotel-photos">
+      <div class="hotel-photo-lobby">
+        <picture class="lobby-img">
+          <source
+            srcset="
+              ../../img/main-page/main-about/desktop/ab-img-1-desk@1x.jpg 1x,
+              ../../img/main-page/main-about/desktop/ab-img-1-desk@2x.jpg 2x
+            "
+            type="image/jpeg"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ../../img/main-page/main-about/mobile/ab-img-1-mob@1x.jpg 1x,
+              ../../img/main-page/main-about/mobile/ab-img-1-mob@2x.jpg 2x
+            "
+            type="image/jpeg"
+            media="(max-width: 767px)"
+          />
+          <img
+            src="../../img/main-page/main-about/desktop/ab-img-1-desk@1x.jpg"
+            alt="hotel lobby interior"
+          />
+        </picture>
+      </div>
+
+      <div class="hotel-photo-bathroom">
+        <picture class="bathroom-img">
+          <source
+            srcset="
+              ../../img/main-page/main-about/desktop/ab-img-2-desk@1x.jpg 1x,
+              ../../img/main-page/main-about/desktop/ab-img-2-desk@2x.jpg 2x
+            "
+            type="image/jpeg"
+            media="(min-width: 1440px)"
+          />
+
+          <source
+            srcset="
+              ../../img/main-page/main-about/tablet/ab-img-2-tab@1x.jpg 1x,
+              ../../img/main-page/main-about/tablet/ab-img-2-tab@2x.jpg 2x
+            "
+            type="image/jpeg"
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="
+              ../../img/main-page/main-about/mobile/ab-img-2-mob@1x.jpg 1x,
+              ../../img/main-page/main-about/mobile/ab-img-2-mob@2x.jpg 2x
+            "
+            type="image/jpeg"
+            media="(max-width: 767px)"
+          />
+          <img
+            src="../../img/main-page/main-about/desktop/ab-img-2-desk@1x.jpg"
+            alt="bathroom image"
+          />
+        </picture>
+      </div>
     </div>
-
-    <div class="bathroom-img">
-      <picture>
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ../../img/main-page/main-about/desktop/ab-img-2-desk@1x.jpg 1x,
-            ../../img/main-page/main-about/desktop/ab-img-2-desk@2x.jpg 2x
-          "
-        />
-
-        <source
-          media="(min-width: 375px)"
-          srcset="
-            ../../img/main-page/main-about/tablet/ab-img-2-tab@1x.jpg 1x,
-            ../../img/main-page/main-about/tablet/ab-img-2-tab@2x.jpg 2x
-          "
-        />
-
-        <source
-          media="(max-width: 375px)"
-          srcset="
-            ../../img/main-page/main-about/mobile/ab-img-2-mob@1x.jpg 1x,
-            ../../img/main-page/main-about/mobile/ab-img-2-mob@2x.jpg 2x
-          "
-        />
-        <img
-          src="../../img/main-page/main-about/desktop/ab-img-2-desk@1x.jpg"
-          alt="bathroom image"
-        />
-      </picture>
-    </div>
-
     <div class="feedback-block maria">
       <img
         class="author-photo"
