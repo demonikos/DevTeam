@@ -140,10 +140,10 @@
     margin-bottom: 0;
   }
   .hotel-btn-list {
-    max-width: 334px;
+    max-width: 336px;
     position: absolute;
     right: 32px;
-    bottom: 221px;
+    bottom: 224px;
   }
   .hotel-double-text:not(:last-child) {
     max-width: 355px;
