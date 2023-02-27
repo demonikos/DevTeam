@@ -33,7 +33,8 @@
 }
 
 
-.restaurant .button-book-wrap button{
+.restaurant .button-book-wrap button,
+.restaurant .button-link{
     display: flex;
     align-items: center;
     justify-content: center;
