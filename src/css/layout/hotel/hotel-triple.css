@@ -5,7 +5,7 @@
 
  .hotel-triple-room .container {
   width: 100%;
-  max-width: 335px;
+  max-width: 375px;
  }
 
  .hotel-triple-room .room-photos {
@@ -16,12 +16,24 @@
   padding-bottom: 32px;
 }
 
-.hotel-triple-room .room-photos li {
-  display: block;
+/* .hotel-triple-room .room-photo-1 {
+  max-width: 335px;
+} */
+
+.hotel-triple-room .room-photo-1 picture {
+  width: 100%;
+  height: auto;
 }
 
-.hotel-triple-room .room-photo-1 {
+.hotel-triple-room .room-photo-2 {
+  display: flex;
+
+  gap: 20px;
+}
+
+.hotel-triple-room .room-photo-2 picture {
   width: 100%;
+  height: auto;
 }
 
 .hotel-triple-room .room-type {
@@ -77,56 +89,58 @@
 
 /* ============================== MEDIA ============================ */
 
-@media screen and (min-width: 375px) {
-  
-}
-
 
 @media screen and (min-width: 768px) {
   .hotel-triple-room .container {
     padding-left: 32px;
     padding-right: 32px;
 
-    max-width: 704px;
+    max-width: 768px;
    }
-
-   /* .hotel-triple-room .room-photos {
-    flex-wrap: nowrap;
-    gap: 32px;
-   }
-
-   .hotel-triple-room .room-photo-1 {
-   width: 331px;
-  }
-  
-  .hotel-triple-room .room-description {
-    flex-flow: row;
-  } */
 
   .hotel-triple-room .room-photos {
-    align-content: flex-start;
+    flex-wrap: nowrap;
+  
+    gap: 32px;
+    padding-bottom: 50px;
   }
-
+  
   .hotel-triple-room .room-photo-1 {
-    width: 331px;
-    height:468px;
-    outline: 2px solid orangered;
+    width: auto;
   }
-
+  
   .hotel-triple-room .room-photo-2 {
-    width: 223px;
-    height: 261px;
-    outline: 2px solid violet;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px;
   }
 
-  .hotel-triple-room .room-photo-3 {
-    width: 341px;
-    height: 175px;
-    outline: 2px solid blue;
-  }
 }
 
 
 @media screen and (min-width: 1440px) {
+
+  .hotel-triple-room .container {
+    position: relative;
+    max-width: 1440px;
+   }
   
+  .hotel-triple-room .room-photos {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hotel-triple-room .room-photo-2 {
+    position: absolute;
+
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .hotel-triple-room .room-photo-2 picture {
+    width: auto;
+  }
+
 }
