@@ -38,25 +38,28 @@ transition: var(--action-transition);
 }
 
 .restaurant-hero-slide-pic-container{
-    margin-bottom: 100px;
+    overflow: hidden;
+    width: 100%;
 }
-
-
-
-
-.restaurant-hero-picture-item { 
-    width: 250px;
-}
-
-.restaurant-hero-picture-list {
+.restaurant-hero-slide-galery{
     display: flex;
-    gap: 20px;
-    height: 429px;
-
+    position: relative;
+    gap: 32px;
+    transition: var(--action-transition);
 }
 
 .restaurant-hero-picture{
-    
+    width: 250px;
+    height: 438px;
+}
+
+.restaurant-hero-button-right-svg{
+    fill: var(--dark);
+}
+
+.restaurant-hero-button-slide{
+    border: none;
+    background-color: transparent;
 }
 
 .restaurant-hero-text{
