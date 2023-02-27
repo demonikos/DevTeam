@@ -17,7 +17,7 @@
   max-width: 240px;
   margin-bottom: 32px;
 
-  color: #121212;
+  color: var(--dark);
   font-weight: 700;
   font-size: 32px;
   line-height: 1.25;
@@ -32,7 +32,7 @@
   margin-bottom: 28px;
 }
 .hotel-double-text {
-  color: #121212;
+  color: var(--dark);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
@@ -47,13 +47,13 @@
   padding: 8px 18px;
 
   background-color: transparent;
-  border: 0.8px solid #121212;
+  border-color: var(--dark);
   border-radius: 32px;
 
   transition: color 250ms linear,
   background-color 250ms linear;
 
-  color: #121212;
+  color: var(--dark);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
