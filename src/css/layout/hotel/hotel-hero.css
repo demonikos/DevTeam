@@ -64,7 +64,8 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  fill: var(--dark);
+  fill: none;
+  stroke: var(--dark);
 }
 .hotel-hero-text {
   max-width: 335px;
