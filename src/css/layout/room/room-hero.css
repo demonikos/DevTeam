@@ -1,0 +1,59 @@
+.room-hero {
+  padding-top: 118px;
+  background-color: var(--button);
+}
+.room-hero-title {
+  font-weight: var(--regular);
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--dark);
+  margin-bottom: 24px;
+}
+.room-hero-btn.btn {
+  border-color: var(--dark);
+  color: var(--dark);
+  padding: 8px 18px;
+  margin-bottom: 28px;
+}
+
+.room-hero-btn.btn:is(:hover, :focus) {
+  color: var(--background);
+  border-color: var(--dark);
+  background-color: var(--dark);
+}
+
+.room-hero-description {
+  font-weight: var(--regular);
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.05em;
+  color: var(--dark);
+  width: 289px;
+}
+
+.room-hero-gallery {
+  overflow: hidden;
+  width: 355px;
+  margin-bottom: 24px;
+}
+.room-hero .photo-slider {
+  position: relative;
+  right: 0;
+  display: flex;
+  gap: 20px;
+  transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.room-hero > .container {
+  padding-top: 40px;
+}
+
+.button-wrap {
+  margin-top: 24px;
+  width: 104px;
+  display: flex;
+  gap: 32px;
+  margin-left: auto;
+  margin-bottom: 40px;
+}

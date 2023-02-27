@@ -1,0 +1,58 @@
+.room-features {
+  background-color: var(--dark);
+  padding-top: 40px;
+  padding-bottom: 64px;
+}
+
+.room-features-list {
+  color: var(--light);
+  margin-bottom: 64px;
+}
+
+.room-features-list-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.room-features-title {
+  font-weight: var(--bold);
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--button);
+  margin-bottom: 28px;
+}
+
+.room-features-sublist {
+  list-style: disc;
+  margin-left: 18px;
+  font-weight: var(--regular);
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--button);
+}
+.btn.btn-features {
+  background-color: transparent;
+  padding: 8px 40px;
+  font-weight: var(--bold);
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--light);
+  width: 175px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.room-features-bottom-box {
+  position: relative;
+}
+
+.room-features-bottom-box-upper-img {
+  position: absolute;
+  left: 0;
+  top: 144px;
+}
+.room-features-bottom-box-lower-img {
+  padding-left: 75px;
+}
