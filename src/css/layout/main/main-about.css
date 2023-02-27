@@ -1,13 +1,7 @@
 /* --- section --- */
 
 .main-about-section {
-  padding-top: 64px;
-  padding-bottom: 64px;
   background-color: var(--light);
-}
-
-/* --- container --- */
-.main-about-container.hotel-wrap {
 }
 
 /* --- text-content --- */
@@ -100,16 +94,23 @@
 }
 
 @media screen and (min-width: 768px) {
-}
+  .main-about-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 
-@media screen and (max-width: 767px) {
   .main-about-container.hotel-wrap {
     max-width: 704px;
     margin-bottom: 80px;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
+  .main-about-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
   .main-about-container.hotel-wrap {
     max-width: 335px;
     margin-bottom: 72px;
