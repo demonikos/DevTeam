@@ -1,0 +1,150 @@
+.room-features {
+  background-color: var(--dark);
+}
+.room-features .container {
+  padding-top: 40px;
+}
+.room-features-list {
+  color: var(--light);
+  margin-bottom: 64px;
+}
+
+.room-features-list-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.room-features-title {
+  font-weight: var(--bold);
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--button);
+  margin-bottom: 28px;
+}
+
+.room-features-sublist {
+  list-style: disc;
+  margin-left: 18px;
+  font-weight: var(--regular);
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--button);
+}
+.btn.btn-features {
+  background-color: transparent;
+  padding: 8px 40px;
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  color: var(--light);
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn.btn-features:is(:hover, :focus) {
+  background: var(--white);
+  border: 0.8px solid #f7f7f7;
+  border-radius: 32px;
+  color: #121212;
+}
+
+.room-features-bottom-box {
+  position: relative;
+}
+
+.room-features-bottom-box-upper-img {
+  position: absolute;
+  left: 0;
+  top: 144px;
+}
+.room-features-bottom-box-lower-img {
+  padding-left: 75px;
+}
+/* -------------------------breakpoint 768px------------------------- */
+@media screen and (min-width: 768px) {
+  .room-features {
+    padding-bottom: 80px;
+  }
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .room-features-title {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .room-features-sublist {
+    font-size: 18px;
+    line-height: 1.33;
+    margin-left: 25px;
+  }
+
+  .room-features-bottom-box-lower-img {
+    padding-left: 0px;
+    display: flex;
+    justify-content: end;
+  }
+
+  .room-features-bottom-box-upper-img {
+    top: 157px;
+  }
+  .btn.btn-features {
+    position: absolute;
+    left: 0;
+    bottom: 114px;
+    padding: 8px 24px;
+    line-height: 1.71;
+  }
+}
+
+/* -------------------------breakpoint 768px------------------------- */
+@media screen and (min-width: 1440px) {
+  .room-features {
+    padding-bottom: 0;
+  }
+  .room-features .container {
+    position: relative;
+    padding-top: 94px;
+    padding-bottom: 616px;
+  }
+
+  .room-features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    row-gap: 100px;
+    column-gap: 70px;
+    margin-bottom: 0;
+  }
+
+  .room-features-list-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .room-features-list:nth-child(3) {
+    margin-right: 140px;
+  }
+  .room-features-list-item {
+    width: 633px;
+  }
+
+  .room-features-bottom-box-upper-img {
+    right: 409px;
+    left: unset;
+    top: 208px;
+  }
+  .room-features-bottom-box {
+    position: absolute;
+    width: 848px;
+    right: 32px;
+    top: 906px;
+  }
+
+  .btn.btn-features {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}

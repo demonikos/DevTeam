@@ -22,14 +22,14 @@ if (viewportWidth >= 1440) {
   });
 } else if (viewportWidth >= 768) {
   buttonRight.addEventListener('click', function () {
-    offset = offset + 368;
+    offset = offset + 456;
     if (offset > 3312) {
       offset = 0;
     }
     photoSlider.style.right = offset + 'px';
   });
   buttonLeft.addEventListener('click', function () {
-    offset = offset - 368;
+    offset = offset - 456;
     if (offset < 0) {
       offset = 0;
     }
@@ -37,14 +37,14 @@ if (viewportWidth >= 1440) {
   });
 } else {
   buttonRight.addEventListener('click', function () {
-    offset = offset + 177;
+    offset = offset + 270;
     if (offset > 1593) {
       offset = 0;
     }
     photoSlider.style.right = offset + 'px';
   });
   buttonLeft.addEventListener('click', function () {
-    offset = offset - 177;
+    offset = offset - 270;
     if (offset < 0) {
       offset = 0;
     }
