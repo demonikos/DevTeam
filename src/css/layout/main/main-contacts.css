@@ -1,57 +1,11 @@
-.maine-map{
+/* основні стилі секції location */
+.maine-map {
     filter: grayscale(100%);
-    width: 100%;
+    width: 100vw;
     height: 384px;
 }
 
-@media screen and (max-width: 375px) {
-    .maine-map{
-        height: 576px;
-        width: 704px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .maine-map{
-    height: 576px;
-    width: 704px;
-    }
-
-    .main-location{
-        display: flex;
-    }
-
-    .main-adress{
-        display: flex;
-        justify-content: flex-end;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .maine-map {
-    height: 524px;
-    width: 640px;
-    
-    }
-    .main-location-position{
-    display: flex;
-    align-items: end;
-    gap: 32px;
-    }
-
-    .main-adress{
-        display: flex;
-        gap: 70px;
-    }
-    .main-contact{
-        text-align: right;
-    }
-}
-
-.main-location-position{
-    /* display: block; */
-}
-.main-title-loc{
+.main-title-loc {
     height: 40px;
     left: 0px;
     top: 0px;
@@ -61,20 +15,46 @@
     letter-spacing: -0.02em;
     color: #121212;
     padding-bottom: 32px;
-    padding-bottom: 64px;
+    padding-top: 64px;
 }
-.main-adress{
+
+.main-adress {
+    padding-top: 32px;
+    padding-bottom: 88px;
+}
+
+.main-adress-item {
+    padding-bottom: 28px;
+}
+
+.main-contact {
+    width: 110px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+}
+
+.contacts-call-us {
+    display: block;
+    font-weight: 500;
+    padding-bottom: 12px;
+}
+
+.main-adress {
     display: flex;
     flex-flow: column wrap;
 }
 
-.main-adress-item{
+.main-adress-item {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.02em;
     color: #000000;
 }
+
 .main-contacts,
 .contacts-call-us {
     font-style: normal;
@@ -85,6 +65,71 @@
     color: #121212;
 
 }
-.contacts-call-us{
+
+.contacts-call-us {
     padding-bottom: 12px;
+}
+
+/* медіа запити */
+
+@media screen and (min-width: 375px) and (max-width: 767px){
+    .maine-map{
+        height: 384px;
+        width: 335px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main-location {
+        width: 768px;
+    }
+
+    .maine-map{
+        width: 704px;
+        height: 376px;
+    }
+
+    /* .main-location-position{
+        display: block;
+    } */
+
+    .main-adress{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        padding-top: 32;
+    }    
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1440px;
+    }
+
+    .maine-map {
+    display: flex;
+    height: 524px;
+    width: 640px;
+    }
+
+    .main-location{
+        /* display: flex; */
+        flex-flow:row-reverse;
+        justify-content: space-between;
+    }
+
+    .main-location-position{
+    display: flex;
+    align-items: end;
+    gap: 32px;
+    }
+
+    .main-adress{
+        display: flex;
+        gap: 70px;
+        padding-bottom: 0;
+    }
+    .main-contact{
+        text-align: right;
+    }
 }
