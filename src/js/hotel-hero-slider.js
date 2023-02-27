@@ -7,8 +7,8 @@ const buttonRight = document.querySelector('.hotel-btn-right');
 if (viewportWidth >= 1440) {
   buttonRight.addEventListener('click', function () {
     offset = offset + 298;
-    if (offset > 1490) {
-      offset = 0;
+    if (offset > 894) {
+      offset = 894;
     }
     photoSlider.style.right = offset + 'px';
   });
