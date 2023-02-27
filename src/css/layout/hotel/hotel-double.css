@@ -155,7 +155,7 @@
   .hotel-double-btn {
     padding: 9px 24px;
   }
-  .hotel-double-btn.btn:is(:hover, :focus) {
+  .hotel-double-btn:is(:hover, :focus) {
     color: #F7F7F7;
     background-color: var(--dark);
   }
