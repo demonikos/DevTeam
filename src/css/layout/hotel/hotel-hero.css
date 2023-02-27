@@ -78,6 +78,30 @@
   .container {
     max-width: 768px;
   }
+  .hotel-hero.section {
+    padding-bottom: 120px;
+  }
+  .container-hotel-title {
+    margin-bottom: 54px;
+  }
+  .hotel-hero-title {
+    margin-bottom: 32px;
+
+    font-size: 80px;
+  }
+  .hotel-hero-slider {
+    width: 748px;
+    margin-bottom: 40px;
+  }
+  .hotel-photo-slider {
+    width: 1372px;
+
+    gap: 32px;
+  }
+  .container-btn-text {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 @media screen and (min-width: 1440px) {
   .container {
