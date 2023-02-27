@@ -43,7 +43,7 @@
   display: flex;
   gap: 12px;
 }
-.hotel-double-btn.btn {
+.hotel-double-btn {
   padding: 8px 18px;
 
   background-color: transparent;
@@ -114,7 +114,7 @@
   .hotel-double.section {
     padding-bottom: 80px;
   }
-  .hotel-double-btn.btn {
+  .hotel-double-btn {
     padding: 8px 24px;
 
     line-height: 1.33;
@@ -152,7 +152,7 @@
   .hotel-double-text:not(:last-child) {
     max-width: 355px;
   }
-  .hotel-double-btn.btn {
+  .hotel-double-btn {
     padding: 9px 24px;
   }
   .hotel-double-btn.btn:is(:hover, :focus) {
