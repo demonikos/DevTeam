@@ -1,22 +1,18 @@
+/* --- section --- */
+
 .main-about-section {
   padding-top: 64px;
   padding-bottom: 64px;
   background-color: var(--light);
 }
 
-.hotel-wrap {
+/* --- container --- */
+.main-about-container.hotel-wrap {
   margin-bottom: 72px;
-}
-
-.feedback {
-  background: var(--dark);
-  box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
-}
-
-.main-about-container {
   max-width: 335px;
 }
+
+/* --- text-content --- */
 
 .main-about-subtitle {
   font-weight: var(--regular);
@@ -41,9 +37,13 @@
   margin-bottom: 14px;
 }
 
+/* --- img-content --- */
+
 .bathroom-img {
   margin-bottom: 20px;
 }
+
+/* --- feedback-block --- */
 
 .feedback-block {
   display: flex;
@@ -90,4 +90,10 @@
 .feedback-text .rating {
   font-style: normal;
   color: var(--button);
+}
+
+/* --- adaptives --- */
+
+@media screen and (max-width: 375px){
+
 }
