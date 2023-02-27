@@ -8,8 +8,6 @@
 
 /* --- container --- */
 .main-about-container.hotel-wrap {
-  margin-bottom: 72px;
-  max-width: 335px;
 }
 
 /* --- text-content --- */
@@ -94,6 +92,26 @@
 
 /* --- adaptives --- */
 
-@media screen and (max-width: 375px){
+@media screen and (min-width: 1440px) {
+  .main-about-container.hotel-wrap {
+    max-width: 1376px;
+    margin-bottom: 100px;
+  }
+}
 
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (max-width: 767px) {
+  .main-about-container.hotel-wrap {
+    max-width: 704px;
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main-about-container.hotel-wrap {
+    max-width: 335px;
+    margin-bottom: 72px;
+  }
 }
