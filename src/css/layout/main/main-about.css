@@ -1,0 +1,135 @@
+/* --- section --- */
+
+.main-about-section {
+  background-color: var(--light);
+}
+
+.main-about-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- text-content --- */
+
+.main-about-subtitle {
+  font-weight: var(--regular);
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.18em;
+  color: #484848;
+  margin-top: 32px;
+  margin-bottom: 18px;
+}
+
+.main-about-text {
+  font-weight: var(--medium);
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.02em;
+
+  color: var(--dark);
+}
+
+.main-about-text:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+/* --- img-content --- */
+
+.images-wrap {
+  max-width: 335px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bathroom-img {
+  position: relative;
+}
+/* --- feedback-block --- */
+
+.feedback-block.maria {
+  position: absolute;
+  top: 65%;
+  right: 0px;
+}
+
+.feedback-block {
+  display: flex;
+  width: 212px;
+
+  background: var(--dark);
+  box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+.author-photo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 14px;
+  margin-right: 12px;
+}
+
+.text-wrap {
+  margin-left: 0;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.author-name {
+  font-weight: var(--medium);
+  font-size: 14px;
+  line-height: calc(14 / 14);
+
+  color: var(--button);
+  text-transform: none;
+  margin-bottom: 7px;
+}
+
+.feedback-text {
+  font-weight: var(--regular);
+  font-size: 12px;
+  line-height: calc(16 / 12);
+
+  color: #575757;
+
+  text-transform: lowercase;
+}
+
+.feedback-text .rating {
+  font-style: normal;
+  color: var(--button);
+}
+
+/* --- adaptives --- */
+
+@media screen and (min-width: 1440px) {
+  .main-about-container.hotel-wrap {
+    max-width: 1376px;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-about-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .main-about-container.hotel-wrap {
+    max-width: 704px;
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-about-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .main-about-container.hotel-wrap {
+    max-width: 335px;
+    margin-bottom: 72px;
+  }
+}
