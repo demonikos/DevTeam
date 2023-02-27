@@ -44,16 +44,23 @@
   max-width: 100%;
   height: auto;
 }
+
+.thumb {
+  margin-top: 20px;
+  position: relative;
+}
+
 /* --- feedback-block --- */
 
 .feedback-block.maria {
   position: absolute;
+  top: -42px;
+  right: 0;
 }
 
 .feedback-block {
   display: flex;
   width: 212px;
-
   background: var(--dark);
   box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
@@ -110,6 +117,22 @@
     padding-left: 32px;
     padding-right: 32px;
   }
+
+  .ab-hotel-photos {
+    position: relative;
+    display: flex;
+  }
+
+  .ab-hotel-photos .thumb {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+  }
+
+  .thumb .feedback-block.maria {
+    top: -33px;
+right: ;
+  }
 }
 @media screen and (min-width: 1440px) {
   .main-about-section {
@@ -119,5 +142,9 @@
 
   .main-about-container {
     max-width: 1440px;
+  }
+
+  .main-about-container.ab-restaurants {
+    max-width: 1200px;
   }
 }
