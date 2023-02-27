@@ -1,4 +1,4 @@
-.section:not(:last-child) {
+section {
     padding-top: 0;
     padding-right: 0;
     padding-bottom: 64px;
