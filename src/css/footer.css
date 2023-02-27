@@ -5,7 +5,10 @@
 .footer-container {
   display: flex;
   align-items: center;
-  padding: 25px 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 45px;
+  padding-bottom: 80px;
   margin: 0 auto;
 }
 
@@ -17,22 +20,6 @@
   font-weight: var(--medium);
   letter-spacing: 0.02em;
   line-height: 1.5;
-}
-
-.footer-nav-item::after {
-content: '';
-position: absolute;
-left: 0;
-bottom: 0;
-display: none;
-width: 100%;
-height: 100%;
-height: 1px;
-background-color: var(--dark);
-}
-
-.footer-nav-item:is(:hover, :focus) > .footer-nav-item::after {
-display: block;
 }
 
 .logo {
@@ -113,36 +100,25 @@ stroke: var(--white);
     display: flex;
     gap: 16px;
   }
-
-  .footer-nav-list {
-    display: flex;
-    gap: 32px;
-  }
-
-  .logo {
-    text-align: center;
-  }
-
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  address {
-    margin-left: 0;
-  }
 }
 
 /* ------------------------------------------------ [DESKTOP] --------------------------------------------------- */
 @media screen and (min-width: 1440px) {
   .footer-container {
     max-width: 1406px;
-    display: flex;
     justify-content: space-between;
-    padding: 30px;
+  }
+
+  .footer-nav-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  address {
+    margin-left: 0;
   }
 
   .logo {
-    margin-left: 50px;
+    text-align: center;
   }
 }
