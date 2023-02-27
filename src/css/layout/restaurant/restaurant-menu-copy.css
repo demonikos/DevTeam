@@ -244,23 +244,19 @@
     stroke:var(--light);
 }
 
-.menu .previous-btn {
-    stroke: rgba(246, 246, 246, 0.3);
-}
-
-.button-wrap{
-    margin-top: 38px;
+.menu .button-wrap{
+    margin-top: 32px;
     display: flex;
     justify-content: center;
 }
 
-.previous-btn-icon,
-.next-btn-icon {
+.menu .previous-btn-icon,
+.menu .next-btn-icon {
     height: 24px;
     width: 24px;
 }
 
-.btn.btn-book-a-table {
+.menu .btn.btn-book-a-table {
     padding-top: 9px;
     padding-right: 24px;
     padding-bottom: 9px;
@@ -269,6 +265,9 @@
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
+
+    background-color: transparent;
+    color: var(--button);
 }
     
 
@@ -370,15 +369,18 @@
         line-height: 1.3333;
     }
 
-    .previous-btn-icon,
-    .next-btn-icon {
+    .menu .previous-btn-icon,
+    .menu .next-btn-icon {
     height: 36px;
     width: 36px;
     }
 
-    .btn.btn-book-a-table {
+    .menu .btn.btn-book-a-table {
         margin-left: 0;
         margin-right: auto;
+    }
+    .menu .button-wrap{
+        margin-top: 24px;
     }
 }
 
@@ -431,7 +433,7 @@
         display: none;
     }
 
-    .button-wrap{
+    .menu .button-wrap{
         display: none;
     }
 }
