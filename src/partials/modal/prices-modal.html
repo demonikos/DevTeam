@@ -1,9 +1,10 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="../../css/base/reset.css" />
 <link rel="stylesheet" href="../../css/base/common.css" />
-<link rel="stylesheet" href="/src/css/utils/hidden.css" />
+<link rel="stylesheet" href="../../css/base/reset.css" />
+<link rel="stylesheet" href="../../css/pages/modal/table-modal.css" />
+<link rel="stylesheet" href="../../css/pages/modal/room-modal.css" />
 <link rel="stylesheet" href="../../css/pages/modal/prices-modal.css" />
 
 <div class="modal-backdrop is-hidden" data-modal-ppr>
@@ -16,26 +17,100 @@
         <h3 class="modal-title">Prices per room</h3>
         <p class="modal-subtitle">double suite</p>
         <form action="" class="modal-form>">
-            <label class=" field-description" for="nights-number"></label>
-            <select class="modal-field number-field " id="nights-number" name="people_number">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-            </select>
-            <label class="field-description" for="nights-number">number of nights</label>
-            <select class="modal-field number-field " id="date_in" name="people_number">
-                <option value="today">today</option>
-                <option value="tomorrow">tomorrow</option>
-                <option value="the day after tomorrow">next day after tomorrow</option>
-            </select>
-            <label class="field-description" for="date_in">Check-in date</label>
-            <button class="modal-btn btn" type="submit" data-modal-ppr-close>Make a reservation
-            </button>
+                <label class=" field-description" for="nights-number"></label>
+                <select class="modal-field number-field " id="nights-number" name="people_number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label class="field-description" for="price">number of nights</label>
+                <select class="modal-field number-field " id="price" name="price">
+                    <option value="1">1000</option>
+                    <option value="2">2000</option>
+                    <option value="3">3000</option>
+                    <option value="4">4000</option>
+                    <option value="5">5000</option>
+                </select>
+                <label class="field-description" for="date_in">uah</label>
+                <button class="modal-btn btn" type="submit" data-modal-ppr-close>Make a reservation
+                </button>
         </form>
 
     </div>
-</div>
+</div> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- / ====== Temporary css links ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/utils/variables.css" />
+    <link rel="stylesheet" href="../../css/base/common.css" />
+    <link rel="stylesheet" href="../../css/base/reset.css" />
+    <link rel="stylesheet" href="../../css/pages/modal/table-modal.css" />
+    <link rel="stylesheet" href="../../css/pages/modal/room-modal.css" />
+    <link rel="stylesheet" href="../../css/pages/modal/prices-modal.css" />
+</head>
+
+<body>
+
+    <!-- ==== Modal Room ===== -->
+
+
+    <div class="modal-backdrop" data-modal-br>
+        <div class="modal-window room-window">
+            <h3 class="modal-title">Prices per room</h3>
+            <p class="modal-subtitle">double suite</p>
+            <button class="modal-close-button" type="button" data-modal-br-close>
+                <svg class="modal-close-icon" width="28px" height="28px">
+                    <use href="../../img/icons.svg#close-icon"></use>
+                </svg>
+            </button>
+            <form class="modal-form">
+
+
+                    <label class="field-description" for="nights-number"></label>
+                    <select class="modal-field number-field " id="nights-number" name="people_number">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+
+
+
+                <label class="field-description">
+                    <input class="modal-field" type="number" placeholder="1000">uah
+                </label>
+                <!-- <label class="field-description" for="nights-number"></label> -->
+
+
+
+
+            </form>
+            <button class="modal-btn btn" type="submit">Make a reservation</button>
+
+        </div>
+    </div>
+
+    <script src="../../js/modal-br.js"></script>
+
+
+
+    <!-- ====/// Modal room === -->
+
+
+</body>
+
+</html>
