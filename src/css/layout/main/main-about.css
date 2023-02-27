@@ -35,23 +35,15 @@
 }
 
 /* --- img-content --- */
-
-.images-wrap {
-  max-width: 335px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.bathroom-img {
+.thumb {
+  width: 282px;
+  height: 153px;
   position: relative;
 }
 /* --- feedback-block --- */
 
 .feedback-block.maria {
   position: absolute;
-  top: 65%;
-  right: 0px;
 }
 
 .feedback-block {
