@@ -1,7 +1,9 @@
+
 .container {
     box-sizing: border-box;
     max-width: 375px;
 }
+
 
 .restaurant {
     padding-top: 32px;
@@ -16,12 +18,14 @@
 
     letter-spacing: -0.02em;
 
-    color: #121212;
+    color: var(--dark);
 }
 
 .restaurant .button-book-wrap{
+    margin-top: 40px;
     display: flex;
     gap: 12px;
+    justify-content: center;
 }
 
 .restaurant .button-book-wrap.desktop{
@@ -34,20 +38,23 @@
     align-items: center;
     justify-content: center;
 
-    width: 167px;
-    height: 42px;
+    width: auto;
+    height: 34px;
 
-    border: 0.8px solid #121212;
+    padding-left: 18px;
+    padding-right: 18px;
+
+    border: 0.8px solid var(--dark);
     border-radius: 32px;
 
     font-weight: 400;
-    font-size: 18px;
-    line-height: 1.33;
+    font-size: 14px;
+    line-height: 1.29;
     
     letter-spacing: -0.02em;
     text-transform: uppercase;
 
-    color: #121212;
+    color: var(--dark);
     background-color: transparent;
 
     cursor: pointer;
@@ -62,24 +69,108 @@
     line-height: 1.29;
     letter-spacing: -0.02em;
 
-    color: #121212;
+    color: var(--dark);
 }
 
-.gallery {
-    width: 100%;
+.restaurant .gallery {
     overflow: hidden;
 }
 
-.photo-slider {
+.restaurant .photo-slider {
     position: relative;
     right: 0;
-    margin-top: 125px;
     display: flex;
-    gap: 32px;
+    gap: 20px;
     transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-
-.photo-slider picture source{
-    width: 100%;
+.restaurant .photo-slider .item{
+    width: 157px;
 }
+
+.restaurant .desktop-img{
+    display: none;
+}
+
+.restaurant .gallery .button-wrap {
+    margin-top: 18px;
+    display: flex;
+}
+
+.restaurant .gallery .button-wrap button{
+    background-color: transparent;
+    border: none;
+    fill: none;
+    stroke: var(--dark);
+}
+
+.restaurant .button-icon{
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .restaurant .title{
+        font-size: 68px;
+        margin-bottom: 0;
+
+    }
+    .restaurant-wrap .text{
+        margin-bottom: 0;
+    }
+    .restaurant .restaurant-wrap{
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    .restaurant .photo-slider{
+        gap: 32px;
+    }
+    .restaurant .photo-slider .item{
+        width: 336px;
+    }
+
+    .restaurant .button-icon{
+        width: 36px;
+        height: 36px;
+    }
+    .restaurant .button-book-wrap button{
+        padding: 8px 24px
+        
+    }
+    
+
+
+}
+
+@media screen and (min-width: 1440px){
+    .restaurant .desktop-img{
+        display: block;
+    }
+    .restaurant .photo-slider .item{
+        width: 266px;
+    }
+    .restaurant .button-book-wrap.mobile{
+        display: none;
+    }
+    .restaurant .button-book-wrap.desktop{
+        margin-left: auto;
+        margin-top: 0;
+        display: flex;
+        gap: 14px;
+        align-self: flex-start;
+        
+    }
+    .restaurant .gallery .button-wrap{
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
