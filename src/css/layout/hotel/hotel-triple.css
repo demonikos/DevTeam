@@ -16,21 +16,13 @@
   padding-bottom: 32px;
 }
 
-/* .hotel-triple-room .room-photo-1 {
-  max-width: 335px;
-} */
-
-.hotel-triple-room .room-photo-1 picture {
-  width: 100%;
-  height: auto;
-}
-
 .hotel-triple-room .room-photo-2 {
   display: flex;
 
   gap: 20px;
 }
 
+.hotel-triple-room .room-photo-1 picture, 
 .hotel-triple-room .room-photo-2 picture {
   width: 100%;
   height: auto;
@@ -132,11 +124,13 @@
   
   .hotel-triple-room .room-photo-2 {
     position: absolute;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
 
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
   }
 
   .hotel-triple-room .room-photo-2 picture {
