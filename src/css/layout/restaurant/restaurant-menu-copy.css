@@ -254,6 +254,12 @@
     justify-content: center;
 }
 
+.previous-btn-icon,
+.next-btn-icon {
+    height: 24px;
+    width: 24px;
+}
+
 .btn.btn-book-a-table {
     padding-top: 9px;
     padding-right: 24px;
@@ -362,6 +368,12 @@
     .menu .menu-category-item .menu-category-wrap .price{
         font-size: 18px;
         line-height: 1.3333;
+    }
+
+    .previous-btn-icon,
+    .next-btn-icon {
+    height: 36px;
+    width: 36px;
     }
 
     .btn.btn-book-a-table {
