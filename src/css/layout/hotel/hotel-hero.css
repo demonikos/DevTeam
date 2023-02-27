@@ -29,6 +29,9 @@
   border-color: var(--dark);
   border-radius: 32px;
 
+  transition: color 250ms linear,
+  background-color 250ms linear;
+
   color: var(--dark);
   font-weight: 400;
   font-size: 14px;
@@ -98,9 +101,12 @@
 
     font-size: 80px;
   }
+  .hotel-hero-list {
+    gap: 14px;
+  }
   .hotel-hero-btn.btn {
     padding: 8px 24px;
-    line-height: 1.71;
+    line-height: 1.33;
   }
   .hotel-hero-slider {
     width: 732px;
@@ -150,7 +156,6 @@
     padding: 9px 24px;
 
     font-size: 18px;
-    line-height: 1.33;
   }
   .hotel-hero-slider {
     width: 703px;
@@ -162,5 +167,9 @@
   .hotel-hero-text {
     bottom: 0;
     left: 32px;
+  }
+  .hotel-hero-btn.btn:is(:hover, :focus) {
+    color: #F7F7F7;
+    background-color: var(--dark);
   }
 }
