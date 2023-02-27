@@ -16,7 +16,8 @@
 }
 
 .main-hero-container {
-  max-width: 335px;
+  width: 100%;
+  max-width: 375px;
 }
 
 .main-hero-content {
@@ -43,6 +44,14 @@
   padding-bottom: 8px;
   padding-left: 18px;
   padding-right: 18px;
+
+  background-color: transparent;
+  color: inherit;
+  font-weight: var(--regular);
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
 .main-hero-title {
@@ -76,9 +85,6 @@
 }
 
 /* --- adaptive --- */
-
-
-
 
 @media screen and (max-width: 767px) {
   .main-hero-container {
