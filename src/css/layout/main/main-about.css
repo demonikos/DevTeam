@@ -5,13 +5,8 @@
 }
 
 .main-about-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.main-about-container.hotel-wrap {
-  max-width: 335px;
-  position: relative;
+  width: 100%;
+  max-width: 375px;
 }
 
 /* --- text-content --- */
@@ -41,16 +36,21 @@
 
 /* --- img-content --- */
 
-.thumb {
-  width: 282px;
-  height: 153px;
+.main-about-container .hotel-photos {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+
+.hotel-photos .lobby-img {
+  width: 100%;
+  height: auto;
 }
 /* --- feedback-block --- */
 
 .feedback-block.maria {
-  position: absolute;
-  right: -53px;
-  top: -42px;
+
 }
 
 .feedback-block {
