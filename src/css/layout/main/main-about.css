@@ -1,12 +1,16 @@
 /* --- section --- */
 
 .main-about-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--light);
 }
 
 .main-about-container {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  max-width: 375px;
 }
 
 /* --- text-content --- */
@@ -35,21 +39,15 @@
 }
 
 /* --- img-content --- */
-
-.images-wrap {
-  max-width: 335px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.bathroom-img {
+.image-origin {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* --- feedback-block --- */
 
 .feedback-block.maria {
-  top: 65%;
-  right: 0px;
+  position: absolute;
 }
 
 .feedback-block {
@@ -100,34 +98,3 @@
 }
 
 /* --- adaptives --- */
-
-@media screen and (min-width: 1440px) {
-  .main-about-container.hotel-wrap {
-    max-width: 1376px;
-    margin-bottom: 100px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .main-about-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-
-  .main-about-container.hotel-wrap {
-    max-width: 704px;
-    margin-bottom: 80px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .main-about-section {
-    padding-top: 64px;
-    padding-bottom: 64px;
-  }
-
-  .main-about-container.hotel-wrap {
-    max-width: 335px;
-    margin-bottom: 72px;
-  }
-}
