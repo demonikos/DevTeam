@@ -3,8 +3,6 @@
 }
 .hotel-double > .container {
   padding-left: 19px;
-
-  outline: 1px solid red;
 }
 .hotel-double-list {
   display: flex;
