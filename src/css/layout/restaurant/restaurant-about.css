@@ -36,11 +36,14 @@ letter-spacing: -0.02em;
         max-width: 767px;
     }
     
+    .restorante-about-container-general{
+        position: relative;}
+/*     
     .restaurant-about-pic-container{
         display: flex;
         flex-direction: row-reverse;
         justify-content: flex-end;
-    }
+    } */
 
     .restaurant-about-pic-container-dishes{
         flex-direction: column-reverse;
@@ -48,14 +51,15 @@ letter-spacing: -0.02em;
     }
 
     .restaurant-about-pic-container-cook{
-        margin-left: 32px;
+        position: absolute;
+        top: 0;
+        transform: translate(316px);
         margin-bottom: 0;
     }
 
     .restaurant-about-text-flex{
         display: flex;
         gap: 32px;
-        /* max-width: calc((100% -32px) / 2); */
     }
 
     .restaurant-about-text {
@@ -74,23 +78,32 @@ letter-spacing: -0.02em;
         max-width: 1440px;
     }
     
-    .restorante-about-container-general{
+    /* .restorante-about-container-general{
         display: flex;
         gap: 32px;
         row-gap: 32px;
-    }
-
-    .restaurant-about-pic-container{
+    } */
+.rest-test{margin-left: 543px;}
+    /* .restaurant-about-pic-container{
         flex-direction: row;
         gap: 32px;
-    }
+    } */
 
     .restaurant-about-pic-container-cook{
-        margin-left: 0;
+        left: 0;
+        transform: translate(0);
     }
 
     .restaurant-about-pic-container-dishes{
         flex-direction: row;
         gap: 32px;
+    }
+
+    .restaurant-about-text{
+        font-weight: 500;
+    }
+    
+    .restaurant-about-text-second{
+        max-width: 453px;
     }
 }
