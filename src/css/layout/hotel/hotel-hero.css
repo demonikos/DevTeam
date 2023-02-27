@@ -28,7 +28,7 @@
   padding: 8px 18px;
 
   background-color: transparent;
-  border-color: var(--dark);
+  border: 0.8px solid var(--dark);
   border-radius: 32px;
 
   transition: color 250ms linear,
@@ -157,8 +157,8 @@
   }
   .hotel-hero-btn {
     padding: 9px 24px;
-
     font-size: 18px;
+    line-height: 1.33;
   }
   .hotel-hero-slider {
     width: 703px;

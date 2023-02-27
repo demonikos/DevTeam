@@ -40,14 +40,16 @@
   text-transform: uppercase;
 }
 .hotel-btn-list {
+  width: 100%;
   display: flex;
   gap: 12px;
+  justify-content: start;
 }
 .hotel-double-btn {
   padding: 8px 18px;
 
   background-color: transparent;
-  border-color: var(--dark);
+  border: 0.8px solid var(--dark);
   border-radius: 32px;
 
   transition: color 250ms linear,
@@ -89,10 +91,6 @@
     font-size: 40px;
     line-height: 1.1;
   }
-  .hotel-btn-list {
-    gap: 14px;
-    margin-bottom: 40px;
-  }
   .text-container {
     max-width: 100%;
     flex-direction: row;
@@ -107,16 +105,14 @@
     line-height: 1.33;
   }
   .hotel-btn-list {
-    max-width: 290px;
     gap: 14px;
-    margin-left: auto;
+    justify-content: end;
   }
   .hotel-double.section {
     padding-bottom: 80px;
   }
   .hotel-double-btn {
     padding: 8px 24px;
-
     line-height: 1.33;
   }
 }
@@ -144,16 +140,18 @@
     margin-bottom: 0;
   }
   .hotel-btn-list {
+    max-width: 334px;
     position: absolute;
     right: 32px;
-    bottom: 227px;
-    margin-bottom: 0;
+    bottom: 221px;
   }
   .hotel-double-text:not(:last-child) {
     max-width: 355px;
   }
   .hotel-double-btn {
     padding: 9px 24px;
+    font-size: 18px;
+    line-height: 1.33;
   }
   .hotel-double-btn:is(:hover, :focus) {
     color: #F7F7F7;
