@@ -122,11 +122,11 @@ letter-spacing: -0.02em;
         font-weight: 500;
     }
     .restaurant-about-text-first{
-        width: 334px;
+        max-width: 334px;
 
     }
     .restaurant-about-text-second{
-        width: 453px;
+        max-width: 453px;
     }
    
 }
