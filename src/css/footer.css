@@ -40,6 +40,8 @@ position: relative;
   font-weight: var(--medium);
   letter-spacing: 0.02em;
   line-height: 1.5;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .footer-logo {
