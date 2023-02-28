@@ -3,6 +3,7 @@
 .main-hero-section {
   padding-top: 40px;
   padding-bottom: 40px;
+
   margin-left: auto;
   margin-right: auto;
 
@@ -20,7 +21,7 @@
   max-width: 375px;
 }
 
-.main-hero-pic .image-origin {
+.image-origin {
   display: block;
   max-width: 100%;
   height: auto;
@@ -28,12 +29,17 @@
 
 /* --- main-hero-content --- */
 
+.position-hero-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
 .main-hero-btns {
   display: flex;
   justify-content: center;
   gap: 14px;
-  margin-top: 54px;
-  margin-bottom: 66px;
 }
 
 .main-hero-section .main-hero-btn {
@@ -64,6 +70,7 @@
 }
 
 .main-hero-desc {
+  margin-top: 154px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -81,14 +88,13 @@
 
 /* --- adaptive --- */
 @media screen and (min-width: 375px) {
-  .main-hero-thumb {
+  .hero-content-wrapper {
     position: relative;
   }
 
-  .main-hero-title {
+  .position-hero-wrapper {
     position: absolute;
-    bottom: -30px;
-    left: 26px;
+    top: 389px;
   }
 }
 
@@ -111,9 +117,15 @@
     justify-content: center;
   }
 
-  .main-hero-btns {
-    margin-top: 32px;
-    margin-bottom: 86px;
+  .hero-img-thumb {
+    max-width: 542px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .position-hero-wrapper {
+    gap: 32px;
+    top: 478px;
   }
 
   .main-hero-section .main-hero-btn {
@@ -124,9 +136,12 @@
   .main-hero-title {
     font-size: 150px;
     line-height: calc(150 / 150);
+    left: 6px;
+    bottom: 82px;
   }
 
   .main-hero-desc {
+    margin-top: 76px;
     flex-direction: row;
     gap: 32px;
 
@@ -153,8 +168,5 @@
     margin-left: 0;
     font-size: 180px;
     line-height: calc(180 / 180);
-  }
-
-  .main-hero-image {
   }
 }
