@@ -4,10 +4,10 @@
         <h2 class="restaurant-hero-title">
             Restaurant
         </h2>
-        <ul class="restaurant-hero-btn">
-            <li class="action-btns-item"><button type="button" class="btn action-btns restaurant-hero-btn-book-table">book a table</button></li>
-            <li class="action-btns-item"><button type="button" class="btn action-btns restaurant-hero-btn-view-menu">view a menu</button></li>
-        </ul>
+        <div class="restaurant-hero-btn">
+            <button type="button" class="btn action-btns restaurant-hero-btn-book-table" data-modal-bt-open>book a table</button>
+            <a href="/restaurant.html#menu" class="btn restorant-wiew-menu-button-link">View a menu</a>
+        </div>
         <div class="restaurant-hero-slide-pic-container">
             <div class="restaurant-hero-slide-galery restaurant-hero-photo-slider">
                 <picture class="restaurant-hero-picture">
@@ -82,44 +82,6 @@
                         media="(max-width: 767px)">
                     <img src="/img/restaurant-page/restaurant-hero/mobile/rst-hero-img-6-mob@1x.jpg" alt="restaurant hall">
                 </picture>
-
-                <!-- test absolute -->
-                <picture class="restaurant-hero-picture">
-                    <source
-                        srcset="/img/restaurant-page/restaurant-hero/desktop/rst-hero-img-1-desk@1x.jpg 1x, /img/restaurant-page/restaurant-hero/desktop/rst-hero-img-1-desk@2x.jpg 2x"
-                        media="(min-width: 1440px)">
-                    <source
-                        srcset="/img/restaurant-page/restaurant-hero/tablet/rst-hero-img-1-tab@1x.jpg 1x, /img/restaurant-page/restaurant-hero/tablet/rst-hero-img-1-tab@2x.jpg 2x"
-                        media="(min-width: 768px)">
-                    <source
-                        srcset="/img/restaurant-page/restaurant-hero/mobile/rst-hero-img-1-mob@1x.jpg 1x, /img/restaurant-page/restaurant-hero/mobile/rst-hero-img-1-mob@2x.jpg 2x"
-                        media="(max-width: 767px)">
-                    <img src="/img/restaurant-page/restaurant-hero/mobile/rst-hero-img-1-mob@1x.jpg" alt="restaurant hall">
-                </picture>
-                <picture class="restaurant-hero-picture">
-                    <source
-                        srcset="/img/restaurant-page/restaurant-hero/desktop/rst-hero-img-2-desk@1x.jpg 1x, /img/restaurant-page/restaurant-hero/desktop/rst-hero-img-2-desk@2x.jpg 2x"
-                        media="(min-width: 1440px)">
-                    <source
-                        srcset="/img/restaurant-page/restaurant-hero/tablet/rst-hero-img-2-tab@1x.jpg 1x, /img/restaurant-page/restaurant-hero/tablet/rst-hero-img-2-tab@2x.jpg 2x"
-                        media="(min-width: 768px)">
-                    <source
-                        srcset="/img/restaurant-page/restaurant-hero/mobile/rst-hero-img-2-mob@1x.jpg 1x, /img/restaurant-page/restaurant-hero/mobile/rst-hero-img-2-mob@2x.jpg 2x"
-                        media="(max-width: 767px)">
-                    <img src="/img/restaurant-page/restaurant-hero/mobile/rst-hero-img-2-mob@1x.jpg" alt="a dish from the menu">
-                </picture>
-                <picture class="restaurant-hero-picture">
-                    <source
-                        srcset="/img/restaurant-page/restaurant-hero/desktop/rst-hero-img-3-desk@1x.jpg 1x, /img/restaurant-page/restaurant-hero/desktop/rst-hero-img-3-desk@2x.jpg 2x"
-                        media="(min-width: 1440px)">
-                    <source
-                        srcset="/img/restaurant-page/restaurant-hero/tablet/rst-hero-img-3-tab@1x.jpg 1x, /img/restaurant-page/restaurant-hero/tablet/rst-hero-img-3-tab@2x.jpg 2x"
-                        media="(min-width: 768px)">
-                    <source
-                        srcset="/img/restaurant-page/restaurant-hero/mobile/rst-hero-img-3-mob@1x.jpg 1x, /img/restaurant-page/restaurant-hero/mobile/rst-hero-img-3-mob@2x.jpg 2x"
-                        media="(max-width: 767px)">
-                    <img src="/img/restaurant-page/restaurant-hero/mobile/rst-hero-img-3-mob@1x.jpg" alt="cooking process">
-                </picture>
             </div>
         </div>
             
@@ -139,3 +101,4 @@
     </div>
     </section>
     <script src="/js/restaurant-hero-slider.js"></script>
+    <script src="/js/modal-bt.js"></script>

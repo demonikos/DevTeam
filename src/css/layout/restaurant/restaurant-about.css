@@ -1,10 +1,10 @@
 .section-restaurant-about {
-    padding-bottom: 64px;
     background-color:var(--background);
 }
 
 .restorante-about-container-general{
-    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
 }
 
 .restaurant-about-pic-container-cook{
@@ -15,7 +15,10 @@
     display: flex;
     gap: 20px;
     margin-bottom: 32px;
+}
 
+.rest-img{
+    display: block;
 }
 
 .restaurant-about-text {
@@ -27,7 +30,11 @@ letter-spacing: -0.02em;
 }
 
 .restaurant-about-text-first{
+    min-width: 349px;
     margin-bottom: 24px;
+}
+.restaurant-about-text-second{
+    min-width: 323px;
 }
 
 @media screen and (min-width: 768px) {
@@ -37,27 +44,25 @@ letter-spacing: -0.02em;
     }
     
     .restorante-about-container-general{
-        position: relative;}
-/*     
-    .restaurant-about-pic-container{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-    } */
-
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+   
     .restaurant-about-pic-container-dishes{
         flex-direction: column-reverse;
         gap: 16px;
+
+        order: 1;
     }
 
     .restaurant-about-pic-container-cook{
-        position: absolute;
-        top: 0;
-        transform: translate(316px);
-        margin-bottom: 0;
+        margin-left: 32px;
+
+        order: 2;
     }
 
     .restaurant-about-text-flex{
+        order: 3;
         display: flex;
         gap: 32px;
     }
@@ -65,6 +70,7 @@ letter-spacing: -0.02em;
     .restaurant-about-text {
         font-size: 18px;
         line-height: 1.33;
+        letter-spacing: 0;
     }
     
     .restaurant-about-text-first{
@@ -78,32 +84,49 @@ letter-spacing: -0.02em;
         max-width: 1440px;
     }
     
-    /* .restorante-about-container-general{
-        display: flex;
-        gap: 32px;
-        row-gap: 32px;
-    } */
-.rest-test{margin-left: 543px;}
-    /* .restaurant-about-pic-container{
+    .restorante-about-container-general{
         flex-direction: row;
+        justify-content: flex-end;
         gap: 32px;
-    } */
+    }
 
     .restaurant-about-pic-container-cook{
-        left: 0;
-        transform: translate(0);
+        position: static;
+        margin-left: 0;
+        margin-bottom: 0;
+        order: 1;
     }
 
     .restaurant-about-pic-container-dishes{
+        position: relative;
         flex-direction: row;
         gap: 32px;
+
+        margin-bottom: 0;
+
+
+
+        order: 2;
+    }
+
+    .restaurant-about-text-flex{
+        position: absolute;
+        
+        transform: translatey(420px);
+
+
+        order: 3;
     }
 
     .restaurant-about-text{
         font-weight: 500;
     }
-    
-    .restaurant-about-text-second{
-        max-width: 453px;
+    .restaurant-about-text-first{
+        width: 334px;
+
     }
+    .restaurant-about-text-second{
+        width: 453px;
+    }
+   
 }
