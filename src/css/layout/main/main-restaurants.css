@@ -62,6 +62,14 @@
     cursor: pointer;
 }
 
+.restaurant .button-book-wrap button:hover,
+.restaurant .button-link:hover,
+.restaurant .button-book-wrap button:focus,
+.restaurant .button-link:focus{
+    color: var(--button);
+    background-color: var(--dark);
+}
+
 .restaurant-wrap .text {
     width: 221px;
     margin-bottom: 32px;
