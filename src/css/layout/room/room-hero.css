@@ -96,3 +96,46 @@
     bottom: 120px;
   }
 }
+
+/* ------------------------------1440 Breakpoint----------------------- */
+@media screen and (min-width: 1440px) {
+  .room-hero {
+    padding-bottom: 0;
+    position: relative;
+  }
+  .room-hero > .container {
+    padding: 30px 32px;
+    padding-bottom: 48px;
+  }
+  .room-hero-title {
+    font-size: 80px;
+    margin-top: 139px;
+    margin-bottom: 32px;
+  }
+
+  .btn.room-hero-btn {
+    padding: 9px 24px;
+    font-size: 18px;
+    line-height: 1.33;
+    margin-bottom: 169px;
+  }
+
+  .room-hero-gallery {
+    width: 705px;
+    margin-left: auto;
+    margin-bottom: 0;
+    position: absolute;
+    top: 30px;
+    right: 0;
+  }
+  .room-hero .button-wrap {
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 30px;
+    right: 600px;
+  }
+
+  .room-hero-description {
+    position: static;
+  }
+}
