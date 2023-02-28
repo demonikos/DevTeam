@@ -77,7 +77,7 @@
   line-height: calc(18/14); 
   letter-spacing: -0.02em;
   text-transform: uppercase;
-
+}
 
 /* ============================== MEDIA ============================ */
 
@@ -138,7 +138,7 @@
     padding: 8px 24px;
 
 }
-
+}
 
 @media screen and (min-width: 1440px) {
   .section {
