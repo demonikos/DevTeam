@@ -14,6 +14,10 @@
     transition: opacity 800ms cubic-bezier(0.23, 1, 0.320, 1), visibility 100ms cubic-bezier(0.23, 1, 0.320, 1);
 }
 
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
+}
+
 .modal-window {
     position: absolute;
     top: 50%;
@@ -34,6 +38,10 @@
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 0;
+}
+
+.modal-form select option {
+    background-color: var(--dark);
 }
 
 .modal-field {
@@ -94,6 +102,15 @@ label {
     color: #F7F7F7;
 }
 
+.modal-subtitle {
+    font-weight: medium;
+    font-size: 16px;
+    line-height: calc(18 / 16);
+    letter-spacing: -0.02em;
+    color: var(--button);
+    margin-bottom: 24px;
+}
+
 .modal-close-button {
     position: absolute;
     align-self: center;
@@ -117,7 +134,7 @@ label {
 
 .modal-span {
     display: block;
-    
+
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
@@ -163,7 +180,7 @@ select {
     border-color: #F6F6F6;
     color: #F6F6F6;
 
-    transition: background-color 400ms cubic-bezier(0.23, 1, 0.320, 1), color 400ms cubic-bezier(0.23, 1, 0.320, 1) ;
+    transition: background-color 400ms cubic-bezier(0.23, 1, 0.320, 1), color 400ms cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .modal-btn:is(:hover, :focus) {
@@ -180,7 +197,7 @@ select {
 
 /* ===== Mobile >767px */
 
-@media screen and (min-width:335px) and (max-width: 767px)  {
+@media screen and (min-width:335px) and (max-width: 767px) {
 
     .modal-window {
         max-width: 335px;
@@ -213,7 +230,8 @@ select {
     }
 
     .modal-close-button {
-        top: 24px;;
+        top: 24px;
+        ;
         right: 24px;
     }
 
@@ -229,6 +247,10 @@ select {
         padding-bottom: 18px;
     }
 
+    .modal-field::placeholder {
+        color: var(--button);
+    }
+
     .number-descr {
         margin-bottom: 0;
         max-width: 266px;
@@ -239,6 +261,3 @@ select {
     }
 
 }
-
-
-

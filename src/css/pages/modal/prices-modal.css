@@ -1,24 +1,23 @@
-.modal-subtitle {
+/* .modal-subtitle {
     font-weight: medium;
     font-size: 16px;
     line-height: calc(18 / 16);
     letter-spacing: -0.02em;
     color: var(--button);
     margin-bottom: 24px;
-}
+} */
 
-.backdrop.is-hidden .modal {
+/* .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0);
-}
+} */
 
-.modal-field::placeholder {
+/* .modal-field::placeholder {
     color: var(--button);
-}
+} */
 
-.modal-form select option {
+/* .modal-form select option {
     background-color: var(--dark);
-
-}
+} */
 
 /* .modal-form{
     column-gap: 40px;
