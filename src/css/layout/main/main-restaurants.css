@@ -87,6 +87,8 @@
 
 .restaurant .photo-slider .item{
     width: 157px;
+    height: 201px;
+
 }
 
 .restaurant .desktop-img{
@@ -128,9 +130,6 @@
     }
     .restaurant .photo-slider{
         gap: 32px;
-    }
-    .restaurant .photo-slider .item{
-        width: 336px;
     }
 
     .restaurant .button-icon{
