@@ -101,11 +101,11 @@
 @media screen and (min-width: 1440px) {
   .room-hero {
     padding-bottom: 0;
-    position: relative;
   }
   .room-hero > .container {
     padding: 30px 32px;
     padding-bottom: 48px;
+    position: relative;
   }
   .room-hero-title {
     font-size: 80px;
