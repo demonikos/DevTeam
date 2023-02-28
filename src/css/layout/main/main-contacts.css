@@ -1,14 +1,18 @@
 /* основні стилі секції location */
 .maine-map {
     filter: grayscale(100%);
-    width: 100vw;
+    width: 100%;
     height: 384px;
+    display: flex;
+    box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
+}
+
+.main-location{
+    justify-content: center;
+    padding: 20px;
 }
 
 .main-title-loc {
-    height: 40px;
-    left: 0px;
-    top: 0px;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.0;
@@ -19,6 +23,7 @@
 }
 
 .main-adress {
+    display: block;
     padding-top: 32px;
     padding-bottom: 88px;
 }
@@ -42,12 +47,8 @@
     padding-bottom: 12px;
 }
 
-.main-adress {
-    display: flex;
-    flex-flow: column wrap;
-}
-
 .main-adress-item {
+    display: flex;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.33;
@@ -63,73 +64,141 @@
     line-height: 1.28;
     letter-spacing: -0.02em;
     color: #121212;
-
 }
 
 .contacts-call-us {
     padding-bottom: 12px;
 }
 
+.btn-main-room.btn{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    padding: 8px 18px;   
+}
+.main-location-position{
+    align-items: center;
+    justify-content: center;
+}
 /* медіа запити */
 
 @media screen and (min-width: 375px) and (max-width: 767px){
-    .maine-map{
-        height: 384px;
-        width: 335px;
-    }
+.maine-map{
+    width: 100%;
+    height: 384px;
+}
 }
 
 @media screen and (min-width: 768px){
-    .main-location {
-        width: 768px;
-    }
+.main-location-position{
+    display: flex;
+    max-width: 704px;
+    padding: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+}
 
-    .maine-map{
-        width: 704px;
-        height: 376px;
-    }
+.main-title-loc{
+    padding-bottom: 40px;
+    padding-top: 80px;
+}
 
-    /* .main-location-position{
-        display: block;
-    } */
+.main-location {
+    width: 704px;
+    /* height: 796px; */
+    padding: 32px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+    /* align-items: center; */
+    flex-direction: column;
+}
 
-    .main-adress{
-        display: flex;
-        flex-flow: row;
-        justify-content: space-between;
-        padding-top: 32;
+.maine-map{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 376px;
+}
+
+.maine-map iframe{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.main-adress{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    position: relative;
     }    
 }
 
 @media screen and (min-width: 1440px) {
-    .container {
-        width: 1440px;
-    }
-
-    .maine-map {
+.main-location {
+    width: 1440px;
     display: flex;
-    height: 524px;
-    width: 640px;
+    position: relative;
+    padding-left: 64px auto;
+    align-items: center;
+    flex-flow: row-reverse;
+    justify-content: space-around;
+    align-items: flex-start
     }
 
-    .main-location{
-        /* display: flex; */
-        flex-flow:row-reverse;
-        justify-content: space-between;
-    }
-
-    .main-location-position{
+.main-title-loc{
+    font-weight: 500;
+        font-size: 68px;
+        line-height: 68px;
+}
+        
+.main-location>.main-title-loc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 500;
+font-size: 68px;
+line-height: 68px;
+}
+.main-location-position {
     display: flex;
+    justify-content: center;
     align-items: end;
     gap: 32px;
+    
+    
+    
     }
 
-    .main-adress{
-        display: flex;
-        gap: 70px;
-        padding-bottom: 0;
-    }
-    .main-contact{
-        text-align: right;
-    }
+.maine-map {
+    overflow: hidden;
+    position: relative;
+    max-width: 640px;
+    height: 524px;
+    flex-shrink: 0;
+    flex-grow: 2;
+}
+.maine-map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.main-adress {
+    display: flex;
+    gap: 70px;
+    padding-bottom: 0;
+}
+
+.main-contact {
+    text-align: right;
+}
 }

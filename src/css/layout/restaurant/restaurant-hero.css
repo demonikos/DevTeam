@@ -1,6 +1,5 @@
 .section-restaurant-hero{
     padding-top: 40px;
-    padding-bottom: 64px;
     background-color: var(--background);
 }
 
@@ -17,12 +16,39 @@ line-height: 1;
     margin-bottom: 40px;
 }
 
+.restorant-wiew-menu-button-link{
+    width: auto;
+    height: 34px;
+    padding-left: 18px;
+    padding-right: 18px;
 
-.action-btns-item .action-btns{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    font-size: 14px;
+    line-height: 1.29;
+    text-transform: uppercase;
+
+    color: var(--dark);
+    border-color: var(--dark);
+    background-color:var(--background);
+    
+    transition: var(--action-transition);
+
+    cursor: pointer;
+}
+
+.restorant-wiew-menu-button-link:is(:hover, :focus){
+    color: var(--background);
+    border-color: var(--dark);
+    background-color: var(--dark);
+}
+
+.restaurant-hero-btn .action-btns{
+    width: auto;
+    height: 34px;
+
+    font-size: 14px;
+    line-height: 1.29;
+    
+    text-transform: uppercase;
 
     padding: 8px 18px;
 color: var(--dark);
@@ -49,11 +75,6 @@ transition: var(--action-transition);
     gap: 20px;
     transition: var(--action-transition);
 }
-/* .restaurant-hero-picture-test-absolute{
-    position: absolute;
-    top: 0;
-    left: 0;
-} */
 
 .restaurant-hero-picture{
     display: inline;
@@ -66,11 +87,12 @@ transition: var(--action-transition);
     text-align: right;
 }
 .restaurant-hero-button-svg{
-    fill:#1212124D;
+    fill: none;
+    stroke: #1212124D;
 }
 
 .restaurant-hero-button-slide:is(:hover, :focus) .restaurant-hero-button-svg{
-    fill: var(--dark);
+    stroke: var(--dark);
 }
 
 .restaurant-hero-button-slide{

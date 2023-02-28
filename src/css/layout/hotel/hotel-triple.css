@@ -77,16 +77,6 @@
   line-height: calc(18/14); 
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  transition: color 300ms var(--action-transition),
-              background-color 300ms var(--action-transition);
-}
-
-.hotel-triple-room .room-button:is(:hover, :focus) {
-  color: var(--light);
-  background-color: var(--dark);
-
-}  
-
 
 
 /* ============================== MEDIA ============================ */
@@ -146,9 +136,6 @@
 
   .hotel-triple-room .room-button {
     padding: 8px 24px;
-  
-    line-height: calc(24/14); 
-  }  
 
 }
 
