@@ -160,6 +160,11 @@
     max-width: 472px;
   }
 
+  .main-about-text {
+    font-size: 18px;
+    line-height: calc(24 / 18);
+  }
+
   .ab-restaurant-thumb {
     max-width: 530px;
     margin-left: auto;
@@ -230,5 +235,10 @@
 
   .ab-restaurant-description {
     margin-bottom: 0;
+  }
+
+  .ab-restaurant-description .main-about-text {
+    font-size: 14px;
+    line-height: calc(18 / 14);
   }
 }
