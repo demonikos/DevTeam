@@ -45,6 +45,11 @@
     width: 100%;
 }
 
+.wellcome-section-img {
+    max-width: 100%;
+    height: auto;
+}
+
 @media screen and (min-width: 375px) {
     .container.wellcome-container {
         max-width: 375px;
@@ -66,11 +71,13 @@
 @media screen and (min-width: 768px) {
     .section.wellcome-section {
         padding-top: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 80px;
     }
 
     .container.wellcome-container {
-        max-width: 744px;
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     .wellcome-title {
@@ -94,6 +101,11 @@
     .wellcome-text.second-paragraph {
         max-width: 366px;
     }
+
+    .wellcome-img-thumb {
+        width: 704px;
+        height: 599px;
+    }
     
 }
 
@@ -110,7 +122,7 @@
         justify-content: start;
 
         max-width: 1440px;
-        padding-left: 20px;
+        padding-left: 32px;
         padding-right: 267px;
     }
 
