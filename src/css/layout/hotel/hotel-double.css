@@ -8,7 +8,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-
   margin-bottom: 32px;
 }
 .hotel-double-title {
@@ -24,10 +23,10 @@
 }
 .text-container {
   max-width: 335px;
+  margin-bottom: 28px;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 28px;
 }
 .hotel-double-text {
   color: var(--dark);
@@ -45,6 +44,7 @@
 }
 .hotel-double-btn {
   padding: 8px 18px;
+  display: block;
 
   background-color: transparent;
   border: 0.8px solid var(--dark);
@@ -60,14 +60,23 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
+
+    /* ------ Mobile ------ */
+
 @media screen and (max-width: 767px) {
   .container {
     max-width: 375px;
   }
 }
+
+    /* ------ Tablet ------ */
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+  .hotel-double.section {
+    padding-bottom: 80px;
   }
   .hotel-double > .container {
     padding-left: 32px;
@@ -91,9 +100,9 @@
   }
   .text-container {
     max-width: 100%;
+    margin-bottom: 40px;
     flex-direction: row;
     gap: 32px;
-    margin-bottom: 40px;
   }
   .hotel-double-text:not(:last-child) {
     max-width: 369px;
@@ -106,23 +115,25 @@
     gap: 14px;
     justify-content: end;
   }
-  .hotel-double.section {
-    padding-bottom: 80px;
-  }
   .hotel-double-btn {
     padding: 8px 24px;
+
     line-height: 1.33;
   }
 }
+
+    /* ------ Desktop ------ */
+
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
   }
-  .hotel-double .container {
+  .hotel-double > .container {
     position: relative;
   }
   .hotel-double-list {
     margin-bottom: 50px;
+    align-items: center;
   }
   .hotel-double-item:last-child {
     position: static;
@@ -130,21 +141,18 @@
   .hotel-double-item:nth-child(2) {
     order: -1;
   }
-  .hotel-double-list {
-    align-items: center;
-  }
   .text-container {
     max-width: 694px;
     margin-bottom: 0;
+  }
+  .hotel-double-text:not(:last-child) {
+    max-width: 355px;
   }
   .hotel-btn-list {
     max-width: 340px;
     position: absolute;
     right: 32px;
     bottom: 224px;
-  }
-  .hotel-double-text:not(:last-child) {
-    max-width: 355px;
   }
   .hotel-double-btn {
     padding: 9px 24px;
