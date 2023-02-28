@@ -180,7 +180,6 @@ select {
     border-color: #F6F6F6;
     color: #F6F6F6;
 
-    /* transition: background-color 400ms cubic-bezier(0.23, 1, 0.320, 1), color 400ms cubic-bezier(0.23, 1, 0.320, 1); */
 }
 
 .modal-btn:is(:hover, :focus) {
