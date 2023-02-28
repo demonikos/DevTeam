@@ -16,7 +16,7 @@
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   
-  <link rel="stylesheet" href="/devteam/assets/styles-7f7af2da.css">
+  <link rel="stylesheet" href="/devteam/assets/styles-ae2eb2fb.css">
 </head>
 
 <body>
@@ -555,8 +555,8 @@
                 <use href="../../img/icons.svg#close-icon"></use>
             </svg>
         </button>
-        <form class="modal-form">
-    
+        <form class="modal-form modal-form-ppr">
+            <div class="field-wrap">
                 <label class="" for="nights-number">
                     <select class="" id="nights-number" name="nights-number">
                         <option value="1">1</option>
@@ -573,6 +573,7 @@
                 <label class="field-description">
                     <input class="modal-field" type="number" placeholder="1000">uah
                 </label>
+            </div>
             <button class="modal-btn btn" type="submit">Make a reservation</button>
         </form>
 
@@ -591,49 +592,53 @@
                 </svg>
             </button>
             <form class="modal-form">
-                <label class="field-description" for="user_name">
-                    <input class="modal-field modal-name"
-                    id="user_name"
-                    type="text" 
-                    name="user_name" 
-                    minlength="2" 
-                    placeholder="your name"
-                    required >
-                    <span class="modal-span">Who should book a table for?</span>
-                </label>
+                <div class="field-wrap">
+                    <label class="field-description" for="user_name">
+                        <input class="modal-field modal-name"
+                        id="user_name"
+                        type="text" 
+                        name="user_name" 
+                        minlength="2" 
+                        placeholder="your name"
+                        required >
+                        <span class="modal-span">Who should book a table for?</span>
+                    </label>
+    
+                    <label class="number-descr">
+                        <select class="modal-field number-field" id="people_number" name="people_number">
+                            <option value="0">NUMBER OF PEOPLE</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <svg class="modal-arrow" width="20px" height="20px">
+                            <use  href="../../img/icons.svg#arrow-down"></use>
+                        </svg>
+                    </label>
+        
+                    <label class="field-description" for="date">
+                        <select class="modal-field day-field " id="date" name="people_number">
+                            <option value="today">TODAY</option>
+                            <option value="tomorrow">TOMORROW</option>
+                            <option value="the day after tomorrow">THE DAY AFTER TOMORROW</option>
+                        </select>    
+                        <span class="modal-span">What date to book?</span>
+                        <svg class="modal-arrow" width="20px" height="20px">
+                            <use  href="../../img/icons.svg#arrow-down"></use>
+                        </svg>
+                    </label>
+        
+                    <label class="field-description modal-descr-tel" for="modal-tel">
+                        <input class="modal-field modal-tel" id="modal-tel" type="tel" name="user_phone" title="xxx-xxx-xx-xx" placeholder="+ 38 ()" required>
+                        <span class="modal-span">Phone number</span>
+                    </label>
+                </div>
+                <button class="modal-btn btn" type="submit">Make a reservation</button>
 
-                <label class="number-descr">
-                    <select class="modal-field number-field" id="people_number" name="people_number">
-                        <option value="0">NUMBER OF PEOPLE</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    <svg class="modal-arrow" width="20px" height="20px">
-                        <use  href="../../img/icons.svg#arrow-down"></use>
-                    </svg>
-                </label>
-    
-                <label class="field-description" for="date">
-                    <select class="modal-field day-field " id="date" name="people_number">
-                        <option value="today">TODAY</option>
-                        <option value="tomorrow">TOMORROW</option>
-                        <option value="the day after tomorrow">THE DAY AFTER TOMORROW</option>
-                    </select>    
-                    <span class="modal-span">What date to book?</span>
-                    <svg class="modal-arrow" width="20px" height="20px">
-                        <use  href="../../img/icons.svg#arrow-down"></use>
-                    </svg>
-                </label>
-    
-                <label class="field-description modal-descr-tel" for="modal-tel">
-                    <input class="modal-field modal-tel" id="modal-tel" type="tel" name="user_phone" title="xxx-xxx-xx-xx" placeholder="+ 38 ()" required>
-                    <span class="modal-span">Phone number</span>
-                </label>
-            <button class="modal-btn btn" type="submit">Make a reservation</button>
             </form>
+
 
 
         </div>
@@ -655,67 +660,69 @@
                 </svg>
             </button>
             <form class="modal-form">
-                <label class="field-description" for="room_name">
-                    <input class="modal-field modal-name"
-                    id="room_name" 
-                    type="text" 
-                    name="user_name" 
-                    pattern="[a-zA-Zа-яА-я]+" 
-                    minlength="2" 
-                    placeholder="your name"
-                    required >
-                    <span class="modal-span">Who should book a room for?</span> 
-                </label>
+                <div class="field-wrap">
+                    <label class="field-description" for="room_name">
+                        <input class="modal-field modal-name"
+                        id="room_name" 
+                        type="text" 
+                        name="user_name" 
+                        pattern="[a-zA-Zа-яА-я]+" 
+                        minlength="2" 
+                        placeholder="your name"
+                        required >
+                        <span class="modal-span">Who should book a room for?</span> 
+                    </label>
+    
+                    <label class="field-description" for="room_tel">
+                        <input 
+                        class="modal-field modal-tel" 
+                        id="room_tel" 
+                        type="tel" 
+                        name="user_phone" 
+                        title="xxx-xxx-xx-xx" 
+                        placeholder="+ 38 ()" required>
+                        <span class="modal-span">Phone Number</span> 
+                    </label>
+    
+                    <label class="field-description" for="date_in">
+                        <select class="modal-field check-in-field" id="date_in" name="people_number">
+                            <option value="today">TODAY</option>
+                            <option value="tomorrow">TOMORROW</option>
+                            <option value="the day after tomorrow">THE DAY AFTER TOMORROW</option>
+                        </select>
+                        <svg class="modal-arrow" width="20px" height="20px">
+                            <use  href="../../img/icons.svg#arrow-down"></use>
+                        </svg>
+                        <span class="modal-span">Check-in date</span>
+                    </label>
+    
+                    <label class="field-description check-out-date" for="date_out">
+                        <select class="modal-field check-out-field " id="date_out" name="people_number">
+                            <option value="today">TODAY</option>
+                            <option value="tomorrow">TOMORROW</option>
+                            <option value="the day after tomorrow">THE DAY AFTER TOMORROW</option>
+                        </select>
+                        <svg class="modal-arrow" width="20px" height="20px">
+                            <use  href="../../img/icons.svg#arrow-down"></use>
+                        </svg>
+                        <span class="modal-span">Check-out date</span>
+                    </label>
+    
+                    <label class="field-description" for="suite_type">
+                        <select class="modal-field suite-type" id="suite_type" name="suite_type">
+                            <option value="double">Double suite</option>
+                            <option value="triple">Triple room</option>
+                            <option value="four">Four-seater room</option>
+                        </select>
+                        <svg class="modal-arrow" width="20px" height="20px">
+                            <use  href="../../img/icons.svg#arrow-down"></use>
+                        </svg>
+                        <span class="modal-span">Number category</span>
+                    </label>
+                </div>
+                <button class="modal-btn btn" type="submit">Make a reservation</button>
 
-                <label class="field-description" for="room_tel">
-                    <input 
-                    class="modal-field modal-tel" 
-                    id="room_tel" 
-                    type="tel" 
-                    name="user_phone" 
-                    title="xxx-xxx-xx-xx" 
-                    placeholder="+ 38 ()" required>
-                    <span class="modal-span">Phone Number</span> 
-                </label>
-
-                <label class="field-description" for="date_in">
-                    <select class="modal-field check-in-field" id="date_in" name="people_number">
-                        <option value="today">TODAY</option>
-                        <option value="tomorrow">TOMORROW</option>
-                        <option value="the day after tomorrow">THE DAY AFTER TOMORROW</option>
-                    </select>
-                    <svg class="modal-arrow" width="20px" height="20px">
-                        <use  href="../../img/icons.svg#arrow-down"></use>
-                    </svg>
-                    <span class="modal-span">Check-in date</span>
-                </label>
-
-                <label class="field-description check-out-date" for="date_out">
-                    <select class="modal-field check-out-field " id="date_out" name="people_number">
-                        <option value="today">TODAY</option>
-                        <option value="tomorrow">TOMORROW</option>
-                        <option value="the day after tomorrow">THE DAY AFTER TOMORROW</option>
-                    </select>
-                    <svg class="modal-arrow" width="20px" height="20px">
-                        <use  href="../../img/icons.svg#arrow-down"></use>
-                    </svg>
-                    <span class="modal-span">Check-out date</span>
-                </label>
-
-                <label class="field-description" for="suite_type">
-                    <select class="modal-field suite-type" id="suite_type" name="suite_type">
-                        <option value="double">Double suite</option>
-                        <option value="triple">Triple room</option>
-                        <option value="four">Four-seater room</option>
-                    </select>
-                    <svg class="modal-arrow" width="20px" height="20px">
-                        <use  href="../../img/icons.svg#arrow-down"></use>
-                    </svg>
-                    <span class="modal-span">Number category</span>
-                </label>
-            <button class="modal-btn btn" type="submit">Make a reservation</button>
-            </form>
-
+            </form> 
 
         </div>
     </div>
