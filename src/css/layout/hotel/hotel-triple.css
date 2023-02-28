@@ -94,7 +94,7 @@
     flex-wrap: nowrap;
   
     gap: 32px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
   
   .hotel-triple-room .room-photo-1 {
@@ -105,6 +105,29 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 32px;
+  }
+
+  .hotel-triple-room .room-type {
+    font-size: 40px;
+    line-height: calc(44/40);
+  }
+
+  .hotel-triple-room .room-description {
+    flex-flow: row;
+
+    gap: 32px;
+    padding-bottom: 28px;
+
+    font-size: 18px;
+    line-height: calc(24/18); 
+  }
+
+  .hotel-triple-room .room-description .p-first {
+    width: 355px;
+  }
+
+  .hotel-triple-room .room-description .p-second {
+    width: 299px;
   }
 
 }
@@ -137,4 +160,19 @@
     width: auto;
   }
 
+  .hotel-triple-room .room-photos {
+    padding-bottom: 50px;
+  }
+
+  .desktop-positioning {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   flex-direction: row-reverse;
+  }
+
+  .hotel-triple-room .room-button {
+    font-size: 18px;
+    line-height: calc(24/18);
+  }
 }
