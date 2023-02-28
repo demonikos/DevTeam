@@ -139,5 +139,37 @@ line-height: 1.29;
     .section-restaurant-hero > .container{
         max-width: 1440px;
     }
+
+    .section-restaurant-hero{
+        position: relative;
+    }
+
+
+    .restaurant-hero-title{
+        margin-top: 204px;
+        font-size: 90px;
+        line-height: 1;
+    }
+
+    .restaurant-hero-btn{
+        margin-bottom: 204px;
+    }
+
+    .restaurant-hero-slide-pic-container{
+
+        position: absolute;
+        top: 30px;
+        right: 0;
+        width: 705px;
+        margin-left: auto;
+        margin-bottom: 0;
+
+    } 
+
+    .restorante-hero-btn-slider{
+        margin-bottom: 0;
+        position: absolute;
+        right: 600px;
+    }
 }
         
