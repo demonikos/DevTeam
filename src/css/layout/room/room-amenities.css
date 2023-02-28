@@ -66,6 +66,9 @@
   .room-features {
     padding-bottom: 80px;
   }
+  .room-features .container {
+    padding-top: 80px;
+  }
   .container {
     padding-left: 32px;
     padding-right: 32px;

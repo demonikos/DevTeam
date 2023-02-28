@@ -1,9 +1,9 @@
 .hotel-hero.section {
-  padding-top: 118px;
+  padding-top: 40px;
 
   background-color: #F7F7F7;
 }
-.hotel-hero .container {
+.hotel-hero > .container {
   padding-right: 0;
 }
 .container-hotel-title {
@@ -41,14 +41,14 @@
 }
 .hotel-hero-slider {
   width: 355px;
-  overflow: hidden;
-
   margin-bottom: 24px;
+  
+  overflow: hidden;
 }
 .hotel-photo-slider {
-  width: 790px;
   position: relative;
-
+  
+  width: 790px;
   display: flex;
   gap: 20px;
 }
@@ -62,8 +62,9 @@
 }
 .btn-slider {
   padding: 0;
-  border: none;
+
   background-color: transparent;
+  border: none;
   fill: none;
   stroke: var(--dark);
 }
@@ -76,23 +77,27 @@
   line-height: 1.29;
   letter-spacing: 0.05em;
 }
+    /* ------ Mobile ------ */
 
 @media screen and (max-width: 767px) {
   .container {
     max-width: 375px;
   }
 }
+
+    /* ------ Tablet ------ */
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
   .hotel-hero.section {
-    padding-bottom: 120px;
+    padding-bottom: 100px;
   }
-  .hotel-hero .container {
+  .hotel-hero > .container {
     position: relative;
     padding-left: 36px;
-    padding-bottom: 40px;
+    padding-bottom: 48px;
   }
   .container-hotel-title {
     margin-bottom: 54px;
@@ -107,6 +112,7 @@
   }
   .hotel-hero-btn {
     padding: 8px 24px;
+
     line-height: 1.33;
   }
   .hotel-hero-slider {
@@ -115,7 +121,6 @@
   }
   .hotel-photo-slider {
     width: 1372px;
-
     gap: 32px;
   }
   .container-btn {
@@ -132,6 +137,9 @@
     left: 32px;
   }
 }
+
+    /* ------ Desktop ------ */
+
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
@@ -155,6 +163,7 @@
   }
   .hotel-hero-btn {
     padding: 9px 24px;
+
     font-size: 18px;
     line-height: 1.33;
   }
@@ -166,7 +175,7 @@
     margin-right: 599px;
   }
   .hotel-hero-text {
-    bottom: 0;
+    bottom: 48px;
     left: 32px;
   }
   .hotel-hero-btn:is(:hover, :focus) {

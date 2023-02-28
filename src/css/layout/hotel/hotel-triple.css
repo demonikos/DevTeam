@@ -59,7 +59,7 @@
 .hotel-triple-room .room-buttons {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-content: center;
   gap: 12px;
 }
 
@@ -77,7 +77,17 @@
   line-height: calc(18/14); 
   letter-spacing: -0.02em;
   text-transform: uppercase;
+
+  transition: color var(--action-transition),
+              background-color var(--action-transition);
 }
+
+.hotel-triple-room .room-button:is(:hover, :focus) {
+  color: var(--light);
+  background-color: var(--dark);
+}
+
+
 
 /* ============================== MEDIA ============================ */
 
@@ -130,6 +140,11 @@
     width: 299px;
   }
 
+  .hotel-triple-room .room-button {
+    padding: 8px 24px;
+
+    line-height: calc(24/14); 
+  }  
 }
 
 
