@@ -8,6 +8,7 @@
 .restaurant {
     padding-top: 32px;
     padding-bottom: 50px;
+    background-color: var(--light);
 }
 
 .restaurant .title {
