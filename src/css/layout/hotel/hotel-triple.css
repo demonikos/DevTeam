@@ -1,6 +1,6 @@
 
 .hotel-triple-room {
-  background-color: var(--button);
+  background-color: var(--light);
 }
 
  .hotel-triple-room .container {
@@ -77,7 +77,15 @@
   line-height: calc(18/14); 
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  transition: color 300ms var(--action-transition),
+              background-color 300ms var(--action-transition);
 }
+
+.hotel-triple-room .room-button:is(:hover, :focus) {
+  color: var(--light);
+  background-color: var(--dark);
+
+}  
 
 /* ============================== MEDIA ============================ */
 
@@ -95,8 +103,6 @@
    }
 
   .hotel-triple-room .room-photos {
-    flex-wrap: nowrap;
-  
     gap: 32px;
     padding-bottom: 40px;
   }
@@ -107,7 +113,7 @@
   
   .hotel-triple-room .room-photo-2 {
     flex-direction: column;
-    flex-wrap: wrap;
+
     gap: 32px;
   }
 
@@ -137,6 +143,7 @@
   .hotel-triple-room .room-button {
     padding: 8px 24px;
 
+    line-height: calc(24/14); 
 }
 }
 
@@ -177,7 +184,6 @@
   .hotel-triple-room .desktop-positioning {
    display: flex;
    justify-content: space-between;
-   align-items: flex-start;
    flex-direction: row-reverse;
   }
 
