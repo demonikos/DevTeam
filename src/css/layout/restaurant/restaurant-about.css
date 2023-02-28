@@ -64,7 +64,7 @@ letter-spacing: -0.02em;
     .restaurant-about-text-flex{
         order: 3;
         display: flex;
-        gap: 32px;
+        
     }
 
     .restaurant-about-text {
