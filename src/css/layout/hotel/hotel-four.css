@@ -1,6 +1,6 @@
 
 .hotel-four-seater-room {
-  background-color: var(--button);
+  background-color: var(--light);
 }
 
  .hotel-four-seater-room .container {
@@ -103,7 +103,6 @@
    }
 
    .hotel-four-seater-room .room-photos {
-    flex-wrap: nowrap;
     flex-direction: row-reverse;
   
     gap: 32px;
@@ -192,10 +191,6 @@
 
   .hotel-four-seater-room .room-photos {
     padding-bottom: 50px;
-  }
-
-  .hotel-four-seater-room .desktop-positioning {
-   display: block;
   }
 
   .hotel-four-seater-room .room-button {
