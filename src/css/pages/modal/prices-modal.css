@@ -20,16 +20,6 @@
 
 }
 
-.modal-form select option:focus {
-    background-color: violet;
-
-}
-
-.modal-form select option:active,
-.modal-form select option:h {
-    background-color: violet;
-}
-
-.modal-form{
-    gap: 40px;
-}
+/* .modal-form{
+    column-gap: 40px;
+} */
