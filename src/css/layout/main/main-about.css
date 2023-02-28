@@ -54,7 +54,7 @@
   position: relative;
 }
 
-.ab-restaurants-description {
+.ab-restaurant-description {
   margin-top: 54px;
   margin-bottom: 40px;
 }
@@ -119,7 +119,7 @@
   color: var(--button);
 }
 
-.ab-restaurants {
+.ab-restaurant {
   margin-top: 64px;
 }
 
@@ -159,6 +159,33 @@
   .main-about-desription {
     max-width: 472px;
   }
+
+  .ab-restaurant-thumb {
+    max-width: 530px;
+    margin-left: auto;
+  }
+
+  .ab-restaurant-thumb .feedback-block.alexander {
+    bottom: 128px;
+    left: -107px;
+  }
+
+  .ab-restaurant-content-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 32px;
+    max-width: 561px;
+    margin-top: 40px;
+  }
+
+  .ab-restaurant-description {
+    margin-top: 0;
+    max-width: 263px;
+  }
+
+  .ab-restaurant-description .main-about-subtitle {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -169,13 +196,14 @@
 
   .main-about-container {
     max-width: 1440px;
-
     display: flex;
-    align-items: center;
   }
 
-  .main-about-container.ab-restaurants {
+  .main-about-container.ab-restaurant {
+    margin-right: 0;
+    padding-left: 0;
     max-width: 1200px;
+    display: flex;
   }
 
   .ab-hotel-photo-bathroom {
@@ -188,5 +216,19 @@
   .main-about-desription {
     margin-left: auto;
     margin-right: 57px;
+  }
+
+  .ab-restaurant-thumb {
+    order: 2;
+  }
+
+  .ab-restaurant-content-wrap {
+    gap: 54px;
+    margin-top: 127px;
+    max-width: 583px;
+  }
+
+  .ab-restaurant-description {
+    margin-bottom: 0;
   }
 }
