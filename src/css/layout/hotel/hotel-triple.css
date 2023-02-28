@@ -1,6 +1,6 @@
 
 .hotel-triple-room {
-  background-color: var(--light);
+  background-color: var(--button);
 }
 
  .hotel-triple-room .container {
@@ -16,16 +16,16 @@
   padding-bottom: 32px;
 }
 
-.hotel-triple-room .room-photo-2 {
-  display: flex;
-
-  gap: 20px;
-}
-
 .hotel-triple-room .room-photo-1 picture, 
 .hotel-triple-room .room-photo-2 picture {
   width: 100%;
   height: auto;
+}
+
+.hotel-triple-room .room-photo-2 {
+  display: flex;
+
+  gap: 20px;
 }
 
 .hotel-triple-room .room-type {
@@ -34,7 +34,7 @@
   color: var(--dark);
   
   font-family: inherit;
-  font-weight: var(--bold);
+  font-weight: 700;
   font-size: 32px;
   line-height: calc(40/32);
   letter-spacing: -0.02em;
@@ -59,7 +59,7 @@
 .hotel-triple-room .room-buttons {
   display: flex;
   flex-direction: row;
-  align-content: center;
+
   gap: 12px;
 }
 
@@ -78,21 +78,15 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
 
-  transition: color var(--action-transition),
-              background-color var(--action-transition);
-}
-
-.hotel-triple-room .room-button:is(:hover, :focus) {
-  color: var(--light);
-  background-color: var(--dark);
-}
-
-
 
 /* ============================== MEDIA ============================ */
 
 
 @media screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 80px;
+  }
+
   .hotel-triple-room .container {
     padding-left: 32px;
     padding-right: 32px;
@@ -126,7 +120,7 @@
     flex-flow: row;
 
     gap: 32px;
-    padding-bottom: 28px;
+    padding-bottom: 40px;
 
     font-size: 18px;
     line-height: calc(24/18); 
@@ -143,12 +137,13 @@
   .hotel-triple-room .room-button {
     padding: 8px 24px;
 
-    line-height: calc(24/14); 
-  }  
 }
 
 
 @media screen and (min-width: 1440px) {
+  .section {
+    padding-bottom: 100px;
+  }
 
   .hotel-triple-room .container {
     position: relative;
@@ -179,7 +174,7 @@
     padding-bottom: 50px;
   }
 
-  .desktop-positioning {
+  .hotel-triple-room .desktop-positioning {
    display: flex;
    justify-content: space-between;
    align-items: flex-start;
