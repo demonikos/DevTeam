@@ -4,34 +4,33 @@
 
 .header-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 30px;
+  padding: 25px 20px;
+  margin: 0 auto;
 }
 
-
-.header-nav-list {
+.header-nav {
   display: none;
 }
 
 .header-nav-item {
-position: relative;
+  position: relative;
 }
 
 .header-nav-item::after {
-content: '';
-position: absolute;
-left: 0;
-bottom: 0;
-display: none;
-width: 100%;
-height: 100%;
-height: 1px;
-background-color: var(--dark);
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  height: 2px;
+  background-color: var(--dark);
 }
 
-.header-nav-item:is(:hover, :focus) > .header-nav-item::after {
-display: block;
+.header-nav-item:hover::after,
+.header-nav-item:focus::after {
+  display: block;
 }
 
 .header-nav-link {
@@ -63,21 +62,20 @@ display: block;
 }
 /* -------------------------------------------------------- Logo ------------------------------------------------------------------ */
 
-.logo {
-  position: relative;
-  top: 10px;
+.header-logo {
   font-weight: var(--medium);
   font-size: 20px;
   line-height: 1.2;
-
   letter-spacing: 0.18em;
-  text-align: center;
-
   color: var(--dark);
+  text-align: center;
+  margin-left: auto;
 }
 
-.logo-subtitle {
+.header-logo-subtitle {
   display: block;
+  position: relative;
+  top: 3px;
   font-weight: var(--regular);
   font-size: 8px;
   line-height: 1.25;
@@ -93,8 +91,8 @@ display: block;
 }
 
 .header-social-media-link {
-padding-top: 30px;
-padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .social-media-icon {
@@ -103,20 +101,16 @@ padding-bottom: 30px;
 }
 
 .header-social-media-link:is(:hover, :focus) > .social-media-icon {
-fill: var(--dark);
+  fill: var(--dark);
 }
 
 .header-social-media-link:is(:hover, :focus) > .social-media-icon.stroke {
-stroke: var(--white);
+  stroke: var(--white);
 }
-
-
-
-
 
 /* ////////////////////////////////////////////////////// [POP-UP MOBILE MENU] \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
-/* ------------------------------------------------ [Close / Open]  -------------------------------------------- */
+/* ------------------------------------------------ [Close / Open] Tooglers -------------------------------------------- */
 .open-menu-btn {
   background-color: transparent;
   border: transparent;
@@ -124,64 +118,86 @@ stroke: var(--white);
 }
 
 .close-menu-btn {
-display: none;
-background-color: transparent;
-border: none;
-padding: 0;
-stroke: var(--dark);
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }
 
-.burger-icon,
-.close-icon {
+.burger-icon {
   stroke: var(--dark);
 }
-/* ----------------------------------------------------------------------------------------------------------------- */
-.popup-menu {
-  position: fixed;
-  top: 93px;
-  left: 0;
-  width: 100%;
-  height: calc(100% - 93px);
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: var(--dark);
-  padding-top: 128px;
-  padding-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
-  transform: translateX(-100%);
-  transition: transform var(--action-transition);
+
+.close-icon {
+  stroke: var(--white);
 }
 
-/* --------------------------------------- Styles for buttons toogling / hiding ----------------------------------- */
 .popup-menu.open {
   transform: translateX(0);
 }
 
-.open-menu-btn + .popup-menu.open {
-display: none;
-}
-
-.close-menu-btn + .popup-menu.open {
-display: block;
+/* ----------------------------------------------------------------------------------------------------------------- */
+.popup-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark);
+  transform: translateX(-100%);
+  transition: 700ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ------------------------------------------------- POP-UP-MENU NAVIGATION ------------------------------------------------- */
 
+.popup-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 25px;
+  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
+}
+
+.popup-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.popup-logo {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.18em;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--white);
+}
+
+.popup-logo-subtitle {
+  display: block;
+  position: relative;
+  top: 3px;
+  font-weight: var(--regular);
+  font-size: 8px;
+  line-height: 1.25;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
 .popup-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 32px;
   text-align: center;
+  gap: 32px;
+  margin-top: 130px;
 }
 
 .popup-menu-item {
-flex: 10px;
+  gap: 10px;
 }
 
-.popup-menu-link{
+.popup-menu-link {
   color: var(--white);
 }
 
@@ -189,7 +205,8 @@ flex: 10px;
 
 .popup-social-media-list {
   position: absolute;
-  bottom: calc(128px + 20px + 25px);
+  left: 20px;
+  bottom: 20px;
   display: flex;
   gap: 14px;
 }
@@ -198,7 +215,6 @@ flex: 10px;
   stroke: var(--white);
   fill: transparent;
 }
-
 
 /* ////////////////////////////////////////////////// [ADAPTATION FOR DIFFERENT DEVICES] \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
@@ -212,7 +228,6 @@ flex: 10px;
 /* --------------------------------------------------- [TABLET] ---------------------------------------------- */
 @media screen and (min-width: 768px) {
   .header-container {
-    margin: 0 auto;
     max-width: 768px;
   }
 
@@ -221,16 +236,16 @@ flex: 10px;
     gap: 16px;
   }
 
-.popup-social-media-list {
-display: none;
-}
-
+  .popup-social-media-list {
+    display: none;
+  }
 }
 
 /* ---------------------------------------------- [DESKTOP] ----------------------------------------------------- */
 @media screen and (min-width: 1440px) {
   .header-container {
-    max-width: 1440px;
+    min-width: 1406px;
+    justify-content: space-between;
     padding: 30px 30px;
   }
 
@@ -239,7 +254,11 @@ display: none;
   }
 
   .burger-icon {
-  display: none;
+    display: none;
+  }
+
+  .header-nav {
+    display: block;
   }
 
   .header-nav-list {
@@ -247,7 +266,11 @@ display: none;
     gap: 32px;
   }
 
+  .header-logo {
+    margin-left: 0;
+  }
+
   .popup-menu {
-  display: none;
+    display: none;
   }
 }
