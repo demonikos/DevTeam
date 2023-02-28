@@ -1,30 +1,46 @@
-/* .modal-subtitle {
-    font-weight: medium;
-    font-size: 16px;
-    line-height: calc(18 / 16);
+
+.ppr label{
+    width: 100%;
+    position: relative;
+    margin-bottom: 32px;
+
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 12px;
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+
+    color: var(--subtext);
+} 
+
+.ppr select {
+    width: 100%;
+    padding-bottom: 18px;
+    margin-bottom: 8px;
+    appearance: none;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
     letter-spacing: -0.02em;
+    text-transform: uppercase;
+
     color: var(--button);
-    margin-bottom: 24px;
-} */
 
-/* .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0);
-} */
-
-/* .modal-field::placeholder {
-    color: var(--button);
-} */
-
-/* .modal-form select option {
-    background-color: var(--dark);
-} */
-
-/* .modal-form{
-    column-gap: 40px;
-} */
-
-.number-field {
-    margin-bottom: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.8px solid #f7f7f733;
+    outline: none;
 }
 
 
+@media screen and (min-width: 768px){
+    .ppr form{
+        row-gap: 0;
+    }
+    
+    .ppr label{
+        width: calc((100% - 32px)/2);
+    }
+}
