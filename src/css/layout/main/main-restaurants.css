@@ -8,6 +8,7 @@
 .restaurant {
     padding-top: 32px;
     padding-bottom: 50px;
+    background-color: var(--light);
 }
 
 .restaurant .title {
@@ -59,6 +60,14 @@
     background-color: transparent;
 
     cursor: pointer;
+}
+
+.restaurant .button-book-wrap button:hover,
+.restaurant .button-link:hover,
+.restaurant .button-book-wrap button:focus,
+.restaurant .button-link:focus{
+    color: var(--button);
+    background-color: var(--dark);
 }
 
 .restaurant-wrap .text {
