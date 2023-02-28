@@ -80,6 +80,14 @@
   letter-spacing: 0.05em;
 }
 
+.main-hero-text.one {
+  max-width: 338px;
+}
+
+.main-hero-text.two {
+  max-width: 314px;
+}
+
 /* --- adaptive --- */
 
 @media screen and (min-width: 375px) {
@@ -89,8 +97,6 @@
 
   .main-hero-title {
     position: absolute;
-    left: 26px;
-    top: 389px;
   }
 
   .main-hero-btns {
@@ -118,7 +124,6 @@
   }
 
   .hero-content-wrapper {
-    position: relative;
     max-width: 542px;
   }
 
@@ -128,12 +133,9 @@
   }
 
   .main-hero-title {
-    left: 6px;
-    top: 478px;
-
+    
     font-size: 150px;
     line-height: calc(150 / 150);
-    bottom: 82px;
   }
 
   .main-hero-section .main-hero-btn {
