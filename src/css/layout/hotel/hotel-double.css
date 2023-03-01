@@ -89,8 +89,8 @@
   }
   .hotel-double-item:last-child {
     position: absolute;
-    top: 293px;
-    left: 2px;
+    bottom: 0;
+    left: 0;
   }
   .hotel-double-title {
     max-width: 100%;
