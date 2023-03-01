@@ -16,7 +16,7 @@
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   
-  <link rel="stylesheet" href="/devteam/assets/styles-c9670586.css">
+  <link rel="stylesheet" href="/devteam/assets/styles-15c07fd6.css">
 </head>
 
 <body>
@@ -121,10 +121,15 @@
         <h2 class="restaurant-hero-title">
             Restaurant
         </h2>
-        <div class="restaurant-hero-btn">
-            <button type="button" class="btn action-btns restaurant-hero-btn-book-table" data-modal-bt-open>book a table</button>
-            <a href="/restaurant.html#menu" class="btn restorant-wiew-menu-button-link">View a menu</a>
-        </div>
+        <ul class="restaurant-hero-btn">
+            <li>
+                <button type="button" class="btn action-btns restaurant-hero-btn-book-table" data-modal-bt-open>book a table</button>
+            </li>
+            <li><a href="" class="btn restorant-wiew-menu-button-link" data-modal-bt-open>View a menu</a></li>
+            <li>
+                <a href="/restaurant.html#menu" class="btn restorant-wiew-menu-button-link">View a menu</a>
+            </li>
+        </ul>
         <div class="restaurant-hero-slide-pic-container">
             <div class="restaurant-hero-slide-galery restaurant-hero-photo-slider">
                 <picture class="restaurant-hero-picture">
@@ -197,11 +202,24 @@
                     <source
                         srcset="/devteam/assets/rst-hero-img-6-mob@1x-63287e38.jpg 1x, /devteam/assets/rst-hero-img-6-mob@2x-c1bd762e.jpg 2x"
                         media="(max-width: 767px)">
+                    <img src="/devteam/assets/rst-hero-img-6-mob@1x-63287e38.jpg"
+                        alt="restaurant hall">
+                </picture>
+                <picture class="restaurant-hero-picture">
+                    <source
+                        srcset="/devteam/assets/rst-hero-img-1-desk@1x-5c7ff55f.jpg 1x, /devteam/assets/rst-hero-img-1-desk@2x-a281792b.jpg 2x"
+                        media="(min-width: 1440px)">
+                    <source
+                        srcset="/devteam/assets/rst-hero-img-1-tab@1x-6ca95899.jpg 1x, /devteam/assets/rst-hero-img-1-tab@2x-4776cf14.jpg 2x"
+                        media="(min-width: 768px)">
+                    <source
+                        srcset="/devteam/assets/rst-hero-img-1-mob@1x-57224b1d.jpg 1x, /devteam/assets/rst-hero-img-1-mob@2x-cef386a0.jpg 2x"
+                        media="(max-width: 767px)">
                     <img src="/devteam/assets/rst-hero-img-6-mob@1x-63287e38.jpg" loading="lazy" alt="restaurant hall">
                 </picture>
             </div>
         </div>
-            
+
         <div class="restorante-hero-btn-slider">
             <button class="restaurant-hero-button-slide" type="button">
                 <svg class="restaurant-hero-button-svg restaurant-hero-button-left" width="36" height="36">
@@ -214,11 +232,12 @@
                 </svg>
             </button>
         </div>
-        <p class="restaurant-hero-text">Whether you're in the mood for a hearty breakfast, a light lunch, or a romantic dinner, our menu has something for everyone.</p>
+        <p class="restaurant-hero-text">Whether you're in the mood for a hearty breakfast, a light lunch, or a romantic
+            dinner, our menu has something for everyone.</p>
     </div>
-    </section>
-    <script src="/js/restaurant-hero-slider.js"></script>
-    <script src="/js/modal-bt.js"></script>
+</section>
+<script src="/js/restaurant-hero-slider.js"></script>
+<script src="/js/modal-bt.js"></script>
   <section class="section-restaurant-about ">
 <div class="container">
         <h2 class="restaurant-about-title hidden">
