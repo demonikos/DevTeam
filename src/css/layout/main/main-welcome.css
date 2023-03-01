@@ -6,7 +6,7 @@
 }
 
 .section.wellcome-section {
-    background-color: var(--light);
+    background-color: var(--background);
     padding-bottom: 0;
     padding-top: 32px;
     padding-bottom: 32px;
