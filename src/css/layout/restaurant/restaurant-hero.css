@@ -73,6 +73,7 @@ transition: var(--action-transition);
     display: flex;
     position: relative;
     gap: 20px;
+    right: 0;
     transition: all 250ms var(--action-transition);
 }
 
