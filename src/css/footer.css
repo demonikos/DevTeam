@@ -15,10 +15,33 @@
   display: none;
 }
 
+.footer-nav-item {
+position: relative;
+}
+
+.footer-nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  height: 2px;
+  background-color: var(--dark);
+}
+
+.footer-nav-item:hover::after,
+.footer-nav-item:focus::after {
+  display: block;
+}
+
 .footer-nav-link {
   font-weight: var(--medium);
   letter-spacing: 0.02em;
   line-height: 1.5;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .footer-logo {
