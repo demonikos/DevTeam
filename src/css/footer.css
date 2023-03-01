@@ -1,4 +1,8 @@
 .footer {
+  border-bottom: 30px;
+}
+
+.footer-content-wrapper {
   border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
 }
 
@@ -16,7 +20,7 @@
 }
 
 .footer-nav-item {
-position: relative;
+  position: relative;
 }
 
 /* .footer-nav-item::after {
@@ -73,15 +77,14 @@ address {
 }
 
 .footer-social-media-link {
-padding-top: 30px;
-padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .social-media-icon {
   stroke: var(--dark);
   fill: transparent;
 }
-
 
 /* ///////////////////////////////////////|// [ADAPTIVE] \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
@@ -94,23 +97,30 @@ padding-bottom: 30px;
 
 /* ------------------------------------------------- [TABLET] ------------------------------------------------ */
 @media screen and (min-width: 768px) {
+  .footer {
+    padding-bottom: 50px;
+  }
+
   .footer-container {
     max-width: 768px;
   }
 
-.footer-logo {
-margin: 0;
-}
+  .footer-logo {
+    margin: 0;
+  }
 
   .footer-social-media-list {
     display: flex;
     gap: 16px;
   }
-
 }
 
 /* ------------------------------------------------ [DESKTOP] --------------------------------------------------- */
 @media screen and (min-width: 1440px) {
+  .footer {
+    padding-bottom: 80px;
+  }
+
   .footer-container {
     max-width: 1440px;
     padding-left: 32px;
@@ -123,7 +133,7 @@ margin: 0;
   }
 
   address {
-  margin-left: 0;
+    margin-left: 0;
   }
 
   .footer-logo {
@@ -131,7 +141,7 @@ margin: 0;
     margin-left: 370px;
   }
 
-  .footer address{
+  .footer address {
     margin-left: auto;
   }
 }

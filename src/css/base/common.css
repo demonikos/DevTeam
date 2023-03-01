@@ -1,10 +1,46 @@
 /* only for base styles for all pages */
 
-/* @font-face {
-    font-family: Geometria, sans-serif;
-    src: url('/src/uploads/fonts/Geometria.ttf');
+@font-face {
+    font-family: DM Sans, sans-serif;
+    src: url('/src/fonts/DMSans-Regular.ttf');
     font-weight: normal;
-} */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: DM Sans, sans-serif;
+    src: url('/src/fonts/DMSans-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: DM Sans, sans-serif;
+    src: url('/src/fonts/DMSans-Medium.ttf');
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: DM Sans, sans-serif;
+    src: url('/src/fonts/DMSans-MediumItalic.ttf');
+    font-weight: medium;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: DM Sans, sans-serif;
+    src: url('/src/fonts/DMSans-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: DM Sans, sans-serif;
+    src: url('/src/fonts/DMSans-Bold.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
 
 body, button, link, textarea, input {
     font-family: 'DM Sans', sans-serif;
@@ -14,10 +50,6 @@ body, button, link, textarea, input {
 span {
     font-style: italic;
 }
-
-/* .menu-description {
-    font-family: 'Geometria', sans-serif;
-} */
 
 .btn {
     display: flex;
