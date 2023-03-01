@@ -4,11 +4,9 @@
     padding-top: 32px;
 }
 
-
-
-
 .main-hotel-head {
 }
+
 .main-hotel .main-hotel-title {
     margin-bottom: 32px;
 
@@ -35,6 +33,17 @@
 
     color: #F7F7F7;
 }
+
+.central-picture .pic{
+}
+
+.central-picture .responsive img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+
 .main-hotel .hotel-photo-wrap .first-column{
     display: none;
 }
@@ -45,8 +54,6 @@
     overflow: hidden;
     margin-bottom: 40px;
 }
-
-
 
 .main-hotel .hotels-gallery .photo-slider{
     margin-top: 27px;
@@ -153,4 +160,6 @@
     top: 0;
     right: 32px;
     }
+
+    
 }
