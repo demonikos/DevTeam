@@ -1,11 +1,11 @@
 {
-  "name": "devteam",
+  "name": "DevTeam",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/devteam/",
+    "build": "vite build --base=/DevTeam/",
     "preview": "vite preview"
   },
   "devDependencies": {
