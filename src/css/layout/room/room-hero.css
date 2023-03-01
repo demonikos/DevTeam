@@ -1,6 +1,8 @@
 .room-hero {
-  background-color: var(--button);
+  background-color: #f7f7f7;
+  padding-top: 40px;
 }
+
 .room-hero-title {
   font-weight: var(--regular);
   font-size: 40px;
@@ -47,10 +49,6 @@
   transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.room-hero > .container {
-  padding-top: 40px;
-}
-
 .room-hero .button-wrap {
   width: 104px;
   display: flex;
@@ -81,14 +79,14 @@
     gap: 32px;
   }
   .room-hero .button-wrap {
-    margin-bottom: 76px;
+    margin-bottom: 0;
   }
 
   .room-hero {
     position: relative;
   }
   .room-hero {
-    padding-bottom: 80px;
+    padding-bottom: 156px;
   }
 
   .room-hero-description {
@@ -100,12 +98,13 @@
 /* ------------------------------1440 Breakpoint----------------------- */
 @media screen and (min-width: 1440px) {
   .room-hero {
-    padding-bottom: 0;
-  }
-  .room-hero > .container {
-    padding: 30px 32px;
+    padding-top: 30px;
     padding-bottom: 48px;
     position: relative;
+  }
+  .room-hero > .container {
+    padding-left: 32px;
+    padding-right: 0;
   }
   .room-hero-title {
     font-size: 80px;

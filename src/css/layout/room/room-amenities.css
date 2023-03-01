@@ -1,9 +1,8 @@
 .room-features {
   background-color: var(--dark);
-}
-.room-features .container {
   padding-top: 40px;
 }
+
 .room-features-list {
   color: var(--light);
   margin-bottom: 64px;
@@ -23,7 +22,7 @@
 
 .room-features-sublist {
   list-style: disc;
-  margin-left: 18px;
+  padding-left: 17px;
   font-weight: var(--regular);
   font-size: 14px;
   line-height: 1.29;
@@ -64,10 +63,8 @@
 /* -------------------------breakpoint 768px------------------------- */
 @media screen and (min-width: 768px) {
   .room-features {
-    padding-bottom: 80px;
-  }
-  .room-features .container {
     padding-top: 80px;
+    padding-bottom: 80px;
   }
   .container {
     padding-left: 32px;
@@ -80,9 +77,9 @@
   }
 
   .room-features-sublist {
+    padding-left: 23px;
     font-size: 18px;
     line-height: 1.33;
-    margin-left: 25px;
   }
 
   .room-features-bottom-box-lower-img {
@@ -106,12 +103,11 @@
 /* -------------------------breakpoint 768px------------------------- */
 @media screen and (min-width: 1440px) {
   .room-features {
-    padding-bottom: 0;
+    padding-top: 94px;
+    padding-bottom: 616px;
   }
   .room-features .container {
     position: relative;
-    padding-top: 94px;
-    padding-bottom: 616px;
   }
 
   .room-features-list {
@@ -143,7 +139,7 @@
     position: absolute;
     width: 848px;
     right: 32px;
-    top: 906px;
+    top: 790px;
   }
 
   .btn.btn-features {
