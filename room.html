@@ -20,57 +20,55 @@
       referrerpolicy="no-referrer"
     />
     
-    <link rel="stylesheet" href="/devteam/assets/styles-b9a76676.css">
+    <link rel="stylesheet" href="/devteam/assets/styles-58cc2fa1.css">
   </head>
 
   <body>
-        <header class="header">
-      <div class="header-container">
+        <header class="header" id="header">
+      <div class="header-container container">
+        <button type="button" class="menu-btn">
+          <svg class="menu-icon" id="menu-icon">
+            <use href="../img/icons.svg#burger-icon" class="burger-icon" id="burger-icon"></use>
+            <use href="/devteam/assets/icons-507e338c.svg#close-icon" class="cross-icon" id="cross-icon"></use>
+          </svg>
+        </button>
         <nav class="header-nav">
-          <button type="button" class="open-menu-btn">
-            <svg class="burger-icon" width="28" height="28">
-              <use href="../img/icons.svg#burger-icon"></use>
-            </svg>
-          </button>
-          <button type="button" class="close-menu-btn">
-            <svg class="close-icon" width="28" height="28">
-              <use href="../img/icons.svg#close-icon"></use>
-            </svg>
-          </button>
-          <ul class="header-nav-list">
-            <li class="header-nav-item">
-              <a href="./index.html" class="link header-nav-link">Home</a>
+          <ul class="header-nav-list" id="header-nav-list">
+            <li id="home" class="header-nav-item">
+              <a href="../index.html"  class="link header-nav-link ">Home</a>
             </li>
-            <li class="header-nav-item">
-              <a href="./hotel.html" class="link header-nav-link">Hotel</a>
+            <li id="hotel" class="header-nav-item">
+              <a href="../hotel.html"   class="link header-nav-link">Hotel</a>
             </li>
-            <li class="header-nav-item">
-              <a href="./restaurant.html" class="link header-nav-link">Restaurant</a>
+            <li id="restaurant" class="header-nav-item">
+            
+          <a href="./restaurant.html" class="link header-nav-link">Restaurant</a>
+
             </li>
           </ul>
         </nav>
-        <a class="link header-logo" href="../index.html">
+        <a class="link header-logo" id="header-logo" href="../index.html">
           Mimino <span class="header-logo-subtitle">restaurant-hotel complex</span>
         </a>
         <address>
           <ul class="header-social-media-list">
             <li class="header-social-media-item">
-              <a href="" class="header-social-media-link">
-                <svg class="social-media-icon stroke" width="24" height="24">
+              <a href="https://www.instagram.com/" class="header-social-media-link" target="_blank">
+                <svg class="social-media-icon" id="soc-med-icon-inst" width="24" height="24">
                   <use href="../img/icons.svg#instagram-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="header-social-media-item">
-              <a href="" class="header-social-media-link">
-                <svg class="social-media-icon" width="24" height="24">
+              <a href="https://www.facebook.com/" class="header-social-media-link" target="_blank">
+                <svg class="social-media-icon" id="soc-med-icon-fb" width="24" height="24">
                   <use href="../img/icons.svg#facebook-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="header-social-media-item">
-              <a href="" class="header-social-media-link">
-                <svg class="social-media-icon" width="24" height="24">
+              <a href="https://twitter.com/" class="header-social-media-link" target="_blank">
+                <svg class="social-media-icon" id="soc-med-icon-twitter" width="24" height="24">
                   <use href="../img/icons.svg#twitter-icon"></use>
                 </svg>
               </a>
@@ -79,46 +77,49 @@
         </address>
       </div>
       <!-- ////////////////////////////// POP UP MENU \\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="popup-menu">
-        <nav class="popup-nav">
-          <ul class="popup-menu-list">
-            <li class="popup-menu-item">
-              <a href="../index.html" class="link popup-menu-link">Home</a>
+      <div class="popup-menu" id="popup-menu">
+        <div class="container">
+          <nav class="popup-nav">
+            <ul class="popup-menu-list">
+              <li class="popup-menu-item">
+                <a href="../index.html" class="link popup-menu-link">Home</a>
+              </li>
+              <li class="popup-menu-item">
+                <a href="../hotel.html" class="link popup-menu-link">Hotel</a>
+              </li>
+              <li class="popup-menu-item">
+                <a href="../restaurant.html" class="link popup-menu-link">Restaurant</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="popup-social-media-list">
+            <li class="popup-social-media-item">
+              <a href="https://www.instagram.com/" class="popup-social-media-link" target="_blank">
+                <svg class="social-media-icon" width="24" height="24">
+                  <use href="../img/icons.svg#instagram-icon"></use>
+                </svg>
+              </a>
             </li>
-            <li class="popup-menu-item">
-              <a href="../hotel.html" class="link popup-menu-link">Hotel</a>
+            <li class="popup-social-media-item">
+              <a href="https://www.facebook.com/" class="popup-social-media-link" target="_blank">
+                <svg class="social-media-icon" width="24" height="24">
+                  <use href="../img/icons.svg#facebook-icon"></use>
+                </svg>
+              </a>
             </li>
-            <li class="popup-menu-item">
-              <a href="../restaurant.html" class="link popup-menu-link">Restaurant</a>
+            <li class="popup-social-media-item">
+              <a href="https://twitter.com/" class="popup-social-media-link" target="_blank">
+                <svg class="social-media-icon" width="24" height="24">
+                  <use href="../img/icons.svg#twitter-icon"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="popup-social-media-list">
-          <li class="popup-social-media-item">
-            <a href="" class="popup-social-media-link">
-              <svg class="social-media-icon" width="24" height="24">
-                <use href="../img/icons.svg#instagram-icon"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="popup-social-media-item">
-            <a href="" class="popup-social-media-link">
-              <svg class="social-media-icon" width="24" height="24">
-                <use href="../img/icons.svg#facebook-icon"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="popup-social-media-item">
-            <a href="" class="popup-social-media-link">
-              <svg class="social-media-icon" width="24" height="24">
-                <use href="../img/icons.svg#twitter-icon"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
+    
     <section class="room-hero">
   <div class="container">
     <h1 class="room-hero-title">
@@ -389,7 +390,7 @@
 </section>
 
     <footer class="footer">
-  <div class="footer-container">
+  <div class="footer-container container">
     <nav class="footer-nav">
       <ul class="footer-nav-list">
         <li class="footer-nav-item">
@@ -411,21 +412,21 @@
     <address>
       <ul class="footer-social-media-list">
         <li class="footer-social-media-item">
-          <a href="" class="footer-social-media-link">
+          <a href="https://www.instagram.com/" class="footer-social-media-link" target="_blank">
             <svg class="social-media-icon" width="24" height="24">
               <use href="../img/icons.svg#instagram-icon"></use>
             </svg>
           </a>
         </li>
         <li class="footer-social-media-item">
-          <a href="" class="header-social-media-link">
+          <a href="https://www.facebook.com/" class="header-social-media-link" target="_blank">
             <svg class="social-media-icon" width="24" height="24">
               <use href="../img/icons.svg#facebook-icon"></use>
             </svg>
           </a>
         </li>
         <li class="footer-social-media-item">
-          <a href="" class="footer-social-media-link">
+          <a href="https://twitter.com/" class="footer-social-media-link" target="_blank">
             <svg class="social-media-icon" width="24" height="24">
               <use href="../img/icons.svg#twitter-icon"></use>
             </svg>
@@ -632,6 +633,14 @@
     <script src="./js/modal-br.js"></script>
     <script src="./js/modal-bt.js"></script>
     <script src="./js/modal-ppr.js"></script>
+
+    <script src="./js/adapt-gallery.js"></script>
+
+    <script src="../js/header.js"></script>
+
+    <script src="./js/mobile-menu.js"></script>
+
     <script src="./js/room-gallery.js"></script>
+
   </body>
 </html>
