@@ -194,8 +194,8 @@
   }
 
   .position-buttons-wrapper {
-  bottom: 10.5%;
-  right: -53%;
+    bottom: 10.5%;
+    right: -53%;
   }
 
   .hero-content-wrapper {
@@ -204,8 +204,11 @@
   }
 
   .main-hero-desc {
+    width: 684px;
+
     margin-top: 0;
     margin-left: 0;
+    margin-right: auto;
 
     margin-bottom: 48px;
   }
