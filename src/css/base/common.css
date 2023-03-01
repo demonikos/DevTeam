@@ -58,7 +58,7 @@ span {
     font-family: inherit;
     font-weight: normal;
     letter-spacing: -0.02em;
-    border: 0.8px solid var(--button);
+    border: 0.8px solid var(--light);
     border-radius: 32px;
 }
 
