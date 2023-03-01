@@ -1,12 +1,12 @@
 /* only for base styles for all pages */
 
-@font-face {
+/* @font-face {
     font-family: Geometria, sans-serif;
     src: url('/src/uploads/fonts/Geometria.ttf');
     font-weight: normal;
-}
+} */
 
-body {
+body, button, link, textarea, input {
     font-family: 'DM Sans', sans-serif;
     text-transform: uppercase;
 }
@@ -15,9 +15,9 @@ span {
     font-style: italic;
 }
 
-.menu-description {
+/* .menu-description {
     font-family: 'Geometria', sans-serif;
-}
+} */
 
 .btn {
     display: flex;
@@ -43,4 +43,8 @@ span {
 
 .h2 {
     font-weight: bold;
+}
+
+button{
+    cursor: pointer;
 }

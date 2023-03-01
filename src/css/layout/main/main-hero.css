@@ -1,6 +1,9 @@
+/*  --- section - container --- */
+
 .main-hero-section {
   padding-top: 40px;
   padding-bottom: 40px;
+
   margin-left: auto;
   margin-right: auto;
 
@@ -13,29 +16,44 @@
   );
 }
 
-.main-hero-img {
-  margin-right: auto;
-  margin-left: auto;
+.main-hero-container {
+  width: 100%;
+  max-width: 375px;
 }
 
+.image-origin {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- main-hero-content --- */
+
 .main-hero-btns {
+  margin-top: 24px;
   display: flex;
   justify-content: center;
   gap: 14px;
-  margin-bottom: 66px;
 }
 
-.main-hero-btn {
+.main-hero-section .main-hero-btn {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 18px;
   padding-right: 18px;
+
+  background-color: transparent;
+  color: inherit;
+  font-weight: var(--regular);
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
 .main-hero-title {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 24px;
 
   text-align: center;
 
@@ -46,14 +64,13 @@
 }
 
 .main-hero-desc {
+  margin-top: 66px;
   display: flex;
   flex-direction: column;
   gap: 32px;
 
   margin-left: auto;
   margin-right: auto;
-
-  max-width: 335px;
 }
 
 .main-hero-text {
@@ -63,11 +80,138 @@
   letter-spacing: 0.05em;
 }
 
-@media screen and (max-width: 1440px) {
-}
-
-@media screen and (max-width: 768px) {
-}
+/* --- adaptive --- */
 
 @media screen and (min-width: 375px) {
+  .hero-content-wrapper {
+    position: relative;
+  }
+
+  .main-hero-title {
+    position: absolute;
+    left: 26px;
+    top: 389px;
+  }
+
+  .main-hero-btns {
+    margin-top: 54px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-hero-section {
+    padding-top: 50px;
+    padding-bottom: 38px;
+  }
+
+  .main-hero-container {
+    max-width: 768px;
+
+    padding-left: 32px;
+    padding-right: 32px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-content-wrapper {
+    position: relative;
+    max-width: 542px;
+  }
+
+  .hero-img-thumb {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .main-hero-title {
+    left: 6px;
+    top: 478px;
+
+    font-size: 150px;
+    line-height: calc(150 / 150);
+    bottom: 82px;
+  }
+
+  .main-hero-section .main-hero-btn {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .position-buttons-wrapper {
+    position: absolute;
+    left: 121px;
+    bottom: 10px;
+  }
+
+  .main-hero-btns {
+    margin-top: 0;
+  }
+
+  .main-hero-desc {
+    margin-top: 76px;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .main-hero-text-one {
+    max-width: 338px;
+  }
+
+  .main-hero-text-two {
+    max-width: 314px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-hero-section {
+    padding-top: 0;
+    padding-bottom: 0px;
+  }
+
+  .container.main-hero-container {
+    max-width: 1440px;
+    padding-right: 0;
+    display: flex;
+  }
+
+  .main-hero-container {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: end;
+
+    position: relative;
+  }
+
+  .main-hero-title {
+    font-size: 180px;
+    line-height: calc(180 / 180);
+
+    top: 196px;
+    left: 32px;
+  }
+
+  .position-buttons-wrapper {
+  bottom: 78px;
+  right: -53%;
+  }
+
+  .hero-content-wrapper {
+    position: static;
+    height: 100%;
+  }
+
+  .main-hero-desc {
+    margin-top: 0;
+    margin-left: 0;
+
+    margin-bottom: 48px;
+  }
+
+  .main-hero-btns {
+    margin-top: 0;
+  }
 }

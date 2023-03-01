@@ -4,8 +4,9 @@
     --white: #ffffff;
     --button: #f7f7f7;
     --background: #D8D8D8;
+    --subtext:#d8d7d7d8;
     --regular: font-weight:400;
     --medium: font-weight:500;
     --bold: font-weight:700;
-    --action-transition: 300ms, cubic-bezier(.17, .67, .77, .32);
+    --action-transition:cubic-bezier(0.4, 0, 0.2, 1);
 }   

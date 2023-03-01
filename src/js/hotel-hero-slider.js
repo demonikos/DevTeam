@@ -1,20 +1,20 @@
 let offset = 0;
-const photoSlider = document.querySelector('.photo-slider');
-let viewportWidth = document.body.clientWidth;
-const buttonRight = document.querySelector('.button-right');
-const buttonLeft = document.querySelector('.button-left');
+const photoSlider = document.querySelector('.hotel-photo-slider');
+const viewportWidth = document.body.clientWidth;
+const buttonLeft = document.querySelector('.hotel-btn-left');
+const buttonRight = document.querySelector('.hotel-btn-right');
 
 if (viewportWidth >= 1440) {
   buttonRight.addEventListener('click', function () {
-    offset = offset + 298;
-    if (offset > 1490) {
-      offset = 0;
+    offset = offset + 468;
+    if (offset > 936) {
+      offset = 936;
     }
     photoSlider.style.right = offset + 'px';
   });
 
   buttonLeft.addEventListener('click', function () {
-    offset = offset - 298;
+    offset = offset - 468;
     if (offset < 0) {
       offset = 0;
     }
@@ -22,14 +22,14 @@ if (viewportWidth >= 1440) {
   });
 } else if (viewportWidth >= 768) {
   buttonRight.addEventListener('click', function () {
-    offset = offset + 368;
-    if (offset > 368*5) {
-      offset = 0;
+    offset = offset + 468;
+    if (offset > 936) {
+      offset = 936;
     }
     photoSlider.style.right = offset + 'px';
   });
   buttonLeft.addEventListener('click', function () {
-    offset = offset - 368;
+    offset = offset - 468;
     if (offset < 0) {
       offset = 0;
     }
@@ -37,14 +37,14 @@ if (viewportWidth >= 1440) {
   });
 } else {
   buttonRight.addEventListener('click', function () {
-    offset = offset + 177;
-    if (offset > 177*5) {
-      offset = 0;
+    offset = offset + 270;
+    if (offset > 540) {
+      offset = 540;
     }
     photoSlider.style.right = offset + 'px';
   });
   buttonLeft.addEventListener('click', function () {
-    offset = offset - 177;
+    offset = offset - 270;
     if (offset < 0) {
       offset = 0;
     }

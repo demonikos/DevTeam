@@ -44,7 +44,7 @@
     padding-top: 40px;
     padding-bottom: 64px;
     text-transform: none;
-    background: #121212;
+    background: var(--dark);
 }
 
 .menu h2{
@@ -55,7 +55,7 @@
     line-height: 1.25;
     letter-spacing: -0.02em;
     
-    color: #F7F7F7;
+    color: var(--button);
 }
 
 .menu .menu-category{
@@ -63,6 +63,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     row-gap: 56px;
+
+    margin-bottom: 0;
 }
 
 .menu .menu-category .menu-category-item{
@@ -78,7 +80,7 @@
     line-height: 1.3333;
     letter-spacing: -0.02em;
 
-    color: #F7F7F7;
+    color: var(--button);
 }
 
 .menu .menu-category>.menu-category-item .item{
@@ -102,7 +104,7 @@
     line-height: 1.2857;
     letter-spacing: -0.02em;
 
-    color: #F7F7F7;
+    color: var(--button);
 }
 
 .menu .menu-category .menu-category-item>ul .marked-text::before{
@@ -116,7 +118,7 @@
     width: 4.5px;
     height: 4.5px;
 
-    background-color: #F7F7F7;
+    background-color:var(--button);
     border-radius: 50%;
 
     transform: translateY(-50%);
@@ -135,7 +137,7 @@
     line-height: 1.17;
     letter-spacing: -0.02em;
 
-    color: #D8D7D7;
+    color: var(--background);
 }
 
 .menu .menu-category-item .subtext{
@@ -145,7 +147,7 @@
     letter-spacing: 0.18em;
     font-weight: 400;
 
-    color: rgba(216, 215, 215, 0.5);;
+    color: var(--subtext);
 }
 
 .menu .menu-category-item .subtext.hm2{
@@ -174,7 +176,7 @@
     line-height: 1.2857;
     letter-spacing: -0.02em;
 
-    color: #F7F7F7;
+    color: var(--button);
 }
 
 .menu .menu-category-wrap .menu-category-item{
@@ -189,8 +191,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    border-bottom: 1px solid black;
 }
 
 .menu .menu-category-item .menu-category-wrap .marked-text{
@@ -205,7 +205,7 @@
     line-height: 1.2857;
     letter-spacing: -0.02em;
 
-    color: #F7F7F7;
+    color: var(--button);
 }
 
 .menu .menu-category-item .menu-category-wrap .marked-text::before{
@@ -220,7 +220,7 @@
     height: 4.5px;
 
 
-    background-color:#F7F7F7;
+    background-color:var(--button);
     border-radius: 50%;
 
     transform: translateY(-50%);
@@ -233,22 +233,51 @@
     
 
     letter-spacing: -0.02em;
-    color: #F7F7F7;
+    color:var(--button);
 }
 
 .menu .next-btn,
-.menu .previous-btn{
+.menu .previous-btn {
     text-align: center;
     background-color: transparent;
     border: none;
-    stroke:#F6F6F6;
+    stroke:var(--light);
 }
 
-.menu>.button-wrap{
+.menu .button-wrap{
     margin-top: 32px;
     display: flex;
     justify-content: center;
 }
+
+.menu .previous-btn-icon,
+.menu .next-btn-icon {
+    height: 24px;
+    width: 24px;
+}
+
+.menu .btn.btn-book-a-table {
+    padding-top: 9px;
+    padding-right: 24px;
+    padding-bottom: 9px;
+    padding-left: 24px;
+
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: transparent;
+    color: var(--button);
+}
+
+.menu .btn.btn-book-a-table:hover,
+.menu .btn.btn-book-a-table:focus{
+    background-color: var(--white);
+    color: var(--dark);
+
+}
+    
+
 
 @media screen and (min-width: 768px){
     .container {
@@ -258,6 +287,11 @@
     .menu-container{
         padding-left: 127px;
         padding-right: 127px;
+    }
+
+    .menu {
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 
     .menu h2{
@@ -331,7 +365,7 @@
         height: 4.5px;
     
     
-        background-color:#F7F7F7;
+        background-color:var(--button);
         border-radius: 50%;
     
         transform: translateY(-50%);
@@ -340,6 +374,20 @@
     .menu .menu-category-item .menu-category-wrap .price{
         font-size: 18px;
         line-height: 1.3333;
+    }
+
+    .menu .previous-btn-icon,
+    .menu .next-btn-icon {
+    height: 36px;
+    width: 36px;
+    }
+
+    .menu .btn.btn-book-a-table {
+        margin-left: 0;
+        margin-right: auto;
+    }
+    .menu .button-wrap{
+        margin-top: 24px;
     }
 }
 
@@ -362,12 +410,22 @@
         box-sizing: border-box;
         max-width: 1440px;
     }
+
+    .menu .menu-category{
+        margin-bottom: 50px;
+    }
+
     .menu-container{
         padding-left: 168px;
         padding-right: 168px;
     }
     .menu h2{
         margin-bottom: 100px;
+    }
+
+    .menu {
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     .menu .menu-category{
@@ -381,6 +439,8 @@
     .menu .previous-btn{
         display: none;
     }
+
+    .menu .button-wrap{
+        display: none;
+    }
 }
-
-

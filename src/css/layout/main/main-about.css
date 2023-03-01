@@ -1,0 +1,244 @@
+/* --- section --- */
+
+.main-about-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--light);
+}
+
+.main-about-container {
+  width: 100%;
+  max-width: 375px;
+}
+
+/* --- text-content --- */
+
+.main-about-subtitle {
+  font-weight: var(--regular);
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.18em;
+  color: #484848;
+  margin-top: 32px;
+  margin-bottom: 18px;
+}
+
+.main-about-text {
+  font-weight: var(--medium);
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.02em;
+
+  color: var(--dark);
+}
+
+.main-about-text:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+/* --- img-content --- */
+.image-origin {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.ab-hotel-thumb {
+  margin-top: 20px;
+  position: relative;
+}
+
+.ab-restaurant-thumb {
+  position: relative;
+}
+
+.ab-restaurant-description {
+  margin-top: 54px;
+  margin-bottom: 40px;
+}
+
+/* --- feedback-block --- */
+
+.feedback-block.alexander {
+  position: absolute;
+  left: 0;
+  bottom: -22px;
+}
+
+.feedback-block.maria {
+  position: absolute;
+  top: -42px;
+  right: 0;
+}
+
+.feedback-block {
+  display: flex;
+  width: 212px;
+  background: var(--dark);
+  box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+.author-photo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 14px;
+  margin-right: 12px;
+}
+
+.text-wrap {
+  margin-left: 0;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.author-name {
+  font-weight: var(--medium);
+  font-size: 14px;
+  line-height: calc(14 / 14);
+
+  color: var(--button);
+  text-transform: none;
+  margin-bottom: 7px;
+}
+
+.feedback-text {
+  font-weight: var(--regular);
+  font-size: 12px;
+  line-height: calc(16 / 12);
+
+  color: #575757;
+
+  text-transform: lowercase;
+}
+
+.feedback-text .rating {
+  font-style: normal;
+  color: var(--button);
+}
+
+.ab-restaurant {
+  margin-top: 64px;
+}
+
+/* --- adaptive --- */
+
+@media screen and (min-width: 768px) {
+  .main-about-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .main-about-container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .ab-hotel-photos {
+    position: relative;
+    display: flex;
+
+    max-width: 482px;
+  }
+
+  .ab-hotel-photo-bathroom {
+    position: absolute;
+    right: -222px;
+    top: 209px;
+    bottom: 208px;
+  }
+
+  .ab-hotel-thumb .feedback-block.maria {
+    top: -33px;
+    right: 122px;
+  }
+
+  .main-about-desription {
+    max-width: 472px;
+  }
+
+  .main-about-text {
+    font-size: 18px;
+    line-height: calc(24 / 18);
+  }
+
+  .ab-restaurant-thumb {
+    max-width: 530px;
+    margin-left: auto;
+  }
+
+  .ab-restaurant-thumb .feedback-block.alexander {
+    bottom: 128px;
+    left: -107px;
+  }
+
+  .ab-restaurant-content-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 32px;
+    max-width: 561px;
+    margin-top: 40px;
+  }
+
+  .ab-restaurant-description {
+    margin-top: 0;
+    max-width: 263px;
+  }
+
+  .ab-restaurant-description .main-about-subtitle {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-about-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .main-about-container {
+    max-width: 1440px;
+    display: flex;
+  }
+
+  .main-about-container.ab-restaurant {
+    margin-right: auto;
+    padding-left: 32px;
+    display: flex;
+  }
+
+  .ab-hotel-photo-bathroom {
+    right: -257px;
+  }
+  .ab-hotel-thumb .feedback-block.maria {
+    right: 157px;
+  }
+
+  .main-about-desription {
+    margin-left: auto;
+    margin-right: 57px;
+  }
+
+  .ab-restaurant-thumb {
+    order: 2;
+  }
+
+  .ab-restaurant-content-wrap {
+    margin-left: auto;
+    gap: 54px;
+    margin-top: 127px;
+    max-width: 583px;
+  }
+
+  .ab-restaurant-description {
+    margin-bottom: 0;
+  }
+
+  .ab-restaurant-description .main-about-text {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+  }
+}
