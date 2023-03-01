@@ -28,7 +28,7 @@ line-height: 1;
 
     color: var(--dark);
     border-color: var(--dark);
-    background-color:var(--background);
+    background-color: transparent;
     
     transition: var(--action-transition);
 
@@ -41,8 +41,8 @@ line-height: 1;
     background-color: var(--dark);
 }
 
-.restaurant-hero-btn .action-btns{
-    width: auto;
+.restaurant-hero-btn .action-btns{display: none;}
+    /* width: auto;
     height: 34px;
 
     font-size: 14px;
@@ -53,10 +53,10 @@ line-height: 1;
     padding: 8px 18px;
 color: var(--dark);
 border-color: var(--dark);
-background-color:var(--background);
+background-color: transparent;
 
 transition: var(--action-transition);
-}
+} */
 
 .action-btns:is(:hover, :focus){
     color: var(--background);
@@ -123,33 +123,55 @@ line-height: 1.29;
     }
 
     .restaurant-hero-title{
+        margin-bottom: 32px;
         font-size: 80px;
         line-height: 80px;
     }
+
+    .restaurant-hero-btn{
+        margin-bottom: 54px;
+    }
     
+    .restaurant-hero-slide-pic-container{
+        margin-bottom: 40px;
+    }
+
     .restaurant-hero-slide-galery{
         gap: 20px;
     }
 
     .restaurant-hero-picture {
         width: 436px;
-        height: 548px
+        height: 100%;
     }
-    .action-btns-item .action-btns{
+
+    /* .action-btns-item .action-btns{
+        font-size: 18px;
+        line-height: 1.33;
+        height: 40px;
         padding: 8px 24px;
+    } */
+
+    .restorant-wiew-menu-button-link{
+        font-size: 18px;
+        line-height: 1.33;
+        height: 40px;
+        padding: 8px 24px;
+        
     }
 
     .restaurant-hero-container-relative{
-
         position: relative;
     }
-    .restaurant-hero-text{
-        position: absolute;
-        bottom: -32px;
-        left: 32px;
 
+    .restorante-hero-btn-slider{
+        position: absolute;
+        bottom: 40px;
+        right: 36px;
+        margin-bottom: 0;
     }
 }
+
 
 @media screen and (min-width: 1440px){
     .section-restaurant-hero > .container{
@@ -157,7 +179,7 @@ line-height: 1.29;
     }
 
     .section-restaurant-hero{
-     
+        padding-bottom: 48px;
     }
 
 
@@ -168,24 +190,35 @@ line-height: 1.29;
     }
 
     .restaurant-hero-btn{
-        margin-bottom: 204px;
+        margin-bottom: 177px;
     }
 
-    /* .restaurant-hero-slide-pic-container{
+    /* .action-btns-item .action-btns{
+        font-size: 14px;
+        line-height: 1.71;
+        height: 40px;
+        padding: 8px 24px;
+    } */
 
+    .restorant-wiew-menu-button-link{
+        font-size: 14px;
+        line-height: 1.71;
+        height: 42px;
+        padding: 9px 24px;
+    }
+
+    .restaurant-hero-slide-pic-container{
         position: absolute;
-        top: 30px;
+        bottom: 30px;
         right: 0;
         width: 705px;
         margin-left: auto;
         margin-bottom: 0;
-
     } 
 
     .restorante-hero-btn-slider{
-        margin-bottom: 0;
-        position: absolute;
-        right: 600px;
-    } */
+        bottom: -18px;
+        right: 620px;
+    } 
 }
         
