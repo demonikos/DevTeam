@@ -205,9 +205,8 @@
   }
 
   .main-about-container.ab-restaurant {
-    margin-right: 0;
-    padding-left: 0;
-    max-width: 1200px;
+    margin-right: auto;
+    padding-left: 32px;
     display: flex;
   }
 
@@ -228,6 +227,7 @@
   }
 
   .ab-restaurant-content-wrap {
+    margin-left: auto;
     gap: 54px;
     margin-top: 127px;
     max-width: 583px;
