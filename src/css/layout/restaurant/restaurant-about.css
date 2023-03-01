@@ -30,11 +30,11 @@ letter-spacing: -0.02em;
 }
 
 .restaurant-about-text-first{
-    min-width: 349px;
+    max-width: 349px;
     margin-bottom: 24px;
 }
 .restaurant-about-text-second{
-    min-width: 323px;
+    max-width: 323px;
 }
 
 @media screen and (min-width: 768px) {
@@ -42,22 +42,29 @@ letter-spacing: -0.02em;
     .section-restaurant-about > .container{
         max-width: 767px;
     }
+    .section-restaurant-about{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
     
     .restorante-about-container-general{
         flex-direction: row;
         flex-wrap: wrap;
+        gap: 30px;
     }
-   
+    
     .restaurant-about-pic-container-dishes{
         flex-direction: column-reverse;
         gap: 16px;
 
         order: 1;
+        
+        margin-bottom: 0;
+
     }
 
     .restaurant-about-pic-container-cook{
-        margin-left: 32px;
-
+        margin-bottom: 0;
         order: 2;
     }
 
@@ -83,8 +90,14 @@ letter-spacing: -0.02em;
     .section-restaurant-about > .container{
         max-width: 1440px;
     }
+
+    .section-restaurant-about{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
     
     .restorante-about-container-general{
+        position: relative;
         flex-direction: row;
         justify-content: flex-end;
         gap: 32px;
@@ -93,12 +106,10 @@ letter-spacing: -0.02em;
     .restaurant-about-pic-container-cook{
         position: static;
         margin-left: 0;
-        margin-bottom: 0;
         order: 1;
     }
 
     .restaurant-about-pic-container-dishes{
-        position: relative;
         flex-direction: row;
         gap: 32px;
 
@@ -111,9 +122,8 @@ letter-spacing: -0.02em;
 
     .restaurant-about-text-flex{
         position: absolute;
-        
-        transform: translatey(420px);
-
+        bottom: 32px;
+        right: 13px;
 
         order: 3;
     }
@@ -122,11 +132,11 @@ letter-spacing: -0.02em;
         font-weight: 500;
     }
     .restaurant-about-text-first{
-        width: 334px;
+        max-width: 334px;
 
     }
     .restaurant-about-text-second{
-        width: 453px;
+        max-width: 453px;
     }
    
 }
