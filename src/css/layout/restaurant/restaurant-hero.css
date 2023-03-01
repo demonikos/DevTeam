@@ -73,7 +73,7 @@ transition: var(--action-transition);
     display: flex;
     position: relative;
     gap: 20px;
-    transition: var(--action-transition);
+    transition: all 250ms var(--action-transition);
 }
 
 .restaurant-hero-picture{
