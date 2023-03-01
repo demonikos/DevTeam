@@ -1,38 +1,45 @@
-let offset = 0;
-const photoSlider = document.querySelector('.slider-restaurant');
-const viewportWidth = document.body.clientWidth;
-const buttonRight = document.querySelector('.restaurant-gallery .button-right');
-const buttonLeft = document.querySelector('.restaurant-gallery .button-left');
+let categoryItem1 = document.querySelector('#slide1');
+let categoryItem2 = document.querySelector('#slide2');
+let categoryItem3 = document.querySelector('#slide3');
+let categoryItem4 = document.querySelector('#slide4');
 
-if (viewportWidth >= 768) {
-  buttonRight.addEventListener('click', function () {
-    offset = offset + 468;
-    if (offset > 1372) {
-      offset = 0;
-    }
-    photoSlider.style.right = offset + 'px';
-  });
+const btnNext = document.querySelector('.next-btn');
+const btnPrevious = document.querySelector('.previous-btn');
 
-  buttonLeft.addEventListener('click', function () {
-    offset = offset - 468;
-    if (offset < 0) {
-      offset = 0;
+btnNext.addEventListener('click', function () {
+    if (categoryItem1.classList.contains('isopen')) {
+        categoryItem2.classList.toggle('isopen');
+        categoryItem1.classList.toggle('isopen');
     }
-    photoSlider.style.right = offset + 'px';
-  });
-} else {
-  buttonRight.addEventListener('click', function () {
-    offset = offset + 270;
-    if (offset > 540) {
-      offset = 0;
+    else if (categoryItem2.classList.contains('isopen')) {
+        categoryItem3.classList.toggle('isopen');
+        categoryItem2.classList.toggle('isopen');
     }
-    photoSlider.style.right = offset + 'px';
-  });
-  buttonLeft.addEventListener('click', function () {
-    offset = offset - 270;
-    if (offset < 0) {
-      offset = 0;
+    else if (categoryItem3.classList.contains('isopen')) {
+        categoryItem4.classList.toggle('isopen');
+        categoryItem3.classList.toggle('isopen');
     }
-    photoSlider.style.right = offset + 'px';
-  });
-}
+    else {
+        categoryItem4.classList.toggle('isopen');
+        categoryItem1.classList.toggle('isopen');
+    }
+});
+
+btnPrevious.addEventListener('click', function () {
+    if (categoryItem1.classList.contains('isopen')) {
+        categoryItem4.classList.toggle('isopen');
+        categoryItem1.classList.toggle('isopen');
+    }
+    else if (categoryItem2.classList.contains('isopen')) {
+        categoryItem1.classList.toggle('isopen');
+        categoryItem2.classList.toggle('isopen');
+    }
+    else if (categoryItem3.classList.contains('isopen')) {
+        categoryItem2.classList.toggle('isopen');
+        categoryItem3.classList.toggle('isopen');
+    }
+    else {
+        categoryItem4.classList.toggle('isopen');
+        categoryItem3.classList.toggle('isopen');
+    }
+});

@@ -4,6 +4,7 @@
     padding: 32px 20px;
 }
 
+
 .main-hotel-title{
     font-weight: 500;
     font-size: 40px;
@@ -13,14 +14,13 @@
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.main-hotel-details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container.main-hotel-details{
+    padding: 0;
+    max-width: 335px;
 }
 .maine-hotel-head{
     display: block;
-    width: 420px;
+    
 }
 
 .main-hotel-about {
@@ -30,31 +30,8 @@
     letter-spacing: -0.02em;
     color: #F7F7F7;
     padding-bottom: 32px;
-
 }
 
-.main-slider {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.main-slider-item{
-    display: flex;
-    justify-content: center;
-    /* width: 158px;
-    height: 128px;
-    border: solid 1px; */
-}
-.slider-back, .slider-up{
-    width: 1px;
-    height: 1px;
-    color: #F7F7F7;
-    border: solid 1px;
-}
-.main-btn-slider{
-    display: flex;
-}
 .main-btn-room{
     display: flex;
     justify-content: center;
@@ -62,27 +39,85 @@
     gap: 16px;
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px){
+/* слайдер */
+
+.main-button-scroll .next-btn,
+.main-button-scroll .previous-btn {
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    stroke: #F6F6F6;
+}
+/* .main-hotel-scroll{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 56px;
+} */
+
+/* .container>.main-button-scroll {
+    display: flex;
+    justify-content: left;
+} */
+/* .slide1, .slide2, .slide3, .slide4{
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+opacity: 0;
+transition: all 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+} */
+
+/* .main-hotel-scroll.isopen {
+    position: static;
+    width: inherit;
+    height: inherit;
+    margin: inherit;
+    border: unset;
+    padding: unset;
+    white-space: unset;
+    clip-path: unset;
+    clip: unset;
+    overflow: unset;
+    opacity: 1;
+} */
 .main-photo-colum {
         display: none;
-
     }
+
+@media screen and (min-width: 375px) and (max-width: 767px){
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+
+@media screen and (min-width: 768px) {
     .main-hotel-details{
         align-items:center;
         justify-content: center;
-
     }
+
+    .container.main-hotel-details {
+        max-width: 704px;
+    }
+
+    .container.main-photo-album{
+        display: flex;
+        justify-content: center;
+    }
+
     .maine-hotel-head {
         display: flex;
-        align-items: center;
-        width: 100%;
+        align-items: center;        
         gap: 32px;
         padding-bottom: 80px;
     }
+
     .left-colum {
         order: 1;
         width: 176px;
@@ -91,7 +126,7 @@
     .big {
         width: 320px;
         order: 2;
-        /* flex-shrink: 1; */
+       
     }
 
     .right-colum {
@@ -100,21 +135,20 @@
     }
 
     .main-photo-album {
-        width: 704px;
+        min-width: 704px;
         display: flex;
         flex-wrap: wrap;
         gap: 16px;
-        /* align-content: space-between; */
     }
 
     .main-photo-album {
         display: flex;
         flex-wrap: nowrap;
-        /* justify-content: center; */
-        /* align-content: center; */
     }
+
     .main-hotel{
-        padding: 44px 32px;
+        padding: 32px;
+        padding-bottom: 0;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -123,34 +157,63 @@
     .main-photo-colum {
         display: block;
     }
+
     .main-hotel-title{
-        font-weight: 500;
         font-size: 68px;
         line-height: 1;
         padding-top: 0;
+        padding-bottom: 0;
     }
     
     .item-colum {
         padding-bottom: 16px;
     }
     .main-btn-room{
-        padding-top: 40px;
+        padding-top: 90px;
         padding-bottom: 44px;
     }
     .main-hotel-about{
         padding: 0;
     }
+    .main-button-scroll{
+        display: none;
+    }
+    /* .slide1,
+    .slide2,
+    .slide3,
+    .slide4 {
+        position: static;
+        width: inherit;
+        height: inherit;
+        margin: inherit;
+        border: unset;
+        white-space: unset;
+        clip-path: unset;
+        clip: unset;
+        overflow: unset;
+        opacity: 1;
+    } */
 }
 
 @media screen and (min-width: 1440px){
-    .main-photo-album{
-        gap: 28px;
+
+    .container.main-hotel-details{
+        max-width: 1440px;        
+    } 
+
+    .container.main-photo-album{
         min-width: 1124px;
         display: flex;
-        /* flex-direction: column;
-        align-items: center; */
+        justify-content: center;
     }
 
+    .main-photo-album{
+        gap: 28px;        
+        max-width: 1124px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
 
     .left-colum {
         width: 320px;
@@ -167,25 +230,21 @@
         width: 320px;
         order: 3;
     }
-   
+
     .item-colum {
         padding-bottom: 28px;
     }
     
     .maine-hotel-head {
         display: flex;
-        width: 550px;
+        min-width: 100%;
         gap: 32px;
         padding-bottom: 80px;
     }
 
-    /* .main-hotel{
-        display: flex;
-        justify-content: center;        
-    } */
-
     .main-hotel-details{
         position: relative;
+        justify-content: center;   
     }
 
     .main-hotel-details > .main-btn-room {
@@ -193,13 +252,37 @@
         top: 0;
         right: 0;
     }
+
     .main-btn-room{
         padding: 0;
     }
     
     .main-hotel-title{
         padding-top: 0;
+        font-size: 68px;
+        line-height: 1.0;
     }
-    
-}
+    .main-hotel-about{
+        max-width: 362px;
+    }
 
+    .main-button-scroll {
+        display: none;
+    }
+
+    /* .slide1,
+    .slide2,
+    .slide3,
+    .slide4{
+        position: static;
+        width: inherit;
+        height: inherit;
+        margin: inherit;
+        border: unset;
+        white-space: unset;
+        clip-path: unset;
+        clip: unset;
+        overflow: unset;    
+        opacity: 1;
+    } */  
+}
