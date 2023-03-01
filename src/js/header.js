@@ -8,7 +8,7 @@ const headerNavList = document.getElementById('header-nav-list');
 const header = document.getElementById('header');
 const menuIcon = document.getElementById('menu-icon');
 const popMenu = document.getElementById('popup-menu'); 
-const popLink = document.querySelectorAll('.popup-menu-link');
+const popLink = document.querySelectorAll('.ps');
 
 if (currentPage.includes('index')){
     document.getElementById('home').classList.add('active');
