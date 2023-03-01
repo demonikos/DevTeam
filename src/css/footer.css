@@ -103,7 +103,6 @@ stroke: var(--white);
 @media screen and (min-width: 768px) {
   .footer-container {
     max-width: 768px;
-    justify-content: space-between;
   }
 
 .footer-logo {
@@ -120,9 +119,9 @@ margin: 0;
 /* ------------------------------------------------ [DESKTOP] --------------------------------------------------- */
 @media screen and (min-width: 1440px) {
   .footer-container {
-    max-width: 1406px;
-    justify-content: space-between;
-  
+    max-width: 1440px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .footer-nav-list {
@@ -136,6 +135,10 @@ margin: 0;
 
   .footer-logo {
     text-align: center;
+    margin-left: 370px;
   }
 
+  .footer address{
+    margin-left: auto;
+  }
 }

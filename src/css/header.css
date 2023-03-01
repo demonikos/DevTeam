@@ -1,11 +1,20 @@
 .header {
   border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
+  height: 78px;
+  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
+  background-color: var(--dark);
 }
+
 
 .header-container {
   display: flex;
-  padding: 25px 20px;
   margin: 0 auto;
+  height: 100%;
+  align-items: center;
+}
+
+.header.secondary{
+  background-color: #fff;
 }
 
 .header-nav {
@@ -16,6 +25,13 @@
   position: relative;
 }
 
+.header-nav-list.secondary{
+  color: var(--dark);
+}
+
+.header-nav-item.active.secondary::after{
+  background-color: var(--dark);
+}
 .header-nav-item::after {
   content: "";
   position: absolute;
@@ -44,7 +60,7 @@
 
 /* ----------------------------------------------- Active page marker -----------------------------------------------------------*/
 
-.header-nav-item.active {
+/* .header-nav-item.active {
   position: relative;
 }
 
@@ -54,22 +70,26 @@
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background-color: var(--background);
+  background-color: var(--dark);
   position: absolute;
   bottom: -6px;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 /* -------------------------------------------------------- Logo ------------------------------------------------------------------ */
 
 .header-logo {
   font-weight: var(--medium);
-  font-size: 20px;
-  line-height: 1.2;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.57;
+
+
   letter-spacing: 0.18em;
-  color: var(--dark);
+  color: var(--light);
   text-align: center;
-  margin-left: auto;
+  margin-left: 83px;
 }
 
 .header-logo-subtitle {
@@ -77,8 +97,10 @@
   position: relative;
   top: 3px;
   font-weight: var(--regular);
-  font-size: 8px;
-  line-height: 1.25;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 8px;
 
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -96,7 +118,7 @@
 }
 
 .social-media-icon {
-  stroke: var(--dark);
+  stroke: var(--light);
   fill: transparent;
 }
 
@@ -111,24 +133,22 @@
 /* ////////////////////////////////////////////////////// [POP-UP MOBILE MENU] \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 /* ------------------------------------------------ [Close / Open] Tooglers -------------------------------------------- */
-.open-menu-btn {
-  background-color: transparent;
-  border: transparent;
-  padding: 0;
-}
 
-.close-menu-btn {
+.menu-btn{
   background-color: transparent;
   border: none;
   padding: 0;
 }
 
-.burger-icon {
-  stroke: var(--dark);
+.cross-icon{
+  display: none;
 }
 
-.close-icon {
-  stroke: var(--white);
+.header .menu-icon{
+  display: block;
+  width: 28px;
+  height: 28px;
+  stroke:var(--light);
 }
 
 .popup-menu.open {
@@ -138,7 +158,7 @@
 /* ----------------------------------------------------------------------------------------------------------------- */
 .popup-menu {
   position: fixed;
-  top: 0;
+  top: 78px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -148,6 +168,14 @@
   background-color: var(--dark);
   transform: translateX(-100%);
   transition: 700ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.popup-menu.secondary{
+  background-color: var(--light);
+}
+
+.popup-menu-link.secondary{
+  color: var(--dark);
 }
 
 /* ------------------------------------------------- POP-UP-MENU NAVIGATION ------------------------------------------------- */
@@ -205,8 +233,8 @@
 
 .popup-social-media-list {
   position: absolute;
-  left: 20px;
-  bottom: 20px;
+  left: 30px;
+  bottom: 123px;
   display: flex;
   gap: 14px;
 }
@@ -215,6 +243,20 @@
   stroke: var(--white);
   fill: transparent;
 }
+
+.header .social-media-icon.secondary{
+  stroke:black;
+}
+
+
+.header-logo.secondary{
+  color:var(--dark);
+}
+
+.header .menu-icon.secondary{
+  stroke: var(--dark);
+}
+
 
 /* ////////////////////////////////////////////////// [ADAPTATION FOR DIFFERENT DEVICES] \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
@@ -239,16 +281,116 @@
   .popup-social-media-list {
     display: none;
   }
+
+  .header .social-media-icon {
+    stroke: var(--light);
+    fill: transparent;
+  }
+
+  .header-logo{
+    margin-left: 246px;
+    font-style: normal;
+
+    font-size: 20px;
+    line-height: 1.2;
+
+    letter-spacing: 0.18em;
+  }
+
+  .header .social-media-icon.secondary{
+    stroke:black;
+  }
+
+
+  .header-logo.secondary{
+    color:var(--dark);
+  }
+
+  .header .menu-icon{
+    width: 32px;
+    height: 32px;
+  }
+
+  .header .menu-icon.secondary{
+    stroke: var(--dark);
+  }
+
+
+  .header .popup-menu-link{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.14;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .header-logo-subtitle{
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height, or 125% */
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+
+
+  }
+
 }
 
 /* ---------------------------------------------- [DESKTOP] ----------------------------------------------------- */
 @media screen and (min-width: 1440px) {
-  .header-container {
-    min-width: 1406px;
-    justify-content: space-between;
-    padding: 30px 30px;
+
+  .header {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    left: 50%;
+    background: transparent;
+    height: 78px;
+    border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
+    transform: translateX(-50%);
   }
 
+  .header.secondary{
+    position: static;
+    transform: none;
+    background-color: var(--light);
+  }
+  .header-container {
+    min-width: 1406px;
+    height: 100%;
+    align-items: center;
+
+  }
+
+  .header-nav-item.active {
+    position: relative;
+  }
+  
+  .header-nav-item.active::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--light);
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+
+  .header-nav-item.active.secondary::after{
+    background-color: var(--dark);
+  }
+
+  .header .close-icon{
+    display: none;
+  }
+  
   .open-menu-btn {
     display: none;
   }
@@ -258,16 +400,49 @@
   }
 
   .header-nav {
-    display: block;
+    display: flex;
+
   }
 
   .header-nav-list {
     display: flex;
+    color: var(--light);
     gap: 32px;
+  }
+  .header-nav-list.secondary{
+    color: black;
+  }
+
+  .header-nav-link{
+    color: inherit;
   }
 
   .header-logo {
-    margin-left: 0;
+    margin-left: 370px;
+    color: var(--light);
+  }
+
+  .header-logo.secondary{
+    color: black;
+  }
+
+  .header address{
+    margin-left: auto;
+  }
+
+  .header-social-media-link{
+    color: var(--light);
+  }
+
+  .header .social-media-icon {
+    stroke: var(--light);
+  }
+
+  .header .social-media-icon.secondary{
+    stroke:black;
+  }
+  .menu-btn{
+    display: none;
   }
 
   .popup-menu {
