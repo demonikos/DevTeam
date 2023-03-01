@@ -64,12 +64,12 @@
 .feedback-block.alexander {
   position: absolute;
   left: 0;
-  bottom: -22px;
+  bottom: -7%;
 }
 
 .feedback-block.maria {
   position: absolute;
-  top: -42px;
+  top: -27%;
   right: 0;
 }
 
@@ -146,14 +146,13 @@
 
   .ab-hotel-photo-bathroom {
     position: absolute;
-    right: -222px;
-    top: 209px;
-    bottom: 208px;
+    right: -46%;
+    bottom: 33%;
   }
 
   .ab-hotel-thumb .feedback-block.maria {
-    top: -33px;
-    right: 122px;
+    top: -15%;
+    right: 30%;
   }
 
   .main-about-desription {
@@ -171,8 +170,8 @@
   }
 
   .ab-restaurant-thumb .feedback-block.alexander {
-    bottom: 128px;
-    left: -107px;
+    bottom: 26%;
+    left: -20%;
   }
 
   .ab-restaurant-content-wrap {
@@ -211,10 +210,10 @@
   }
 
   .ab-hotel-photo-bathroom {
-    right: -257px;
+    right: -53%;
   }
   .ab-hotel-thumb .feedback-block.maria {
-    right: 157px;
+    right: 35%;
   }
 
   .main-about-desription {
