@@ -72,8 +72,9 @@
 
 .main-hero-desc {
   margin-top: 66px;
+
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 32px;
 
   margin-left: auto;
@@ -85,6 +86,14 @@
   font-size: 14px;
   line-height: calc(18 / 14);
   letter-spacing: 0.05em;
+}
+
+.mh-txt-one {
+  max-width: 338px;
+}
+
+.mh-txt-two {
+  max-width: 332px;
 }
 
 /* --- adaptive --- */
@@ -111,6 +120,7 @@
 
   .main-hero-desc {
     max-width: 704px;
+    justify-content: space-between;
   }
 }
 
@@ -166,7 +176,7 @@
   }
 
   .main-hero-desc {
-    max-width: 704px;
+    width: 704px;
 
     margin-top: 76px;
     flex-direction: row;
@@ -174,6 +184,7 @@
 
     margin-right: 0;
     margin-left: 0;
+    flex-basis: calc((100% - 32) / 2);
   }
 }
 
@@ -228,11 +239,11 @@
     bottom: 78px;
   }
 
-  .main-hero-btn {
+  .desktop-main-hero-btns .main-hero-btn {
     font-size: 18px;
     line-height: calc(24 / 18);
     padding-top: 9px;
-    padding-left: 9px;
+    padding-bottom: 9px;
     letter-spacing: -0.02em;
   }
 }
