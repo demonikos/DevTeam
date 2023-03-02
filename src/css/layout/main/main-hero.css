@@ -73,7 +73,7 @@
   margin-top: 66px;
 
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 32px;
 
   margin-left: auto;
@@ -88,11 +88,13 @@
 }
 
 .mh-txt-one {
-  max-width: 315px;
+  font-size: small;
+  max-width: 338px;
 }
 
 .mh-txt-two {
-  max-width: 334px;
+  font-size: small;
+  max-width: 314px;
 }
 
 /* --- adaptive --- */
@@ -115,14 +117,6 @@
 
   .main-hero-section .main-hero-btn {
     font-size: 14px;
-  }
-
-  .main-hero-desc {
-    flex-direction: column;
-  }
-
-  .mh-txt-one {
-    min-width: 355px;
   }
 }
 
@@ -178,23 +172,14 @@
   }
 
   .main-hero-desc {
-    width: 720px;
+    max-width: 684px;
 
     margin-top: 76px;
     flex-wrap: nowrap;
     flex-direction: row;
-    gap: 10px;
 
     margin-right: 0;
     margin-left: 0;
-  }
-
-  .mh-txt-one {
-    max-width: 370px;
-  }
-
-  .mh-txt-two {
-    min-width: 336px;
   }
 }
 
@@ -236,19 +221,10 @@
   }
 
   .main-hero-desc {
-    max-width: 730px;
     margin-top: 0;
     margin-left: 0;
     margin-right: auto;
     margin-bottom: 48px;
-  }
-
-  .mh-txt-one  {
-    min-width: 370px;
-  }
-
-  .mh-txt-two {
-    min-width: 338px;
   }
 
   .desktop-main-hero-btns {
