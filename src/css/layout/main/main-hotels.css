@@ -95,6 +95,11 @@
     border-color: var(--light);
     color: var(--light);
 
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 18px;
+    padding-right: 18px;
+
 }
 
 @media screen and (min-width:768px){
@@ -144,7 +149,10 @@
         display: none;
     }
 
-
+.main-hotel .main-btn-room .btn-main-room {
+    padding-left: 24px;
+    padding-right: 24px;
+}
 
 }
 
@@ -170,6 +178,11 @@
     position: absolute;
     top: 0;
     right: 32px;
+    }
+
+    .main-hotel .main-btn-room .btn-main-room {
+        padding-top: 9px;
+        padding-bottom: 9px;
     }
     
 
