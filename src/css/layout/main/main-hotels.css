@@ -35,6 +35,7 @@
 }
 
 .central-picture .pic{
+    display: none;
 }
 
 .central-picture .responsive img{
@@ -135,6 +136,16 @@
         display: none;
     }
 
+    .main-hotel .central-picture .pic{
+        display: inline;
+    }
+
+    .main-hotel .responsive{
+        display: none;
+    }
+
+
+
 }
 
 @media screen and (min-width:1440px){
@@ -160,6 +171,7 @@
     top: 0;
     right: 32px;
     }
+    
 
     
 }
