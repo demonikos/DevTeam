@@ -66,7 +66,7 @@
 .restaurant .button-link:hover,
 .restaurant .button-book-wrap button:focus,
 .restaurant .button-link:focus{
-    color: var(--button);
+    color: var(--light);
     background-color: var(--dark);
 }
 
