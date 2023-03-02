@@ -74,7 +74,7 @@
   margin-top: 66px;
 
   display: flex;
-  flex-wrap: wrap;
+flex-direction: column;
   gap: 32px;
 
   margin-left: auto;
@@ -89,7 +89,8 @@
 }
 
 .mh-txt-one {
-  max-width: 315px;
+  max-width: 358px;
+  text-align: start;
 }
 
 .mh-txt-two {
