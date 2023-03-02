@@ -73,7 +73,7 @@
   margin-top: 66px;
 
   display: flex;
-flex-direction: column;
+  flex-direction: column;
   gap: 32px;
 
   margin-left: auto;
@@ -117,10 +117,6 @@ flex-direction: column;
 
   .main-hero-section .main-hero-btn {
     font-size: 14px;
-  }
-
-  .main-hero-desc {
-    flex-direction: column;
   }
 }
 
@@ -176,7 +172,7 @@ flex-direction: column;
   }
 
   .main-hero-desc {
-    width: 720px;
+    max-width: 684px;
 
     margin-top: 76px;
     flex-wrap: nowrap;
@@ -184,14 +180,6 @@ flex-direction: column;
 
     margin-right: 0;
     margin-left: 0;
-  }
-
-  .mh-txt-one {
-    max-width: 370px;
-  }
-
-  .mh-txt-two {
-    min-width: 336px;
   }
 }
 
@@ -233,13 +221,11 @@ flex-direction: column;
   }
 
   .main-hero-desc {
-
     margin-top: 0;
     margin-left: 0;
     margin-right: auto;
     margin-bottom: 48px;
   }
-
 
   .desktop-main-hero-btns {
     display: flex;
