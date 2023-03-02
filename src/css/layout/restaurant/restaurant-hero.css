@@ -1,6 +1,6 @@
 .section-restaurant-hero{
     padding-top: 40px;
-    background-color: var(--background);
+    background-color: var(--background)
 }
 
 .restaurant-hero-title{
@@ -122,7 +122,6 @@ line-height: 1.29;
 
     .section-restaurant-hero{
         padding-bottom: 40px;
-        background-color: var(--button);
     }
 
     .restaurant-hero-title{
