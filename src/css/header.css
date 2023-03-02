@@ -347,7 +347,7 @@
   .header.secondary{
     position: static;
     transform: none;
-    /* background-color: var(--light); */
+    background-color: var(--white);
   }
   .header-container {
     min-width: 1406px;
