@@ -1,1 +1,0 @@
-importScripts('mobile-menu.js');

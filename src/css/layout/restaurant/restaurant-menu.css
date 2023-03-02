@@ -118,7 +118,7 @@
     width: 4.5px;
     height: 4.5px;
 
-    background-color:var(--background);
+background-color:var(--background);
     border-radius: 50%;
 
     transform: translateY(-50%);
@@ -220,7 +220,7 @@
     height: 4.5px;
 
 
-    background-color:var(--background);
+background-color:var(--background);
     border-radius: 50%;
 
     transform: translateY(-50%);
@@ -254,7 +254,6 @@
 .menu .next-btn-icon {
     height: 24px;
     width: 24px;
-    fill: transparent;
 }
 
 .menu .btn.btn-book-a-table {
@@ -366,7 +365,7 @@
         height: 4.5px;
     
     
-        background-color:var(--background);
+    background-color:var(--background);
         border-radius: 50%;
     
         transform: translateY(-50%);
