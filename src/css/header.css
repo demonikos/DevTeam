@@ -213,6 +213,12 @@
   margin-top: 130px;
 }
 
+@media  screen and (max-height: 410px){ 
+  .popup-menu-list{
+    margin-top: 30px;
+  }
+}
+
 .popup-menu-item {
   gap: 10px;
 }
