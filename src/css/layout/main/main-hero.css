@@ -58,7 +58,6 @@
 }
 
 .main-hero-title {
-
   margin-left: auto;
   margin-right: auto;
 
@@ -121,8 +120,11 @@ flex-direction: column;
   }
 
   .main-hero-desc {
-    min-width: 704px;
-    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .mh-txt-one {
+    min-width: 355px;
   }
 }
 
@@ -178,17 +180,16 @@ flex-direction: column;
   }
 
   .main-hero-desc {
-    /* max-width: 704px; */
+    max-width: 704px;
 
     margin-top: 76px;
     flex-wrap: nowrap;
     flex-direction: row;
-    gap: 32px;
+    gap: 10px;
 
     margin-right: auto;
     margin-left: auto;
   }
-
 }
 
 @media screen and (min-width: 1440px) {
@@ -229,10 +230,19 @@ flex-direction: column;
   }
 
   .main-hero-desc {
+    max-width: 730px;
     margin-top: 0;
     margin-left: 0;
     margin-right: auto;
     margin-bottom: 48px;
+  }
+
+  .mh-txt-one  {
+    min-width: 370px;
+  }
+
+  .mh-txt-two {
+    min-width: 338px;
   }
 
   .desktop-main-hero-btns {
