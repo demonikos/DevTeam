@@ -13,20 +13,20 @@
         <form class="modal-form modal-form-ppr">
             <div class="field-wrap">
                 <label class="" for="nights-number">
-                    <select class="" id="nights-number" name="nights-number">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    <svg class="modal-arrow" width="20px" height="20px">
-                        <use href="../../img/icons.svg#arrow-down"></use>
-                    </svg>
+                    <div class="arrow">
+                        <select class="" id="nights-number" name="nights-number">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
                     number of nights
                 </label>
                 <label class="field-description">
-                    <input class="modal-field" type="number" placeholder="1000" pattern="[0-9]">uah
+                    <input class="modal-field room-price" type="number" placeholder="1000" pattern="[0-9]">
+                    <span class="modal-span">uah</span>
                 </label>
             </div>
             <button class="modal-btn btn" type="submit">Make a reservation</button>

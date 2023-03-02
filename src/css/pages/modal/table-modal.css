@@ -43,7 +43,6 @@
 }
 
 .modal-field {
-    margin-bottom: 8px;
     padding: 0;
     padding-bottom: 18px;
     width: 100%;
@@ -66,13 +65,47 @@ label {
     position: relative;
 } 
 
-.modal-arrow {
+/* .modal-arrow {
     position: absolute;
     top: 0;
     right: 0;
     stroke: #f6f6f6;
     pointer-events: none;
+} */
+
+
+/* pseudo arrow */
+
+.number-field {
+    margin-bottom: 0;
 }
+
+.day-field {
+    margin-bottom: 0;
+}
+
+.arrow {
+    margin-bottom: 8px;
+}
+
+.arrow::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    content: '';
+    
+    background-image: url(../../../img/chevron-down.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    pointer-events: none;
+}
+
+/* ==== */
 
 .modal-field::placeholder {
     color: #F7F7F7;
@@ -126,6 +159,7 @@ label {
 }
 
 .modal-name {
+    margin-bottom: 8px;
     color: #D8D7D7;
 }
 
@@ -142,7 +176,6 @@ label {
 }
 
 .number-descr {
-    /* margin-bottom: 32px; */
     width: 100%;
 }
 
@@ -156,6 +189,10 @@ select {
 
 .modal-descr-tel {
     margin-bottom: 0px;
+}
+
+.modal-tel {
+    margin-bottom: 8px;
 }
 
 .modal-btn {
@@ -238,7 +275,6 @@ select {
     }
 
     .modal-field {
-        margin-bottom: 8px;
         padding: 0;
         padding-bottom: 18px;
     }
