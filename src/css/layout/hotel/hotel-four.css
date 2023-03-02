@@ -1,14 +1,13 @@
-
 .hotel-four-seater-room {
-  background-color: var(--light);
+  background-color: var(--background);
 }
 
- .hotel-four-seater-room .container {
+.hotel-four-seater-room .container {
   width: 100%;
   max-width: 375px;
- }
+}
 
- .hotel-four-seater-room .room-photos {
+.hotel-four-seater-room .room-photos {
   display: flex;
   flex-wrap: wrap;
 
@@ -16,7 +15,7 @@
   padding-bottom: 32px;
 }
 
-.hotel-four-seater-room .room-photo-1 picture, 
+.hotel-four-seater-room .room-photo-1 picture,
 .hotel-four-seater-room .room-photo-2 picture {
   width: 100%;
   height: auto;
@@ -32,11 +31,11 @@
   padding-bottom: 32px;
 
   color: var(--dark);
-  
+
   font-family: inherit;
   font-weight: 700;
   font-size: 32px;
-  line-height: calc(40/32);
+  line-height: calc(40 / 32);
   letter-spacing: -0.02em;
 }
 
@@ -52,7 +51,7 @@
   font-family: inherit;
   font-weight: var(--regular);
   font-size: 14px;
-  line-height: calc(18/14); 
+  line-height: calc(18 / 14);
   letter-spacing: -0.02em;
 }
 
@@ -74,19 +73,17 @@
   font-family: inherit;
   font-weight: var(--regular);
   font-size: 14px;
-  line-height: calc(18/14); 
+  line-height: calc(18 / 14);
   letter-spacing: -0.02em;
   text-transform: uppercase;
   transition: color 300ms var(--action-transition),
-              background-color 300ms var(--action-transition);
+    background-color 300ms var(--action-transition);
 }
 
 .hotel-four-seater-room .room-button:is(:hover, :focus) {
   color: var(--light);
   background-color: var(--dark);
-
-}  
-
+}
 
 /* ============================== MEDIA ============================ */
 
@@ -100,19 +97,19 @@
     padding-right: 32px;
 
     max-width: 768px;
-   }
+  }
 
-   .hotel-four-seater-room .room-photos {
+  .hotel-four-seater-room .room-photos {
     flex-direction: row-reverse;
-  
+
     gap: 32px;
     padding-bottom: 40px;
   }
-  
+
   .hotel-four-seater-room .room-photo-1 {
     width: auto;
   }
-  
+
   .hotel-four-seater-room .room-photo-2 {
     flex-direction: column;
 
@@ -126,7 +123,7 @@
 
   .hotel-four-seater-room .room-type {
     font-size: 40px;
-    line-height: calc(44/40);
+    line-height: calc(44 / 40);
   }
 
   .hotel-four-seater-room .room-description {
@@ -135,7 +132,7 @@
     padding-bottom: 40px;
 
     font-size: 18px;
-    line-height: calc(24/18); 
+    line-height: calc(24 / 18);
   }
 
   .hotel-four-seater-room .room-description .p-first {
@@ -149,9 +146,9 @@
 
   .hotel-four-seater-room .room-button {
     padding: 8px 24px;
-  
-    line-height: calc(24/14); 
-  }  
+
+    line-height: calc(24 / 14);
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -162,13 +159,13 @@
   .hotel-four-seater-room .container {
     position: relative;
     max-width: 1440px;
-   }
-  
+  }
+
   .hotel-four-seater-room .room-photos {
     justify-content: center;
     align-items: center;
   }
-  
+
   .hotel-four-seater-room .room-photo-2 {
     position: absolute;
     width: 100%;
@@ -193,8 +190,17 @@
     padding-bottom: 50px;
   }
 
+  .hotel-four-seater-room .desktop-positioning {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hotel-four-seater-room .div-for-room-buttons {
+    display: block;
+  }
+
   .hotel-four-seater-room .room-button {
     font-size: 18px;
-    line-height: calc(24/18);
+    line-height: calc(24 / 18);
   }
 }

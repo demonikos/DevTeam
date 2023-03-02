@@ -5,7 +5,7 @@
             <h3 class="modal-title">Book <span>a room</span></h3>
             <button class="modal-close-button" type="button" data-modal-br-close>
                 <svg class="modal-close-icon" width="28px" height="28px">
-                    <use  href="../../img/icons.svg#close-icon"></use>
+                    <use  href="./img/icons.svg#close-icon"></use>
                 </svg>
             </button>
             <form class="modal-form">
@@ -36,35 +36,38 @@
                     </label>
     
                     <label class="field-description" for="date_in">
-                        <span class="arrow">
-                            <select class="modal-field check-in-field" id="date_in" name="people_number">
-                                <option value="today">TODAY</option>
-                                <option value="tomorrow">TOMORROW</option>
-                                <option value="the day after tomorrow">THE DAY AFTER TOMORROW</option>
-                            </select>
-                        </span>
+                        <select class="modal-field check-in-field" id="date_in" name="people_number">
+                            <option value="today">TODAY</option>
+                            <option value="tomorrow">TOMORROW</option>
+                            <option value="the day after tomorrow">THE DAY AFTER TOMORROW</option>
+                        </select>
+                        <svg class="modal-arrow" width="20px" height="20px">
+                            <use  href="./img/icons.svg#arrow-down"></use>
+                        </svg>
                         <span class="modal-span">Check-in date</span>
                     </label>
     
                     <label class="field-description check-out-date" for="date_out">
-                        <span class="arrow">
-                            <select class="modal-field check-out-field " id="date_out" name="people_number">
-                                <option value="today">TODAY</option>
-                                <option value="tomorrow">TOMORROW</option>
-                                <option value="the day after tomorrow">THE DAY AFTER TOMORROW</option>
-                            </select>
-                        </span>
+                        <select class="modal-field check-out-field " id="date_out" name="people_number">
+                            <option value="today">TODAY</option>
+                            <option value="tomorrow">TOMORROW</option>
+                            <option value="the day after tomorrow">THE DAY AFTER TOMORROW</option>
+                        </select>
+                        <svg class="modal-arrow" width="20px" height="20px">
+                            <use  href="./img/icons.svg#arrow-down"></use>
+                        </svg>
                         <span class="modal-span">Check-out date</span>
                     </label>
     
                     <label class="field-description" for="suite_type">
-                        <span class="arrow">
-                            <select class="modal-field suite-type" id="suite_type" name="suite_type">
-                                <option value="double">Double suite</option>
-                                <option value="triple">Triple room</option>
-                                <option value="four">Four-seater room</option>
-                            </select>
-                        </span>
+                        <select class="modal-field suite-type" id="suite_type" name="suite_type">
+                            <option value="double">Double suite</option>
+                            <option value="triple">Triple room</option>
+                            <option value="four">Four-seater room</option>
+                        </select>
+                        <svg class="modal-arrow" width="20px" height="20px">
+                            <use  href="./img/icons.svg#arrow-down"></use>
+                        </svg>
                         <span class="modal-span">Number category</span>
                     </label>
                 </div>

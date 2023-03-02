@@ -55,7 +55,7 @@
     line-height: 1.25;
     letter-spacing: -0.02em;
     
-    color: var(--button);
+    color: var(--background);
 }
 
 .menu .menu-category{
@@ -80,7 +80,7 @@
     line-height: 1.3333;
     letter-spacing: -0.02em;
 
-    color: var(--button);
+    color: var(--background);
 }
 
 .menu .menu-category>.menu-category-item .item{
@@ -104,7 +104,7 @@
     line-height: 1.2857;
     letter-spacing: -0.02em;
 
-    color: var(--button);
+    color: var(--background);
 }
 
 .menu .menu-category .menu-category-item>ul .marked-text::before{
@@ -118,7 +118,7 @@
     width: 4.5px;
     height: 4.5px;
 
-    background-color:var(--button);
+background-color:var(--background);
     border-radius: 50%;
 
     transform: translateY(-50%);
@@ -176,7 +176,7 @@
     line-height: 1.2857;
     letter-spacing: -0.02em;
 
-    color: var(--button);
+    color: var(--background);
 }
 
 .menu .menu-category-wrap .menu-category-item{
@@ -205,7 +205,7 @@
     line-height: 1.2857;
     letter-spacing: -0.02em;
 
-    color: var(--button);
+    color: var(--background);
 }
 
 .menu .menu-category-item .menu-category-wrap .marked-text::before{
@@ -220,7 +220,7 @@
     height: 4.5px;
 
 
-    background-color:var(--button);
+background-color:var(--background);
     border-radius: 50%;
 
     transform: translateY(-50%);
@@ -233,7 +233,7 @@
     
 
     letter-spacing: -0.02em;
-    color:var(--button);
+    color:var(--background);
 }
 
 .menu .next-btn,
@@ -267,7 +267,7 @@
     margin-right: auto;
 
     background-color: transparent;
-    color: var(--button);
+    color: var(--background);
 }
 
 .menu .btn.btn-book-a-table:hover,
@@ -365,7 +365,7 @@
         height: 4.5px;
     
     
-        background-color:var(--button);
+    background-color:var(--background);
         border-radius: 50%;
     
         transform: translateY(-50%);

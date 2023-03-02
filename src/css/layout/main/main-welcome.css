@@ -6,10 +6,10 @@
 }
 
 .section.wellcome-section {
-    background-color: var(--light);
+    background-color: var(--background);
     padding-bottom: 0;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 14px;
+    padding-bottom: 64px;
 }
 
 .wellcome-title {
@@ -60,7 +60,7 @@
     }
 
     .wellcome-text.first-paragraph {
-        max-width: 306px;
+        max-width: 325px;
     }
 
     .wellcome-text.second-paragraph {
@@ -70,7 +70,7 @@
 
 @media screen and (min-width: 768px) {
     .section.wellcome-section {
-        padding-top: 40px;
+        padding-top: 30px;
         padding-bottom: 80px;
     }
 
@@ -81,7 +81,7 @@
     }
 
     .wellcome-title {
-        max-width: 434px;
+        max-width: 450px;
         margin-bottom: 50px;
 
         font-size: 36px;
@@ -98,6 +98,11 @@
         margin-bottom: 40px;
     }
 
+
+    .wellcome-text.first-paragraph {
+        max-width: 306px;
+    }
+
     .wellcome-text.second-paragraph {
         max-width: 366px;
     }
@@ -111,7 +116,7 @@
 
 @media screen and (min-width: 1440px) {
     .section.wellcome-section {
-        padding-top: 100px;
+        padding-top: 76px;
         padding-bottom: 100px;
     }
 
@@ -123,7 +128,7 @@
 
         max-width: 1440px;
         padding-left: 32px;
-        padding-right: 267px;
+        padding-right: 255px;
     }
 
     .wellcome-text-wrap {
@@ -136,6 +141,7 @@
     }
 
     .wellcome-title {
+        max-width: 455px;
         margin-bottom: 310px;
     }
 
@@ -152,6 +158,6 @@
     }
 
     .wellcome-text.second-paragraph {
-        max-width: 437px;
+        max-width: 450px;
     }
 }

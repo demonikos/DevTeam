@@ -6,7 +6,7 @@
             <h3 class="modal-title">Book <span>a table</span></h3>
             <button class="modal-close-button" type="button" data-modal-bt-close>
                 <svg class="modal-close-icon" width="28px" height="28px">
-                    <use  href="../../img/icons.svg#close-icon"></use>
+                    <use  href="./img/icons.svg#close-icon"></use>
                 </svg>
             </button>
             <form class="modal-form">
@@ -24,16 +24,17 @@
                     </label>
     
                     <label class="number-descr">
-                        <span class="arrow">
-                            <select class="modal-field number-field " id="people_number" name="people_number">
-                                <option value="0">NUMBER OF PEOPLE</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </span>
+                        <select class="modal-field number-field" id="people_number" name="people_number">
+                            <option value="0">NUMBER OF PEOPLE</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <svg class="modal-arrow" width="20px" height="20px">
+                            <use  href="./img/icons.svg#arrow-down"></use>
+                        </svg>
                     </label>
         
                     <label class="field-description date" for="date">
@@ -45,6 +46,9 @@
                             </select> 
                         </span>   
                         <span class="modal-span">What date to book?</span>
+                        <svg class="modal-arrow" width="20px" height="20px">
+                            <use  href="./img/icons.svg#arrow-down"></use>
+                        </svg>
                     </label>
         
                     <label class="field-description modal-descr-tel phone" for="modal-tel">
