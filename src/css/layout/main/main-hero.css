@@ -27,6 +27,12 @@
   height: auto;
 }
 
+.desktop-main-hero-btns {
+  display: flex;
+  gap: 14px;
+  display: none;
+}
+
 /* --- main-hero-content --- */
 
 .main-hero-btns {
@@ -128,7 +134,7 @@
   }
 
   .main-hero-title {
-    left: 1%;
+    left: 0;
     top: 67%;
 
     font-size: 150px;
@@ -140,14 +146,11 @@
     padding-right: 24px;
   }
 
-  .position-buttons-wrapper {
-    position: absolute;
-    left: 121px;
-    bottom: 1.5%;
-  }
-
   .main-hero-btns {
     margin-top: 0;
+    position: absolute;
+    left: 121px;
+    bottom: 10px;
   }
 
   .main-hero-desc {
@@ -193,9 +196,8 @@
     left: 2%;
   }
 
-  .position-buttons-wrapper {
-  bottom: 10.5%;
-  right: -53%;
+  .main-hero-btns {
+    display: none;
   }
 
   .hero-content-wrapper {
@@ -210,7 +212,10 @@
     margin-bottom: 48px;
   }
 
-  .main-hero-btns {
-    margin-top: 0;
+  .desktop-main-hero-btns {
+    display: flex;
+    position: absolute;
+    right: 94px;
+    bottom: 78px;
   }
 }
