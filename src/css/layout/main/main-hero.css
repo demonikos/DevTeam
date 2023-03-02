@@ -89,12 +89,13 @@ flex-direction: column;
 }
 
 .mh-txt-one {
-  max-width: 358px;
-  text-align: start;
+  font-size: small;
+  max-width: 338px;
 }
 
 .mh-txt-two {
-  max-width: 334px;
+  font-size: small;
+  max-width: 314px;
 }
 
 /* --- adaptive --- */
@@ -177,16 +178,17 @@ flex-direction: column;
   }
 
   .main-hero-desc {
-    max-width: 704px;
+    /* max-width: 704px; */
 
     margin-top: 76px;
     flex-wrap: nowrap;
     flex-direction: row;
     gap: 32px;
 
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
+
 }
 
 @media screen and (min-width: 1440px) {
