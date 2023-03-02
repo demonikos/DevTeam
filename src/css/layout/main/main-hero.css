@@ -122,10 +122,6 @@ flex-direction: column;
   .main-hero-desc {
     flex-direction: column;
   }
-
-  .mh-txt-one {
-    min-width: 355px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -180,15 +176,22 @@ flex-direction: column;
   }
 
   .main-hero-desc {
-    max-width: 704px;
+    width: 720px;
 
     margin-top: 76px;
     flex-wrap: nowrap;
     flex-direction: row;
-    gap: 10px;
 
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .mh-txt-one {
+    max-width: 370px;
+  }
+
+  .mh-txt-two {
+    min-width: 336px;
   }
 }
 
@@ -230,20 +233,13 @@ flex-direction: column;
   }
 
   .main-hero-desc {
-    max-width: 730px;
+
     margin-top: 0;
     margin-left: 0;
     margin-right: auto;
     margin-bottom: 48px;
   }
 
-  .mh-txt-one  {
-    min-width: 370px;
-  }
-
-  .mh-txt-two {
-    min-width: 338px;
-  }
 
   .desktop-main-hero-btns {
     display: flex;
