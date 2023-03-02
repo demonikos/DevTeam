@@ -17,28 +17,28 @@
 @font-face {
     font-family: DM Sans, sans-serif;
     src: url('/src/fonts/DMSans-Medium.ttf');
-    font-weight: medium;
+    font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: DM Sans, sans-serif;
     src: url('/src/fonts/DMSans-MediumItalic.ttf');
-    font-weight: medium;
+    font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
     font-family: DM Sans, sans-serif;
     src: url('/src/fonts/DMSans-Bold.ttf');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: DM Sans, sans-serif;
     src: url('/src/fonts/DMSans-Bold.ttf');
-    font-weight: bold;
+    font-weight: 700;
     font-style: italic;
 }
 
