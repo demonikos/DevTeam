@@ -58,13 +58,14 @@
 }
 
 .main-hero-title {
+
   margin-left: auto;
   margin-right: auto;
 
   text-align: center;
 
   font-weight: var(--regular);
-  font-size: 80px;
+  font-size: 70px;
   line-height: calc(80 / 80);
   letter-spacing: -0.02em;
 }
@@ -94,6 +95,7 @@
   }
 
   .main-hero-title {
+    font-size: 80px;
     position: absolute;
     left: 7%;
     top: 71%;
@@ -109,10 +111,7 @@
 
   .main-hero-desc {
     max-width: 704px;
-    justify-content: space-between;
   }
-
-
 }
 
 @media screen and (min-width: 768px) {
