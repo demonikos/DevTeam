@@ -27,6 +27,12 @@
   height: auto;
 }
 
+.desktop-main-hero-btns {
+  display: flex;
+  gap: 14px;
+  display: none;
+}
+
 /* --- main-hero-content --- */
 
 .main-hero-btns {
@@ -36,7 +42,7 @@
   gap: 14px;
 }
 
-.main-hero-section .main-hero-btn {
+.main-hero-btn {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 18px;
@@ -100,6 +106,13 @@
   .main-hero-section .main-hero-btn {
     font-size: 14px;
   }
+
+  .main-hero-desc {
+    max-width: 704px;
+    justify-content: space-between;
+  }
+
+
 }
 
 @media screen and (min-width: 768px) {
@@ -132,7 +145,7 @@
   }
 
   .main-hero-title {
-    left: 1%;
+    left: 0;
     top: 67%;
 
     font-size: 150px;
@@ -146,14 +159,11 @@
     line-height: calc(24 / 14);
   }
 
-  .position-buttons-wrapper {
-    position: absolute;
-    left: 121px;
-    bottom: 1.5%;
-  }
-
   .main-hero-btns {
     margin-top: 0;
+    position: absolute;
+    left: 121px;
+    bottom: 10px;
   }
 
   .main-hero-desc {
@@ -196,14 +206,12 @@
     left: 2%;
   }
 
-  .position-buttons-wrapper {
-    bottom: 10.5%;
-    right: -53%;
+  .main-hero-btns {
+    display: none;
   }
 
   .hero-content-wrapper {
     position: static;
-    margin-left: auto;
     height: 100%;
   }
 
@@ -214,7 +222,18 @@
     margin-bottom: 48px;
   }
 
-  .main-hero-btns {
-    margin-top: 0;
+  .desktop-main-hero-btns {
+    display: flex;
+    position: absolute;
+    right: 94px;
+    bottom: 78px;
+  }
+
+  .main-hero-btn {
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    padding-top: 9px;
+    padding-left: 9px;
+    letter-spacing: -0.02em;
   }
 }
