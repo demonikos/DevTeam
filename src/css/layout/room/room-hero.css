@@ -57,6 +57,13 @@
   margin-left: auto;
   margin-bottom: 40px;
 }
+.btn-slider {
+  stroke: #1212124d;
+}
+.btn-slider:is(:hover, :focus) {
+  stroke: var(--dark);
+}
+
 /* ------------------------------768 Breakpoint----------------------- */
 
 @media screen and (min-width: 768px) {
