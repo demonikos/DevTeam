@@ -1,10 +1,46 @@
 /* only for base styles for all pages */
 
-/* @font-face {
-    font-family: Geometria, sans-serif;
-    src: url('/src/uploads/fonts/Geometria.ttf');
+@font-face {
+    font-family: 'DM Sans', sans-serif;
+    src: url('/src/fonts/DMSans-Regular.ttf');
     font-weight: normal;
-} */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DM Sans', sans-serif;
+    src: url('/src/fonts/DMSans-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DM Sans', sans-serif;
+    src: url('/src/fonts/DMSans-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DM Sans', sans-serif;
+    src: url('/src/fonts/DMSans-MediumItalic.ttf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DM Sans', sans-serif;
+    src: url('/src/fonts/DMSans-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DM Sans', sans-serif;
+    src: url('/src/fonts/DMSans-Bold.ttf');
+    font-weight: 700;
+    font-style: italic;
+}
 
 body, button, link, textarea, input {
     font-family: 'DM Sans', sans-serif;
@@ -15,10 +51,6 @@ span {
     font-style: italic;
 }
 
-/* .menu-description {
-    font-family: 'Geometria', sans-serif;
-} */
-
 .btn {
     display: flex;
     align-items: center;
@@ -26,7 +58,7 @@ span {
     font-family: inherit;
     font-weight: normal;
     letter-spacing: -0.02em;
-    border: 0.8px solid var(--button);
+    border: 0.8px solid var(--light);
     border-radius: 32px;
 }
 
