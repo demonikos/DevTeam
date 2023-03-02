@@ -39,7 +39,22 @@
     gap: 16px;
 }
 
+<<<<<<< Updated upstream
 /* слайдер */
+=======
+.main-hotel .main-btn-room .btn-main-room{
+    font-weight: var(--regular);
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    width: auto;
+    height: 34px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: var(--dark);
+    border: 0.8px solid #F7F7F7;
+    border-color: var(--light);
+    color: var(--light);
+>>>>>>> Stashed changes
 
 .main-button-scroll .next-btn,
 .main-button-scroll .previous-btn {
