@@ -85,6 +85,7 @@ label {
 }
 
 .arrow {
+    display: block;
     margin-bottom: 8px;
 }
 
