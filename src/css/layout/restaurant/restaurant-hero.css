@@ -94,9 +94,9 @@ transition: var(--action-transition);
     stroke: #1212124D;
 }
 
-/* .restaurant-hero-button-slide:is(:hover, :focus) .restaurant-hero-button-svg{
+.restaurant-hero-button-slide:is(:hover, :focus) .restaurant-hero-button-svg{
     stroke: var(--dark);
-} */
+}
 
 .restaurant-hero-button-slide{
     padding: 0;
