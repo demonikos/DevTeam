@@ -1,5 +1,5 @@
-/* ==== Book a table and  room modal ===== */
 
+/* ==== Book a table and  room modal ===== */
 
 .modal-backdrop {
     position: fixed;
@@ -64,7 +64,7 @@
 
 label {
     position: relative;
-}
+} 
 
 .modal-arrow {
     position: absolute;
@@ -184,6 +184,14 @@ select {
     color: #121212;
 }
 
+.date {
+    order: 1;
+}
+
+.phone {
+    order: 2;
+}
+
 
 
 /* ===== Mobile >767px */
@@ -246,6 +254,14 @@ select {
 
     .modal-btn {
         margin-top: 80px;
+    }
+
+    .date {
+        order: 2;
+    }
+    
+    .phone {
+        order: 1;
     }
 
 }
